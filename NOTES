@@ -1,13 +1,10 @@
-
-# NOTES TO SELF
-amazon affiliate account: nadvornik.j.i.r.i@gmail.com. UPDATE: not any more
-- je potřeba mít amazon účet + účet na amazon associates 
-- blbne amazoni web: ale funguje bez diakritiky v firefoxu.
-- moje associate's id: calculusma00d-20. UPDATE: not any more
-- biblio's sharesale is blocked by uBlock
-- na amazonu jsem ještě nevyplnil jak mi budou platit. Ale peníze by tam zatím měly zůstávat.
-
 # Launching:
+make compile
+make deploy
+
+compile
+  source venv/bin/activate
+  python3 compile_templates.py
 deploy
   scp -r calculus-made-easy/* nadvornix_calculusmadeeasy@ssh.phx.nearlyfreespeech.net:/home/public
 linchecker
@@ -15,4 +12,3 @@ linchecker
 commit
 push
 
-post it on HN
