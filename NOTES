@@ -1,14 +1,5 @@
-# Launching:
-make compile
 make deploy
-
-compile
-  source venv/bin/activate
-  python3 compile_templates.py
-deploy
-  scp -r calculus-made-easy/* nadvornix_calculusmadeeasy@ssh.phx.nearlyfreespeech.net:/home/public
-linchecker
-  linkchecker --check-extern http://calculusmadeeasy.org/
+(password for account nadvornix.)
 commit
 push
 
