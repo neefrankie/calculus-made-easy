@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Maxima and Minima | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 11}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Maxima and Minima</h1>
+
+
+
+
+<main id="main-content">
+
+<p>One of the principal uses of the process of differentiating
+is to find out under what conditions the value
+of the thing differentiated becomes a maximum, or a
+minimum. This is often exceedingly important in
+engineering questions, where it is most desirable to
+know what conditions will make the cost of working
+a minimum, or will make the efficiency a maximum.</p>
+
+
+<p>Now, to begin with a concrete case, let us take the
+equation</p>
+
+<p id="922809fb-248f-411a-9640-95de40a3bb13" class="latex-block">\[
+y = x^2 - 4x + 7.
+\]</p>
+
+<p><img src="33283-t/images/105a.pdf.png-1.png"></p>
+
+
+<p>By assigning a number of successive values to $x$,
+and finding the corresponding values of $y$, we can
+
+readily see that the equation represents a curve with
+a minimum.</p>
+
+<table>
+<tr><td>$x$</td><td>$ 0$</td><td>$ 1 $</td><td>$2 $</td><td>$3 $</td><td>$4$</td><td>$ 5$</td></tr>
+<tr><td>$y$</td><td>$ 7$</td><td>$ 4 $</td><td>$3 $</td><td>$4 $</td><td>$7$</td><td>$ 12$</td></tr>
+</table>
+
+
+
+<p>These values are plotted in Figure 26, which shows
+that $y$ has apparently a minimum value of $3$, when $x$
+is made equal to $2$. But are you sure that the
+minimum occurs at $2$, and not at $2 \tfrac{1}{4}$ or at $1 \tfrac{3}{4}$?</p>
+
+
+<p>Of course it would be possible with any algebraic
+expression to work out a lot of values, and in this
+way arrive gradually at the particular value that
+may be a maximum or a minimum.</p>
+
+
+
+<p><img src="33283-t/images/106a.pdf.png-1.png"></p>
+
+
+<p>Here is another example:</p>
+
+
+<p>Let $y = 3x - x^2$.</p>
+
+
+<p>Calculate a few values thus:</p>
+
+
+<table>
+<tr><td>$x$</td><td>-1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+<tr><td>$y$</td><td>-4</td><td>0</td><td>2</td><td>2</td><td>0</td><td>-4</td><td>-10</td></tr>
+</table>
+
+
+<p>Plot these values as in Figure 27.</p>
+
+
+<p>It will be evident that there will be a maximum
+somewhere between $x = 1$ and $x = 2$; and the thing
+<em>looks</em> as if the maximum value of $y$ ought to be
+about $2 \tfrac{1}{4}$. Try some intermediate values. If $x = 1 \tfrac{1}{4}$,
+$y = 2.187$; if $x = 1 \tfrac{1}{2}$, $y = 2.25$; if $x = 1.6$, $y = 2.24$.
+How can we be sure that $2.25$ is the real maximum,
+or that it occurs exactly when $x = 1 \tfrac{1}{2}$?</p>
+
+
+<p>Now it may sound like juggling to be assured that
+there is a way by which one can arrive straight at a
+maximum (or minimum) value without making a lot of
+preliminary trials or guesses. And that way depends
+on differentiating. Look back to an earlier page (<a href="10.html#curve">here</a>) for
+the remarks about Fig. 14 and Fig. 15, and you will see
+that whenever a curve gets either to its maximum
+or to its minimum height, at that point its $\dfrac{dy}{dx} = 0$.
+Now this gives us the clue to the dodge that is
+wanted. When there is put before you an equation,
+and you want to find that value of $x$ that will make
+its $y$ a minimum (or a maximum), <em>first differentiate
+it</em>, and having done so, write its $\dfrac{dy}{dx}$ as <em>equal to zero</em>,
+and then solve for $x$. Put this particular value of $x$
+into the original equation, and you will then get the
+required value of $y$. This process is commonly called
+“equating to zero.”</p>
+
+
+<p>To see how simply it works, take the example with
+which this chapter opens, namely</p>
+
+<p id="abd61144-edfa-4458-9476-76d30b4ed28e" class="latex-block">\[
+y = x^2 - 4x + 7.
+\]</p>
+
+<p>Differentiating, we get:</p>
+
+<p id="b116d5fe-0978-45c9-94fd-ad0b091e61de" class="latex-block">\[
+\dfrac{dy}{dx} = 2x - 4.
+\]</p>
+
+<p>Now equate this to zero, thus:</p>
+
+<p id="d501a9a4-9916-4151-9d50-1377e9515444" class="latex-block">\[
+2x - 4 = 0.
+\]</p>
+
+<p>Solving this equation for $x$, we get:</p>
+
+<p id="8f6366e9-006b-4225-8e1f-52931a2dcdef" class="latex-block">\begin{align*}
+2x &= 4, \\
+ x &= 2.
+\end{align*}</p>
+
+
+
+
+<p>Now, we know that the maximum (or minimum)
+will occur exactly when $x=2$.</p>
+
+
+<p>Putting the value $x=2$ into the original equation,
+we get</p>
+
+<p id="ad39f76e-024f-4688-a911-d9c21124c40b" class="latex-block">\begin{align*}
+y &= 2^2 - (4×2) + 7 \\
+  &= 4 - 8 + 7       \\
+  &= 3.
+\end{align*}</p>
+
+
+
+
+<p>Now look back at Figure 26, and you will see that the
+minimum occurs when $x = 2$, and that this minimum
+of $y = 3$.</p>
+
+
+<p>Try the second example (Figure 24), which is</p>
+
+<p id="729aad6a-40fa-4887-84f5-fb4641b47abf" class="latex-block">\begin{align*}
+y &= 3x - x^2. \\
+\frac{dy}{dx} &= 3 - 2x. \\
+\end{align*}</p>
+
+<p>Equating to zero,</p>
+
+<p id="fb249899-033f-44ee-883d-9e6942e7b876" class="latex-block">\begin{align*}
+3 - 2x &= 0, \\
+x &= 1 \tfrac{1}{2}; \\
+\end{align*}</p>
+
+<p>and putting this value of $x$ into the original equation, we find:</p>
+
+<p id="0b9844a1-ef17-4ce1-904c-6bed31612e6f" class="latex-block">\begin{align*}
+y &= 4 \tfrac{1}{2} - (1 \tfrac{1}{2} × 1 \tfrac{1}{2}), \\
+y &= 2 \tfrac{1}{4}.
+\end{align*}</p>
+
+<p>This gives us exactly the information as to which
+the method of trying a lot of values left us uncertain.</p>
+
+
+
+<p>Now, before we go on to any further cases, we have
+two remarks to make. When you are told to equate
+$\dfrac{dy}{dx}$ to zero, you feel at first (that is if you have any
+wits of your own) a kind of resentment, because you
+know that $\dfrac{dy}{dx}$ has all sorts of different values at
+different parts of the curve, according to whether it
+is sloping up or down. So, when you are suddenly
+told to write</p>
+
+<p id="fb57c2c1-9895-434d-aaab-3b298cab3753" class="latex-block">\[
+\frac{dy}{dx} = 0,
+\]</p>
+
+<p>you resent it, and feel inclined to say that it can't be
+true. Now you will have to understand the essential
+difference between “an equation,” and “an equation
+of condition.” Ordinarily you are dealing with equations
+that are true in themselves, but, on occasions,
+of which the present are examples, you have to write
+down equations that are not necessarily true, but are
+only true if certain conditions are to be fulfilled; and
+you write them down in order, by solving them, to
+find the conditions which make them true. Now we
+want to find the particular value that $x$ has when
+the curve is neither sloping up nor sloping down, that
+is, at the particular place where $\dfrac{dy}{dx} = 0$. So, writing
+$\dfrac{dy}{dx} = 0$ does <em>not</em> mean that it always is $=0$; but you
+write it down <em>as a condition</em> in order to see how
+much $x$ will come out if $\dfrac{dy}{dx}$ is to be zero.</p>
+
+
+
+<p>The second remark is one which (if you have any
+wits of your own) you will probably have already
+made: namely, that this much-belauded process of
+equating to zero entirely fails to tell you whether
+the $x$ that you thereby find is going to give you
+a <em>maximum</em> value of $y$ or a <em>minimum</em> value of $y$.
+Quite so. It does not of itself discriminate; it finds
+for you the right value of $x$ but leaves you to find
+out for yourselves whether the corresponding $y$ is a
+maximum or a minimum. Of course, if you have
+plotted the curve, you know already which it will be.</p>
+
+
+<p>For instance, take the equation:</p>
+
+<p id="1e7626b0-0e91-42fc-982b-81cd881ccc66" class="latex-block">\[
+y = 4x + \frac{1}{x}.
+\]</p>
+
+
+<p>Without stopping to think what curve it corresponds
+to, differentiate it, and equate to zero:</p>
+
+<p id="77a629aa-1b8d-428d-b212-a6ac5957e9ce" class="latex-block">\begin{align*}
+\frac{dy}{dx}  &= 4 - x^{-2} \\
+ &= 4 - \frac{1}{x^2} \\
+ &= 0; \\
+x &= \tfrac{1}{2}; \\
+\end{align*}</p>
+
+<p>and, inserting this value,</p>
+
+<p id="4f82f887-7cb1-4940-983d-1d101c8d7b8c" class="latex-block">\begin{align*}
+y &= 4
+\end{align*}</p>
+
+<p>will be either a maximum or else a minimum. But
+which? You will hereafter be told a way, depending
+upon a second differentiation, (see <a href="11.html">Chap. XII.</a>).
+But at present it is enough if you will simply try
+any other value of $x$ differing a little from the one
+found, and see whether with this altered value the
+corresponding value of $y$ is less or greater than that
+already found.</p>
+
+
+
+<p>Try another simple problem in maxima and minima.
+Suppose you were asked to divide any number into
+two parts, such that the product was a maximum?
+How would you set about it if you did not know
+the trick of equating to zero? I suppose you could
+worry it out by the rule of try, try, try again. Let
+$60$ be the number. You can try cutting it into two
+parts, and multiplying them together. Thus, $50$ times
+$10$ is $500$; $52$ times $8$ is $416$; $40$ times $20$ is $800$; $45$
+times $15$ is $675$; $30$ times $30$ is $900$. This looks like
+a maximum: try varying it. $31$ times $29$ is $899$,
+which is not so good; and $32$ times $28$ is $896$, which
+is worse. So it seems that the biggest product will
+be got by dividing into two equal halves.</p>
+
+
+<p>Now see what the calculus tells you. Let the
+number to be cut into two parts be called $n$. Then
+if $x$ is one part, the other will be $n-x$, and the product
+will be $x(n-x)$ or $nx-x^2$. So we write $y=nx-x^2$.
+Now differentiate and equate to zero;</p>
+
+<p id="f5aae250-3b61-4eb5-bd52-2e17cbfe970b" class="latex-block">\begin{align*}
+\dfrac{dy}{dx} = n - 2x = 0\\
+ \text{}\;  \\
+\end{align*}</p>
+
+<p>Solving for $x$, we get</p>
+
+<p id="19cc4fcb-0c7d-4a75-abf0-fc882d2abdd2" class="latex-block">\[
+\dfrac{n}{2} = x.
+\]</p>
+
+<p>So now we <em>know</em> that whatever number $n$ may be,
+we must divide it into two equal parts if the product
+of the parts is to be a maximum; and the value of
+that maximum product will always be $ = \tfrac{1}{4} n^2$.</p>
+
+
+<p>This is a very useful rule, and applies to any number
+of factors, so that if $m+n+p=$ a constant number,
+$m×n×p$ is a maximum when $m=n=p$.</p>
+
+
+
+<p><em>Test Case.</em></p>
+<p>Let us at once apply our knowledge to a case that
+we can test.</p>
+
+
+<p id="0cbb862c-fc04-4a3d-a6e1-8e812c7e8b65" class="latex-block">\begin{align*}
+  \text{Let }   y &= x^2 - x;
+\end{align*}</p>
+
+<p>and let us find whether this function has a maximum
+or minimum; and if so, test whether it is a maximum
+or a minimum.</p>
+
+
+<p>Differentiating, we get</p>
+
+<p id="6f6539b1-7c54-4104-9740-9474a76223fe" class="latex-block">\[
+\frac{dy}{dx} = 2x - 1.
+\]</p>
+
+<p>Equating to zero, we get $2x - 1 = 0$, whence $2x = 1$, or $x = \tfrac{1}{2}$.</p>
+
+
+<p>That is to say, when $x$ is made $=\frac{1}{2}$, the corresponding
+value of $y$ will be either a maximum or a minimum.
+Accordingly, putting $x=\frac{1}{2}$ in the original equation, we
+get</p>
+
+<p id="a223c266-9b94-4181-b842-7def660902dd" class="latex-block">\begin{align*}
+y &= (\tfrac{1}{2})^2 - \tfrac{1}{2} \\
+ &= -\tfrac{1}{4}.
+\end{align*}</p>
+
+
+
+
+<p>Is this a maximum or a minimum? To test it, try
+putting $x$ a little bigger than $\frac{1}{2}$,–say make $x=0.6$.
+Then</p>
+
+<p id="b1be2a3b-75fe-4445-b26c-ee1e8e9ce0c7" class="latex-block">\[
+y = (0.6)^2 - 0.6 = 0.36 - 0.6 = -0.24,
+\]</p>
+
+<p>which is higher up than $-0.25$; showing that
+$y = -0.25$ is a <em>minimum</em>.</p>
+
+
+<p>Plot the curve for yourself, and verify the calculation.</p>
+
+
+
+
+
+<p><em>Further Examples</em>.
+A most interesting example is afforded by a curve
+that has both a maximum and a minimum. Its
+equation is:</p>
+
+<p id="80be4f9b-1f04-484d-a512-76882433bcc5" class="latex-block">\begin{align*}
+y &=\tfrac{1}{3} x^3 - 2x^2 + 3x + 1. \\
+   Now \; \dfrac{dy}{dx} &= x^2 - 4x +3.
+\end{align*}</p>
+
+
+
+
+<p><img src="33283-t/images/113a.pdf.png-1.png"></p>
+
+
+<p>Equating to zero, we get the quadratic,</p>
+
+<p id="13e6778a-cd84-4cb4-93ba-abbdeeb7097f" class="latex-block">\[
+x^2 - 4x +3 = 0;
+\]</p>
+
+<p>and solving the quadratic gives us <em>two</em> roots, viz.</p>
+
+<p id="a6eee46d-6412-4c9a-aca8-08a241ea8e18" class="latex-block">\[
+\left\{
+\begin{aligned}
+x &= 3 \\
+x &= 1.
+\end{aligned}
+\right.
+\]</p>
+
+
+<p>Now, when $x=3$, $y=1$; and when $x=1$, $y=2\frac{1}{3}$.
+The first of these is a minimum, the second a
+maximum.</p>
+
+
+<p>The curve itself may be plotted (as in Figure 28)
+
+from the values calculated, as below, from the
+original equation.</p>
+
+<table>
+  <tr><td>$x$</td><td>$-1$</td><td>$0$</td><td>$1$</td><td>$2$</td><td>$3$</td><td>$4$</td><td>$5$</td><td>$6$</td></tr>
+<tr><td>$y$</td><td>$-4\frac{1}{3}$</td><td>$1$</td><td>$2\frac{1}{3}$</td><td>$1\frac{2}{3}$</td><td>$1$</td><td>$2\frac{1}{3}$</td><td>$7\frac{2}{3}$</td><td>$19$</td></tr>
+</table>
+
+
+<p>A further exercise in maxima and minima is
+afforded by the following example:</p>
+
+
+<p>The equation to a circle of radius $r$, having its
+centre $C$ at the point whose coordinates are $x=a$,
+$y=b$, as depicted in Figure 29, is:</p>
+
+<p id="50fe63e0-0ade-41c4-b030-8f5ccc602f91" class="latex-block">\[
+(y-b)^2 + (x-a)^2 = r^2.
+\]</p>
+
+
+<p><img src="33283-t/images/114a.pdf.png-1.png"></p>
+
+
+<p>This may be transformed into</p>
+
+<p id="e741b6da-dec2-46d3-b601-5e9b5f32d2e8" class="latex-block">\[
+y = \sqrt{r^2-(x-a)^2} + b.
+\]</p>
+
+
+<p>Now we know beforehand, by mere inspection of
+the figure, that when $x=a$, $y$ will be either at its
+maximum value, $b+r$, or else at its minimum
+value, $b-r$. But let us not take advantage of this
+
+knowledge; let us set about finding what value
+of $x$ will make $y$ a maximum or a minimum, by the
+process of differentiating and equating to zero.</p>
+
+<p id="8c2b3970-78d0-4540-ac34-86d4eb11c457" class="latex-block">\begin{align*}
+\frac{dy}{dx} &= \frac{1}{2} \frac{1}{\sqrt{r^2-(x-a)^2}} × (2a-2x) \\
+ &= \frac{a-x}{\sqrt{r^2-(x-a)^2}}.
+\end{align*}</p>
+
+
+
+
+<p>Then the condition for $y$ being maximum or
+minimum is:</p>
+
+<p id="29faa174-a929-4af2-a0ac-45304ecd5a89" class="latex-block">\[
+\frac{a-x}{\sqrt{r^2-(x-a)^2}} = 0.
+\]</p>
+
+
+<p>Since no value whatever of $x$ will make the denominator
+infinite, the only condition to give zero is</p>
+
+<p id="3eb1e188-170a-4eac-bd23-e770e654fc82" class="latex-block">\begin{align*}
+x &= a.
+\end{align*}</p>
+
+<p>Inserting this value in the original equation for
+the circle, we find</p>
+
+<p id="98abed2d-bb38-4043-aa8d-50929e159a99" class="latex-block">\begin{align*}
+y &= \sqrt{r^2}+b;
+\end{align*}</p>
+
+<p>and as the root of $r^2$ is either $+r$ or $-r$, we have
+two resulting values of $y$</p>
+
+<p id="b3caa9a3-e10a-43bb-8793-72558b2026da" class="latex-block">\begin{align*}
+\left\{\begin{aligned}y \\ y\end{aligned}\right. &
+\begin{aligned}= b & + r \\ = b & - r.\end{aligned}
+\end{align*}</p>
+
+
+
+
+<p>The first of these is the maximum, at the top;
+the second the minimum, at the bottom.</p>
+
+
+
+<p>If the curve is such that there is no place that is a
+maximum or minimum, the process of equating to
+zero will yield an impossible result. For instance:</p>
+
+<p>Let</p>
+
+<p id="ea346318-bedb-498d-b3a1-e9a5e6797b22" class="latex-block">\[
+y = ax^3 + bx + c.
+\]</p>
+
+<p>Then</p>
+
+<p id="af8faf82-4d5d-4a01-b445-f7b1c390afde" class="latex-block">\[
+\frac{dy}{dx} = 3ax^2 + b.
+\]</p>
+
+<p>Equating this to zero, we get $3ax^2 + b = 0$,</p>
+
+<p id="b9638ddf-a7f3-46e6-9d5d-88f5407ba308" class="latex-block">\begin{align*}
+x^2 &= \frac{-b}{3a} \\
+x &= \sqrt{\frac{-b}{3a}}
+\end{align*}</p>
+
+<p>which is impossible.</p>
+
+<p>Therefore $y$ has no maximum nor minimum.</p>
+
+
+<p>A few more worked examples will enable you to
+thoroughly master this most interesting and useful
+application of the calculus.</p>
+
+
+<p>(1) What are the sides of the rectangle of maximum
+area inscribed in a circle of radius $R$?</p>
+
+
+<p>If one side be called $x$, the other side</p>
+
+<p id="f55dabd3-299c-4ce8-996d-b55597373565" class="latex-block">\[
+\sqrt{(\text{diagonal})^2 - x^2};
+\]</p>
+
+<p>and as the diagonal of the rectangle is necessarily a
+diameter, the other side $ = \sqrt{4R^2 - x^2}$.</p>
+
+
+<p>Then, area of rectangle $S = x\sqrt{4R^2 - x^2}$,</p>
+
+<p id="48cd5571-8036-4045-b42a-d6e1533927be" class="latex-block">\[
+\frac{dS}{dx} = x × \dfrac{d\left(\sqrt{4R^2 - x^2}\,\right)}{dx} + \sqrt{4R^2 - x^2} × \dfrac{d(x)}{dx}.
+\]</p>
+
+
+<p>If you have forgotten how to differentiate $\sqrt{4R^2-x^2}$,
+here is a hint: write $4R^2-x^2=w$ and $y=\sqrt{w}$, and
+seek $\dfrac{dy}{dw}$ and $\dfrac{dw}{dx}$; fight it out, and only if you can't
+get on refer to <a href="9.html#dodge">here</a>.</p>
+
+
+
+<p>You will get</p>
+
+<p id="8beabdb5-8903-476a-9c3e-0c230e406944" class="latex-block">\[
+\dfrac{dS}{dx}
+  = x × -\dfrac{x}{\sqrt{4R^2 - x^2}} + \sqrt{4R^2 - x^2}
+  = \dfrac{4R^2 - 2x^2}{\sqrt{4R^2 - x^2}}.
+\]</p>
+
+
+<p>For maximum or minimum we must have</p>
+
+<p id="e9cba1e7-87a8-4e8e-a487-e31bd9c1222d" class="latex-block">\[
+\dfrac{4R^2 - 2x^2}{\sqrt{4R^2 - x^2}} = 0;
+\]</p>
+
+<p>that is, $4R^2 - 2x^2 = 0$ and $x = R\sqrt{2}$.</p>
+
+
+<p>The other side ${} = \sqrt{4R^2 - 2R^2} = R\sqrt{2}$; the two sides
+are equal; the figure is a square the side of which is
+equal to the diagonal of the square constructed on the
+radius. In this case it is, of course, a maximum with
+which we are dealing.</p>
+
+
+<p>(2) What is the radius of the opening of a conical
+vessel the sloping side of which has a length $l$ when
+the capacity of the vessel is greatest?</p>
+
+
+<p>If $R$ be the radius and $H$ the corresponding height,
+$H = \sqrt{l^2 - R^2}$.</p>
+
+<p id="19ae26f4-d142-439d-9121-1300c90ed4a4" class="latex-block">\[
+\text{Volume } V = \pi R^2 × \dfrac{H}{3} = \pi R^2 × \dfrac{\sqrt{l^2 - R^2}}{3}.
+\]</p>
+
+
+<p>Proceeding as in the previous problem, we get</p>
+
+<p id="c3a12d5c-e1f8-430c-9259-edf03456ff56" class="latex-block">\begin{align*}
+\dfrac{dV}{dR}
+  &= \pi R^2 × -\dfrac{R}{3\sqrt{l^2 - R^2}} + \dfrac{2\pi R}{3} \sqrt{l^2 - R^2} \\
+  &= \dfrac{2\pi R(l^2 - R^2) - \pi R^3}{3\sqrt{l^2 - R^2}} = 0
+\end{align*}</p>
+
+<p>for maximum or minimum.</p>
+
+
+<p>Or, $2\pi R(l^2 - R^2) - \pi R^2 = 0$, and $R = l\sqrt{\tfrac{2}{3}}$, for a maximum,
+obviously.</p>
+
+
+
+<p>(3) Find the maxima and minima of the function</p>
+
+<p id="434d6766-0954-4a56-b8cf-50c760d254da" class="latex-block">\[
+y = \dfrac{x}{4-x} + \dfrac{4-x}{x}.
+\]</p>
+
+
+<p>We get</p>
+
+<p id="0ce93ae0-2bcf-41da-9dae-dfdd2a521188" class="latex-block">\[
+\dfrac{dy}{dx} = \dfrac{(4-x)-(-x)}{(4-x)^2} + \dfrac{-x - (4-x)}{x^2} = 0
+\]</p>
+
+<p>for maximum or minimum; or</p>
+
+<p id="79e9b4e5-892c-45a0-8207-4a19aa9c18fc" class="latex-block">\begin{align*}
+\dfrac{4}{(4-x)^2} - \dfrac{4}{x^2} &= 0 \\
+ x &= 2.
+\end{align*}</p>
+
+
+<p>There is only one value, hence only one maximum
+or minimum.</p>
+
+<p id="6cb65e75-d564-473a-8e57-e8dc50c9f0cc" class="latex-block">\begin{align*}
+\text{For}\quad x &= 2,\phantom{.5}\quad y = 2, \\
+\text{for}\quad x &= 1.5,\quad y = 2.27,   \\
+\text{for}\quad x &= 2.5,\quad y = 2.27;
+\end{align*}</p>
+
+<p>it is therefore a minimum. (It is instructive to plot
+the graph of the function.)</p>
+
+
+<p>(4) Find the maxima and minima of the function
+$y = \sqrt{1+x} + \sqrt{1-x}$. (It will be found instructive to
+plot the graph.)</p>
+
+
+<p>Differentiating gives at once (see example No. 1,
+<a href="9.html#ExNo1">here</a>)</p>
+
+<p id="7151585e-1b8e-4b6c-a8d9-ad475ba9e158" class="latex-block">\[
+\dfrac{dy}{dx} = \dfrac{1}{2\sqrt{1+x}} - \dfrac{1}{2\sqrt{1-x}} = 0
+\]</p>
+
+<p>for maximum or minimum.</p>
+
+
+<p>Hence $\sqrt{1+x} = \sqrt{1-x}$ and $x = 0$, the only solution</p>
+
+
+<p>For $x=0$, $y=2$.</p>
+
+
+<p>For $x=±0.5$, $y= 1.932$, so this is a maximum.</p>
+
+
+
+<p>(5) Find the maxima and minima of the function</p>
+
+<p id="7004e21c-9dcd-4e79-a3c7-e3c77a4310c8" class="latex-block">\[
+y = \dfrac{x^2-5}{2x-4}.
+\]</p>
+
+
+<p>We have</p>
+
+<p id="f6117864-50c3-4155-829b-edc65d6b13cf" class="latex-block">\[
+\dfrac{dy}{dx} = \dfrac{(2x-4) × 2x - (x^2-5)2}{(2x-4)^2} = 0
+\]</p>
+
+<p>for maximum or minimum; or</p>
+
+<p id="48cbaa65-f95a-4a79-ac38-0507afc93fad" class="latex-block">\[
+\dfrac{2x^2 - 8x + 10}{(2x - 4)^2} = 0;
+\]</p>
+
+<p>or $x^2 - 4x + 5 = 0$; which has for solutions</p>
+
+<p id="73a31e77-6af1-46e2-a4ea-3c4f0432daee" class="latex-block">\[
+x = \tfrac{5}{2} ± \sqrt{-1}.
+\]</p>
+
+
+<p>These being imaginary, there is no real value of $x$
+for which $\dfrac{dy}{dx} = 0$; hence there is neither maximum nor
+minimum.</p>
+
+
+<p>(6) Find the maxima and minima of the function</p>
+
+<p id="bbe4cb43-b2d4-433a-932a-932aedcd9113" class="latex-block">\[
+(y-x^2)^2 = x^5.
+\]</p>
+
+
+<p>This may be written $y = x^2 ± x^{\frac{5}{2}}$.</p>
+
+<p id="afce680c-6d69-499f-8c99-fe9ba16f1f90" class="latex-block">\[
+\dfrac{dy}{dx} = 2x ± \tfrac{5}{2} x^{\frac{3}{2}} = 0
+\]</p>
+
+<p>for maximum or minimum; that is, $x(2 ± \tfrac{5}{2} x^{\frac{1}{2}}) = 0$, which is satisfied for $x = 0$,
+and for $2 ± \tfrac{5}{2} x^{\frac{1}{2}} = 0$, that is for $x=\tfrac{16}{25}$. So there are
+two solutions.</p>
+
+
+<p>Taking first $x = 0$. If $x = -0.5$, $y = 0.25 ± \sqrt[2]{-(.5)^5}$,
+and if $x = +0.5$, $y = 0.25 ± \sqrt[2]{(.5)^5}$. On one side $y$ is
+imaginary; that is, there is no value of $y$ that can be
+represented by a graph; the latter is therefore entirely
+on the right side of the axis of $y$ (see Figure 30).</p>
+
+
+<p>On plotting the graph it will be found that the
+
+curve goes to the origin, as if there were a minimum
+there; but instead of continuing beyond, as it should
+do for a minimum, it retraces its steps (forming what
+is called a “cusp”). There is no minimum, therefore,
+although the condition for a minimum is satisfied,
+namely $\dfrac{dy}{dx} = 0$. It is necessary therefore always to
+check by taking one value on either side.</p>
+
+
+<p><img src="33283-t/images/120a.pdf.png-1.png"></p>
+
+
+<p>Now, if we take $x = \tfrac{16}{25} = 0.64$. If $x = 0.64$, $y = 0.7373$
+and $y = 0.0819$; if $x = 0.6$, $y$ becomes $0.6389$ and $0.0811$;
+and if $x = 0.7$, $y$ becomes $0.8996$ and $0.0804$.</p>
+
+
+<p>This shows that there are two branches of the curve;
+the upper one does not pass through a maximum, but
+the lower one does.</p>
+
+
+<p>(7) A cylinder whose height is twice the radius of
+the base is increasing in volume, so that all its parts
+
+keep always in the same proportion to each other;
+that is, at any instant, the cylinder is <em>similar</em> to the
+original cylinder. When the radius of the base is
+$r$ metres, the surface area is increasing at the rate of
+$20$ square centimetres per second; at what rate is its
+volume then increasing?</p>
+
+<p id="da8fb642-8aab-4e3a-8f71-1aafb3977c28" class="latex-block">\begin{align*}
+\text{Area}   &= S = 2(\pi r^2)+ 2 \pi r × 2r = 6 \pi r^2.\\
+\text{Volume} &= V = \pi r^2 × 2r=2 \pi r^3.\\
+\frac{dS}{dr} &= 12\pi r,\quad \frac{dV}{dr}=6 \pi r^2,\\
+dS            &= 12\pi r\, dr=20,\quad dr=\frac{20}{12 \pi r},\\
+dV            &=  6\pi r^2\, dr = 6 \pi r^2 × \frac{20}{12 \pi r} = 10r.
+\end{align*}</p>
+
+
+
+
+<p>The volume changes at the rate of $10r$ cubic centimetres.</p>
+
+
+<p>Make other examples for yourself. There are few
+subjects which offer such a wealth for interesting
+examples.</p>
+
+
+
+<hr>
+
+
+
+<div class="exercises-section">
+<h3>Exercises IX</h3>
+
+
+<p>(1) What values of $x$ will make $y$ a maximum
+and a minimum, if $y=\dfrac{x^2}{x+1}$?</p>
+
+
+<p>(2) What value of $x$ will make $y$ a maximum in
+the equation $y=\dfrac{x}{a^2+x^2}$?</p>
+
+
+
+<p>(3) A line of length $p$ is to be cut up into $4$ parts
+and put together as a rectangle. Show that the area
+of the rectangle will be a maximum if each of its
+sides is equal to $\frac{1}{4}p$.</p>
+
+
+<p>(4) A piece of string $30$ centimetres long has its two
+ends joined together and is stretched by $3$ pegs so
+as to form a triangle. What is the largest triangular
+area that can be enclosed by the string?</p>
+
+
+<p>(5) Plot the curve corresponding to the equation</p>
+
+<p id="d8c96747-2569-411c-87c1-f81b9d53a919" class="latex-block">\[
+y = \frac{10}{x} + \frac{10}{8-x};
+\]</p>
+
+<p>also find $\dfrac{dy}{dx}$, and deduce the value of $x$ that will
+make $y$ a minimum; and find that minimum value
+of $y$.</p>
+
+
+<p>(6) If $y = x^5-5x$, find what values of $x$ will make
+$y$ a maximum or a minimum.</p>
+
+
+<p>(7) What is the smallest square that can be inscribed
+in a given square?</p>
+
+
+<p>(8) Inscribe in a given cone, the height of which
+is equal to the radius of the base, a cylinder
+(<em>a</em>) whose volume is a maximum; (<em>b</em>) whose lateral
+area is a maximum; (<em>c</em> ) whose total area is a
+maximum.</p>
+
+
+<p>(9) Inscribe in a sphere, a cylinder (<em>a</em>) whose
+volume is a maximum; (<em>b</em>) whose lateral area is a
+maximum; (<em>c</em>) whose total area is a maximum.</p>
+
+
+
+<p>(10) A spherical balloon is increasing in volume.
+If, when its radius is $r$ metres, its volume is increasing
+at the rate of $4$ cubic metres per second, at what rate is
+its surface then increasing?</p>
+
+
+<p>(11) Inscribe in a given sphere a cone whose volume
+is a maximum.</p>
+
+
+<p>(12) The current $C$ given by a battery of $N$ similar
+voltaic cells is $C=\dfrac{n×E}{R+\dfrac{rn^2}{N}}$, where $E$, $R$, $r$, are constants
+and $n$ is the number of cells coupled in series. Find
+the proportion of $n$ to $N$ for which the current is
+greatest.</p>
+
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)   Min.: $x = 0$, $y = 0$; max.: $x = -2$, $y = -4$.</p>
+
+<p>(2)   $x = a$.</p>
+
+<p>(4)   $25 \sqrt{3}$ square centimetres.</p>
+
+<p>(5)   $\dfrac{dy}{dx} = - \dfrac{10}{x^2} + \dfrac{10}{(8 - x)^2}$; $x = 4$; $y = 5$.</p>
+
+<p>(6)   Max. for $x = -1$; min. for $x = 1$.</p>
+
+<p>(7)   Join the middle points of the four sides.</p>
+
+<p>(8)   $r = \frac{2}{3} R$, $r = \dfrac{R}{2}$, no max.</p>
+
+<p>(9)   $r = R \sqrt{\dfrac{2}{3}}$, $r = \dfrac{R}{\sqrt{2}}$, $r = 0.8506R$.</p>
+
+<p>(10)   At the rate of $\dfrac{8}{r}$ square metres per second.</p>
+
+<p>(11)   $r = \dfrac{R \sqrt{8}}{3}$.</p>
+
+<p>(12)   $n = \sqrt{\dfrac{NR}{r}}$.</p>
+</div>
+
+<br>
+<hr>
+</main>
+
+<a href="12.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

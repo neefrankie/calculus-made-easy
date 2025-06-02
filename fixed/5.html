@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Next Stage. What to do with Constants | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 5}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Next Stage. What to do with Constants</h1>
+
+
+
+
+<main id="main-content">
+
+<p>In our equations we have regarded $x$ as growing,
+and as a result of $x$ being made to grow $y$ also
+changed its value and grew. We usually think of $x$
+as a quantity that we can vary; and, regarding the
+variation of $x$ as a sort of <em>cause</em>, we consider the resulting
+variation of $y$ as an <em>effect</em>. In other words, we
+regard the value of $y$ as depending on that of $x$. Both
+$x$ and $y$ are variables, but $x$ is the one that we operate
+upon, and $y$ is the “dependent variable.” In all the
+preceding chapter we have been trying to find out
+rules for the proportion which the dependent variation
+in $y$ bears to the variation independently made in $x$.</p>
+
+
+<p><a name="diffrule2"></a>
+Our next step is to find out what effect on the
+process of differentiating is caused by the presence of
+<em>constants</em>, that is, of numbers which don't change
+when $x$ or $y$ change their values.</p>
+
+
+<p><em>Added Constants.</em></p>
+<p><a name="addconst"></a>
+Let us begin with some simple case of an added
+constant, thus:
+   Let</p>
+
+<p id="bb9e0bc6-b2de-4e73-8bda-c242b03e7de0" class="latex-block">\begin{align*}
+y=x^3+5.
+\end{align*}</p>
+
+<p>Just as before, let us suppose $x$ to grow to $x+dx$ and
+$y$ to grow to $y+dy$.</p>
+
+<p>Then:</p>
+
+<p id="4419c74c-4626-415b-b843-05ceda03a91d" class="latex-block">\begin{align*}
+y + dy &= (x + dx)^3 + 5 \\
+       &= x^3 + 3x^2\, dx + 3x(dx)^2 + (dx)^3 + 5.
+\end{align*}</p>
+
+<p>Neglecting the small quantities of higher orders, this
+becomes</p>
+
+<p id="4db734db-3caf-4c41-b652-10b774c08479" class="latex-block">\begin{align*}
+y + dy &= x^3 + 3x^2·dx + 5. \\
+\end{align*}</p>
+
+<p>Subtract the original $y = x^3 + 5$, and we have left:</p>
+
+<p id="4fedd160-cd19-4f2e-a63a-b937a4d59269" class="latex-block">\begin{align*}
+dy &= 3x^2\, dx. \\
+\frac{dy}{dx} &= 3x^2.
+\end{align*}</p>
+
+
+
+
+<p>So the $5$ has quite disappeared. It added nothing
+to the growth of $x$, and does not enter into the
+differential coefficient. If we had put $7$, or $700$, or
+any other number, instead of $5$, it would have disappeared.
+So if we take the letter $a$, or $b$, or $c$ to
+represent any constant, it will simply disappear when
+we differentiate.</p>
+
+
+<p>If the additional constant had been of negative value,
+such as $-5$ or $-b$, it would equally have disappeared.</p>
+
+
+<p><em>Multiplied Constants.</em></p>
+<p>Take as a simple experiment this case:</p>
+
+
+<p>Let $y = 7x^2$.
+Then on proceeding as before we get:</p>
+
+<p id="539f21c6-e94a-427e-9d94-6d8bf01dabce" class="latex-block">\begin{align*}
+y + dy &= 7(x+dx)^2 \\
+       &= 7\{x^2 + 2x·dx + (dx)^2\} \\
+       &= 7x^2 + 14x·dx + 7(dx)^2. \\
+\end{align*}</p>
+
+<p>Then, subtracting the original $y = 7x^2$, and neglecting
+the last term, we have</p>
+
+<p id="169b1e9e-2b4c-4c00-9fe2-054d2aec9e86" class="latex-block">\begin{align*}
+dy &= 14x·dx.\\
+\frac{dy}{dx} &= 14x.
+\end{align*}</p>
+
+
+
+
+
+<p>Let us illustrate this example by working out the
+graphs of the equations $y = 7x^2$ and $\dfrac{dy}{dx} = 14x$, by
+assigning to $x$ a set of successive values, $0$, $1$, $2$, $3$, etc.,
+and finding the corresponding values of $y$ and of $\dfrac{dy}{dx}$.</p>
+
+
+<p>These values we tabulate as follows:</p>
+<table>
+<tr><td>$x$</td><td>$0$</td><td>$1$</td><td>$2$</td><td>$3$</td><td>$4$</td><td>$5$</td><td>$-1$</td><td>$-2$</td><td>$-3$</td></tr>
+<tr><td>$y$</td><td>$0$</td><td>$7$</td><td>$28$</td><td>$63$</td><td>$112$</td><td>$175$</td><td>$7$</td><td>$28$</td><td>$63$</td></tr>
+<tr><td>$\dfrac{dy}{dx}$</td><td>$0$</td><td>$14$</td><td>$28$</td><td>$42$</td><td>$56$</td><td>$70$</td><td>$-14$</td><td>$-28$</td><td>$ -42$</td></tr>
+</table>
+
+
+
+
+<p><img src="33283-t/images/040a.pdf.png-1.png"></p>
+
+
+
+<p>Now plot these values to some convenient scale,
+and we obtain the two curves, Fig. 6 and Fig. 6a.</p>
+
+<p><img src="33283-t/images/040b.pdf.png-1.png"></p>
+
+<p>Carefully compare the two figures, and verify by
+inspection that the height of the ordinate of the
+derived curve, Fig. 6a, is proportional to the <em>slope</em> of
+the original curve, (See <a href="10.html#slope">here</a> about <em>slopes</em> of curves.)
+Figure 6, at the corresponding value
+of $x$. To the left of the origin, where the original
+curve slopes negatively (that is, downward from left
+to right) the corresponding ordinates of the derived
+curve are negative.</p>
+
+
+<p><a name="differ"></a>
+Now if we look back at <a href="4.html#diffexample">here</a>, we shall see that
+simply differentiating $x^2$ gives us $2x$. So that the
+differential coefficient of $7x^2$ is just $7$ times as big as
+that of $x^2$. If we had taken $8x^2$, the differential
+coefficient would have come out eight times as great
+as that of $x^2$. If we put $y = ax^2$, we shall get</p>
+
+<p id="ee6f803a-d246-4fad-b695-48e3c503a3ed" class="latex-block">\[
+\frac{dy}{dx} = a × 2x.
+\]</p>
+
+
+<p>If we had begun with $y = ax^n$, we should have had
+$\dfrac{dy}{dx} = a×nx^{n-1}$. So that any mere multiplication by
+a constant reappears as a mere multiplication when
+the thing is differentiated. And, what is true about
+multiplication is equally true about <em>division</em>: for if,
+in the example above, we had taken as the constant $\frac{1}{7}$
+instead of $7$, we should have had the same $\frac{1}{7}$ come
+out in the result after differentiation.</p>
+
+
+
+
+
+<p><em>Some Further Examples</em>.
+The following further examples, fully worked out,
+will enable you to master completely the process of
+differentiation as applied to ordinary algebraical expressions,
+and enable you to work out by yourself the
+examples given at the end of this chapter.</p>
+
+
+<p>(1) Differentiate $y = \dfrac{x^5}{7} - \dfrac{3}{5}$.</p>
+
+
+<p>$\dfrac{3}{5}$ is an added constant and vanishes (see <a href="5.html#addconst">here</a>).</p>
+
+
+<p>We may then write at once</p>
+
+<p id="f4788698-96c6-4bbc-96f3-6104942d5f67" class="latex-block">\begin{align*}
+\frac{dy}{dx} &= \frac{1}{7} × 5 × x^{5-1} \\
+              &= \frac{5}{7} x^4.  
+\end{align*}</p>
+
+
+<p>(2) Differentiate $y = a\sqrt{x} - \dfrac{1}{2}\sqrt{a}$.</p>
+
+
+<p>The term $\dfrac{1}{2}\sqrt{a}$ vanishes, being an added constant;
+and as $a\sqrt{x}$, in the index form, is written $ax^{\frac{1}{2}}$, we
+have</p>
+
+<p id="e0d9d103-547b-4a7f-b9d5-c29e3a16927f" class="latex-block">\begin{align*}
+\frac{dy}{dx}  &= a × \frac{1}{2} × x^{\frac{1}{2}-1}  \\
+               &= \frac{a}{2} × x^{-\frac{1}{2}}, \\
+               &= \frac{a}{2\sqrt{x}}.
+\end{align*}</p>
+
+
+<p>(3) If $ay + bx = by - ax + (x+y)\sqrt{a^2 - b^2}$,
+find the differential coefficient of $y$ with respect to $x$.</p>
+
+
+<p>As a rule an expression of this kind will need a
+little more knowledge than we have acquired so far;
+
+it is, however, always worth while to try whether the
+expression can be put in a simpler form.</p>
+
+
+<p>First we must try to bring it into the form $y = {}$ some
+expression involving $x$ only.</p>
+
+
+<p>The expression may be written</p>
+
+<p id="aa68a9ec-9262-47b1-8924-3c05b0beed2a" class="latex-block">\[
+(a-b)y + (a + b)x = (x+y) \sqrt{a^2 - b^2}.
+\]</p>
+
+
+<p>Squaring, we get</p>
+
+<p id="d5127a89-e97d-451c-9982-057549544c5b" class="latex-block">\[
+(a-b)^2 y^2 + (a + b)^2 x^2 + 2(a+b)(a-b)xy = (x^2+y^2+2xy)(a^2-b^2),
+\]</p>
+
+<p>which simplifies to</p>
+
+
+<p id="7ae3419a-d4e8-4b5d-b4ca-6656179f13da" class="latex-block">\begin{align*}
+(a-b)^2y^2 + (a+b)^2 x^2 &= x^2(a^2 - b^2) + y^2(a^2 - b^2); \\
+[(a-b)^2 - (a^2 - b^2)]y^2 &= [(a^2 - b^2) - (a+b)^2]x^2, \\
+2b(b-a)y^2 &= -2b(b+a)x^2;
+\end{align*}</p>
+
+<p>hence</p>
+
+<p id="b8e89716-e6cc-46ae-9830-ca8035a2f382" class="latex-block">\begin{align*}
+y &= \sqrt{\frac{a+b}{a-b}} x \\
+\frac{dy}{dx} &= \sqrt{\frac{a+b}{a-b}}.
+\end{align*}</p>
+
+
+<p>(4) The volume of a cylinder of radius $r$ and height $h$
+is given by the formula $V = \pi r^2 h$. Find the rate of
+variation of volume with the radius when $r = 5.5$ cm
+and $h=20$ cm If $r = h$, find the dimensions of the
+cylinder so that a change of $1$ cm in radius causes a
+change of $400$ cub. cm in the volume.</p>
+
+
+<p>The rate of variation of $V$ with regard to $r$ is</p>
+
+<p id="a5abc331-8b07-46d3-9a7f-569d3721f30e" class="latex-block">\[
+\frac{dV}{dr} = 2 \pi r h.
+\]</p>
+
+
+<p>If $r = 5.5$ cm and $h=20$ cm this becomes $690.8$. It
+means that a change of radius of $1$ centimetre will cause a
+change of volume of $690.8$ cub. centimetre. This can be
+easily verified, for the volumes with $r = 5$ and $r = 6$
+
+are $1570$ cub. cm and $2260.8$ cub. cm respectively, and
+$2260.8 - 1570 = 690.8$.</p>
+
+
+<p>Also, if</p>
+
+<p id="241383fa-9144-45b7-8a51-5ada440b54f2" class="latex-block">\begin{align*}
+r &= h \\
+\dfrac{dV}{dr} &= 2\pi r^2 = 400 \\
+r &= h = \sqrt{\dfrac{400}{2\pi}} = 7.98 \text{cm}.
+\end{align*}</p>
+
+
+<p>(5) The reading $\theta$ of a Féry's Radiation pyrometer
+is related to the Centigrade temperature $t$ of the
+observed body by the relation</p>
+
+<p id="1e73519b-1d19-432d-9274-98caf449020a" class="latex-block">\[
+\dfrac{\theta}{\theta_1} = \left(\dfrac{t}{t_1}\right)^4,
+\]</p>
+
+<p>where $\theta_1$ is the reading corresponding to a known temperature $t_1$
+of the observed body.</p>
+
+
+<p>Compare the sensitiveness of the pyrometer at
+temperatures $800°$C., $1000°$C., $1200°$C., given that it
+read $25$ when the temperature was $1000°$C.</p>
+
+
+<p>The sensitiveness is the rate of variation of the
+reading with the temperature, that is $\dfrac{d\theta}{dt}$. The formula
+may be written</p>
+
+<p id="ba7bd2d7-dff0-4da4-823c-2c677f353a3f" class="latex-block">\[
+\theta = \dfrac{\theta_1}{t_1^4} t^4 = \dfrac{25t^4}{1000^4},
+\]</p>
+
+<p>and we have</p>
+
+<p id="01ac8ebb-950b-43b5-b365-da66dd2b1610" class="latex-block">\[
+\dfrac{d\theta}{dt} = \dfrac{100t^3}{1000^4} = \dfrac{t^3}{10,000,000,000}.
+\]</p>
+
+
+<p>When $t=800$, $1000$ and $1200$, we get $\dfrac{d\theta}{dt} = 0.0512$, $0.1$ and
+$0.1728$ respectively.</p>
+
+
+<p>The sensitiveness is approximately doubled from
+$800°$ to $1000°$, and becomes three-quarters as great
+again up to $1200°$.</p>
+
+
+
+
+<hr>
+
+
+
+<div class="exercises-section">
+<h3>Exercises II</h3>
+
+
+<p>Differentiate the following:</p>
+
+<p>(1) $y = ax^3 + 6$.</p>
+<p>
+(2) $y = 13x^{\frac{3}{2}} - c$.</p>
+
+
+
+<p>(3) $y = 12x^{\frac{1}{2}} + c^{\frac{1}{2}}$.
+(4) $y = c^{\frac{1}{2}} x^{\frac{1}{2}}$.</p>
+
+
+
+<p>(5) $u = \dfrac{az^n - 1}{c}$.</p>
+
+<p>(6) $y = 1.18t^2 + 22.4$.</p>
+
+
+
+<p>Make up some other examples for yourself, and try
+your hand at differentiating them.</p>
+
+
+<p>(7) If $l_t$ and $l_0$ be the lengths of a rod of iron at
+the temperatures $t°$ C. and $0°$ C. respectively, then
+$l_t = l_0(1 + 0.000012t)$. Find the change of length of the
+rod per degree Centigrade.</p>
+
+
+<p>(8) It has been found that if $c$ be the candle power
+of an incandescent electric lamp, and $V$ be the voltage,
+$c = aV^b$, where $a$ and $b$ are constants.</p>
+
+
+<p>Find the rate of change of the candle power with
+the voltage, and calculate the change of candle power
+per volt at $80$, $100$ and $120$ volts in the case of a lamp
+for which $a = 0.5×10^{-10}$ and $b=6$.</p>
+
+
+<p>(9) The frequency $n$ of vibration of a string of
+diameter $D$, length $L$ and specific gravity $\sigma$, stretched
+with a force $T$, is given by</p>
+
+<p id="ea6479a1-eb9a-474a-8621-568801586a84" class="latex-block">\[
+n = \dfrac{1}{DL} \sqrt{\dfrac{gT}{\pi\sigma}}.
+\]</p>
+
+
+<p>Find the rate of change of the frequency when $D$, $L$,
+$\sigma$ and $T$ are varied singly.</p>
+
+
+
+
+
+<p>(10) The greatest external pressure $P$ which a tube
+can support without collapsing is given by</p>
+
+<p id="e46b830f-95f9-40d2-9791-ccab56005433" class="latex-block">\[
+  P = \left(\dfrac{2E}{1-\sigma^2}\right) \dfrac{t^3}{D^3},
+\]</p>
+
+<p>where $E$ and $\sigma$ are constants, $t$ is the thickness of the
+tube and $D$ is its diameter. (This formula assumes
+that $4t$ is small compared to $D$.)</p>
+
+
+<p>Compare the rate at which $P$ varies for a small
+change of thickness and for a small change of diameter
+taking place separately.</p>
+
+
+<p>(11) Find, from first principles, the rate at which
+the following vary with respect to a change in
+radius:
+
+(<em>a</em> ) -  the circumference of a circle of radius $r$;</p>
+
+<p>(<em>b</em> ) -  the area of a circle of radius $r$;</p>
+
+<p>(<em>c</em> ) -  the lateral area of a cone of slant dimension $l$;</p>
+
+<p>(<em>d</em> ) -  the volume of a cone of radius $r$ and height $h$;</p>
+
+<p>(<em>e</em> ) -  the area of a sphere of radius $r$;</p>
+
+<p>(<em>f</em> ) -  the volume of a sphere of radius $r$.</p>
+
+
+
+<p>(12) The length $L$ of an iron rod at the temperature $T$
+being given by $L = l_t\bigl[1 + 0.000012(T-t)\bigr]$, where $l_t$
+is the length at the temperature $t$, find the rate of
+variation of the diameter $D$ of an iron tyre suitable
+for being shrunk on a wheel, when the temperature $T$
+varies.</p>
+
+
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)  $\dfrac{dy}{dx} = 3ax^2$.</p>
+
+<p>(2)  $\dfrac{dy}{dx} = 13 × \frac{3}{2}x^{\frac{1}{2}}$.</p>
+
+<p>(3)  $\dfrac{dy}{dx} = 6x^{-\frac{1}{2}}$.</p>
+
+<p>(4)  $\dfrac{dy}{dx} = \dfrac{1}{2}c^{\frac{1}{2}} x^{-\frac{1}{2}}$.</p>
+
+<p>(5)  $\dfrac{du}{dz} = \dfrac{an}{c} z^{n-1}$.</p>
+
+<p>(6)  $\dfrac{dy}{dt} = 2.36t$.</p>
+
+<p>(7)  $\dfrac{dl_t}{dt} = 0.000012×l_0$.</p>
+
+<p>(8)  $\dfrac{dC}{dV} = abV^{b-1}$, $0.98$, $3.00$ and $7.47$ candle power per volt respectively.</p>
+
+<p>(9)</p>
+
+<p id="2097f921-4a60-4a48-9ad6-9bf70c276761" class="latex-block">\[
+  \dfrac{dn}{dD} = -\dfrac{1}{LD^2} \sqrt{\dfrac{gT}{\pi \sigma}},
+  \dfrac{dn}{dL} = -\dfrac{1}{DL^2} \sqrt{\dfrac{gT}{\pi \sigma}}, \\
+
+  \dfrac{dn}{d \sigma}
+  = -\dfrac{1}{2DL} \sqrt{\dfrac{gT}{\pi \sigma^3}},
+  \dfrac{dn}{dT} =  \dfrac{1}{2DL} \sqrt{\dfrac{g}{\pi \sigma T}}.
+\]</p>
+
+
+
+<p>(10)</p>
+
+<p id="ac2aa5ee-d072-4e82-9c4d-033e5c51a8cb" class="latex-block">\[
+	\dfrac{\text{Rate of change of $P$ when $t$ varies}}
+            {\text{Rate of change of $P$ when $D$ varies}}
+  = - \dfrac{D}{t}
+  \]</p>
+
+
+<p>(11) $2\pi$, $2\pi r$, $\pi l$, $\frac{2}{3}\pi rh$, $8\pi r$, $4\pi r^2$.</p>
+
+<p>(12) $\dfrac{dD}{dT} = \dfrac{0.000012l_t}{\pi}$.</p>
+</div>
+
+
+<br>
+<hr>
+</main>
+
+<a href="6.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>How to deal with Sines and Cosines | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 15}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>How to deal with Sines and Cosines</h1>
+
+
+
+
+
+<main id="main-content">
+
+<p>Greek letters being usual to denote angles, we will
+take as the usual letter for any variable angle the
+letter $\theta$ (“theta”).</p>
+
+
+<p>Let us consider the function</p>
+
+<p id="fdd8ba06-8761-4f0e-937c-208011fce46b" class="latex-block">\[
+y= \sin \theta.
+\]</p>
+
+
+<p><img src="33283-t/images/177a.pdf.png-1.png"></p>
+
+
+<p>What we have to investigate is the value of $\dfrac{d(\sin \theta)}{d \theta}$;
+or, in other words, if the angle $\theta$ varies, we have to
+find the relation between the increment of the sine
+and the increment of the angle, both increments being
+indefinitely small in themselves. Examine Figure 43,
+wherein, if the radius of the circle is unity, the height
+of $y$ is the sine, and $\theta$ is the angle. Now, if $\theta$ is
+
+supposed to increase by the addition to it of the
+small angle $d \theta$–an element of angle–the height
+of $y$, the sine, will be increased by a small element $dy$.
+The new height $y + dy$ will be the sine of the new
+angle $\theta + d \theta$, or, stating it as an equation,</p>
+
+<p id="a3a17ff1-1f38-4837-b4e3-a6a6009e7125" class="latex-block">\[
+y+dy = \sin(\theta + d \theta);
+\]</p>
+
+<p>and subtracting from this the first equation gives</p>
+
+<p id="87e82795-5367-4755-b80b-7fa2f2e079a4" class="latex-block">\[
+dy = \sin(\theta + d \theta)- \sin \theta.
+\]</p>
+
+
+<p>The quantity on the right-hand side is the difference
+between two sines, and books on trigonometry tell
+us how to work this out. For they tell us that if
+$M$ and $N$ are two different angles,</p>
+
+<p id="d44ed428-4398-4e79-aea3-a57f43f0edd4" class="latex-block">\[
+\sin M - \sin N = 2 \cos\frac{M+N}{2}·\sin\frac{M-N}{2}.
+\]</p>
+
+
+<p>If, then, we put $M= \theta + d \theta$ for one angle, and
+$N= \theta$ for the other, we may write</p>
+
+<p id="e0263766-4c85-4921-ae1c-fe0283b9251c" class="latex-block">\begin{align*}
+dy &= 2 \cos\frac{\theta + d\theta + \theta}{2}
+      · \sin\frac{\theta + d\theta - \theta}{2},\\
+dy &= 2\cos(\theta + \tfrac{1}{2}d\theta)
+     · \sin\tfrac{1}{2} d\theta.
+\end{align*}</p>
+
+
+
+
+<p>But if we regard $d \theta$ as indefinitely small, then in
+the limit we may neglect $\frac{1}{2} d \theta$ by comparison with $\theta$,
+and may also take $\sin\frac{1}{2} d \theta$ as being the same as $\frac{1}{2} d \theta$.
+The equation then becomes:<a name="differsin"></a></p>
+
+<p id="948be902-800e-43d8-ad7b-0fb9e212eb7e" class="latex-block">\begin{align*}
+dy &= 2 \cos \theta × \tfrac{1}{2} d \theta; \\
+dy &= \cos \theta · d \theta, \\
+\dfrac{dy}{d \theta} &= \cos \theta.
+\end{align*}</p>
+
+
+
+
+
+<p>The accompanying curves, Fig. 44 and Fig. 45 show,
+plotted to scale, the values of $y=\sin \theta$, and $\dfrac{dy}{d\theta}=\cos\theta$,
+for the corresponding values of $\theta$.</p>
+
+
+<p><a name="figure44"><img src="33283-t/images/179a.pdf.png-1.png"><a name="erratum2"></a></p>
+
+<p><img src="33283-t/images/179b.pdf.png-1.png"></p>
+<hr>
+
+
+
+<p>Take next the cosine.<a name="differcos"></a></p>
+
+
+<p>Let $y=\cos \theta$.</p>
+
+
+<p>Now $\cos \theta=\sin\left(\dfrac{\pi}{2}-\theta\right)$.</p>
+
+
+<p>Therefore</p>
+
+<p id="7ed4be1b-9853-4678-aec5-58dfc3745eaa" class="latex-block">\begin{align*}
+dy &= d\left(\sin\left(\frac{\pi}{2} - \theta\right)\right) \\
+  &= \cos\left(\frac{\pi}{2} - \theta\right) × d(-\theta) \\
+  &= \cos\left(\frac{\pi}{2} - \theta\right) × (-d\theta) \\
+\frac{dy}{d\theta} &= -\cos\left(\frac{\pi}{2} - \theta\right).
+\end{align*}</p>
+
+<p>And it follows that</p>
+
+<p id="3c10ff1a-1ca9-4cd0-8af9-f27e55e912d7" class="latex-block">\begin{align*}
+&\frac{dy}{d\theta} = -\sin \theta.
+\end{align*}</p>
+
+
+
+
+
+<hr>
+
+
+<p>Lastly, take the tangent.
+   Let</p>
+
+<p id="c1001d8e-52fe-4ecf-b069-a4d3fa788e09" class="latex-block">\begin{align*}
+y  &= \tan \theta, \\
+dy &= \tan(\theta + d\theta) - \tan\theta. \\
+\end{align*}</p>
+
+<p>Expanding, as shown in books on trigonometry,</p>
+
+<p id="cb83e603-2290-4b04-8cf0-9c91e77e6f43" class="latex-block">\begin{align*}
+\tan(\theta + d\theta)
+   &= \frac{\tan\theta + \tan d\theta}
+           {1 - \tan\theta·\tan d\theta}; \\
+dy &= \frac{\tan\theta + \tan d\theta}
+           {1-\tan\theta·\tan d\theta} - \tan\theta \\
+   &= \frac{(1 + \tan^2\theta)\tan d\theta}
+           {1-\tan\theta·\tan d\theta}.
+\end{align*}</p>
+
+
+
+
+
+<p>Now remember that if $d\theta$ is indefinitely diminished,
+the value of $\tan d\theta$ becomes identical with $d\theta$, and
+$\tan\theta · d\theta$ is negligibly small compared with $1$, so that
+the expression reduces to</p>
+
+<p id="3c6d3b66-ef1f-4bf5-94e4-13affda8ec02" class="latex-block">\begin{align*}
+dy &= \frac{(1+\tan^2 \theta)\, d\theta}{1}, \\
+\frac{dy}{d\theta} &= 1 + \tan^2\theta, \\
+\frac{dy}{d\theta} &= \sec^2 \theta.
+\end{align*}</p>
+
+
+
+
+<p>Collecting these results, we have:</p>
+<table>
+    <tr><th>$y$</th><th>$\dfrac{dy}{d\theta}$</th></tr>
+    <tr><td>$\sin\theta$</td><td>$\cos\theta$</td></tr>
+    <tr><td>$\cos\theta$</td><td>$-\sin\theta$</td></tr>
+    <tr><td>$\tan\theta$</td><td>$\sec^2\theta$</td></tr>
+  </table>
+
+
+
+<p>Sometimes, in mechanical and physical questions,
+as, for example, in simple harmonic motion and in
+wave-motions, we have to deal with angles that increase
+in proportion to the time. Thus, if $T$ be the
+time of one complete <em>period</em>, or movement round the
+circle, then, since the angle all round the circle is $2\pi$ radians,
+or $360°$, the amount of angle moved through
+in time $t$, will be</p>
+
+<p id="5f795399-a5a9-4f90-b54e-9cd376d24f21" class="latex-block">\begin{align*}
+\theta &= 2\pi\frac{t}{T},\quad \text{in radians,} \\
+\text{or}\;
+\theta &= 360\frac{t}{T},\quad \text{in degrees.}
+\end{align*}</p>
+
+
+
+
+
+<p>If the <em>frequency</em>, or number of periods per second,
+be denoted by $n$, then $n = \dfrac{1}{T}$, and we may then write:</p>
+
+<p id="3bf42e47-36d0-478b-9c74-3ea79e29e926" class="latex-block">\[
+\theta=2\pi nt.
+\]</p>
+
+<p>Then we shall have</p>
+
+<p id="c0604f1e-0bc2-4f18-a89f-126f13f29916" class="latex-block">\[
+y = \sin 2\pi nt.
+\]</p>
+
+
+<p>If, now, we wish to know how the sine varies with
+respect to time, we must differentiate with respect, not
+to $\theta$, but to $t$. For this we must resort to the artifice
+explained in <a href="9.html">Chapter IX</a>., and put</p>
+
+<p id="d5e0daa0-9cbc-49c8-85c5-514cfa2b5c59" class="latex-block">\[
+\frac{dy}{dt} = \frac{dy}{d\theta} · \frac{d\theta}{dt}.
+\]</p>
+
+
+<p>Now $\dfrac{d\theta}{dt}$ will obviously be $2\pi n$; so that</p>
+
+<p id="0d62323b-fadd-4a4b-9718-b8097a394ef3" class="latex-block">\begin{align*}
+\frac{dy}{dt} &= \cos \theta × 2\pi n \\
+              &= 2\pi n · \cos 2\pi nt. \\
+\end{align*}</p>
+
+<p>Similarly, it follows that</p>
+
+<p id="aed8b3c4-3f3d-4254-ad8f-02476d5bd50b" class="latex-block">\begin{align*}
+\frac{d(\cos 2\pi nt)}{dt} &= -2\pi n · \sin 2\pi nt.
+\end{align*}</p>
+
+
+
+
+
+<h2>Second Differential Coefficient of Sine or Cosine.</h2>
+
+
+
+<p>We have seen that when $\sin \theta$ is differentiated with
+respect to $\theta$ it becomes $\cos \theta$; and that when $\cos \theta$ is
+differentiated with respect to $\theta$ it becomes $-\sin \theta$;
+or, in symbols,</p>
+
+<p id="662102c4-baad-407e-9eef-d756a357fd78" class="latex-block">\[
+\frac{d^2(\sin \theta)}{d\theta^2} = -\sin \theta.
+\]</p>
+
+
+
+<p>So we have this curious result that we have found
+a function such that if we differentiate it twice over,
+we get the same thing from which we started, but
+with the sign changed from $+$ to $-$.</p>
+
+
+<p>The same thing is true for the cosine; for differentiating
+$\cos\theta$ gives us $-\sin\theta$, and differentiating
+$-\sin\theta$ gives us $-\cos\theta$; or thus:</p>
+
+<p id="4b63387b-b159-4f47-aaad-a6ed15f80799" class="latex-block">\[
+\frac{d^2(\cos\theta)}{d\theta^2} = -\cos\theta.
+\]</p>
+
+
+<p><em>Sines and cosines are the only functions of which
+the second differential coefficient is equal (and of
+opposite sign to) the original function.</em></p>
+
+
+
+<hr>
+
+
+<p><em>Examples</em><a name="intex3"></a>
+With what we have so far learned we can now
+differentiate expressions of a more complex nature.</p>
+
+
+<p>(1) $y=\arcsin x$.</p>
+
+
+<p>If $y$ is the arc whose sine is $x$, then $x = \sin y$.</p>
+
+<p id="0e6704b9-015e-496e-94db-53e0268963e6" class="latex-block">\[
+\frac{dx}{dy}=\cos y.
+\]</p>
+
+
+<p>Passing now from the inverse function to the original
+one, we get</p>
+
+<p id="365470da-87b7-49e9-adca-206bdbb87eb5" class="latex-block">\begin{align*}
+\frac{dy}{dx}
+  &= \frac{1}{\;\dfrac{dx}{dy}\;} = \frac{1}{\cos y}. \\
+\cos y
+  &= \sqrt{1-\sin^2 y}=\sqrt{1-x^2}; \\
+\frac{dy}{dx}
+  &= \frac{1}{\sqrt{1-x^2}},
+\end{align*}</p>
+
+<p>a rather unexpected result.</p>
+
+
+
+<p>(2) $y=\cos^3 \theta$.</p>
+
+
+<p>This is the same thing as $y=(\cos \theta)^3$.</p>
+
+
+<p>Let $\cos\theta=v$; then $y=v^3$; $\dfrac{dy}{dv}=3v^2$.</p>
+
+<p id="2e8337a7-c9ee-4d39-8476-4c70a456d962" class="latex-block">\begin{align*}
+\frac{dv}{d\theta} &= -\sin\theta.\\
+\frac{dy}{d\theta} &=  \frac{dy}{dv} × \frac{dv}{d\theta}
+                    = -3 \cos^2 \theta \sin\theta.
+\end{align*}</p>
+
+
+
+
+<p>(3) $y=\sin(x+a)$.</p>
+
+
+<p>Let $x+a=v$; then $y=\sin v$.</p>
+
+<p id="17592358-b826-409f-bf99-530b6e17dc4a" class="latex-block">\begin{align*}
+\frac{dy}{dv} &= \cos v;\\
+\frac{dv}{dx} &= 1 \\
+\frac{dy}{dx} &= \cos(x+a).
+\end{align*}</p>
+
+
+<p>(4) $y=\log_\epsilon \sin \theta$.</p>
+
+
+<p>Let $\sin\theta=v$; $y=\log_\epsilon v$.</p>
+
+<p id="6c14272a-b52d-49b9-8ac2-a65051d19e32" class="latex-block">\begin{align*}
+\frac{dy}{dv}      &= \frac{1}{v};\quad \frac{dv}{d\theta}=\cos\theta;\\
+\frac{dy}{d\theta} &= \frac{1}{\sin\theta} × \cos\theta = \cot\theta.
+\end{align*}</p>
+
+
+
+
+<p>(5) $y=\cot\theta=\dfrac{\cos\theta}{\sin\theta}$.</p>
+
+<p id="0f9fdba6-bf54-4632-a1e0-642f5ea93505" class="latex-block">\begin{align*}
+\frac{dy}{d\theta}
+  &= \frac{-\sin^2\theta - \cos^2 \theta}{\sin^2 \theta}\\
+  &= -(1+\cot^2 \theta) = -\text{cosec}^2 \theta.
+\end{align*}</p>
+
+
+
+
+<p>(6) $y=\tan 3\theta$.</p>
+
+
+<p>Let $3\theta=v$; $y=\tan v$; $\dfrac{dy}{dv}=\sec^2 v$.</p>
+
+<p id="076064e2-dd2b-4849-996e-3ecfa2651ebb" class="latex-block">\begin{align*}
+\frac{dv}{d\theta} &= 3;\\
+\frac{dy}{d\theta} &= 3 \sec^2 3\theta.
+\end{align*}</p>
+
+
+
+<p>(7) $y = \sqrt{1+3\tan^2\theta}$; $y=(1+3 \tan^2 \theta)^{\frac{1}{2}}$.</p>
+
+
+<p>Let $3\tan^2\theta=v$.</p>
+
+<p id="c8cd51a2-97e1-4aa5-a65e-5a2a211dee5a" class="latex-block">\begin{align*}
+y &= (1+v)^{\frac{1}{2}};\\
+\frac{dy}{dv} &= \frac{1}{2\sqrt{1+v}}
+\end{align*}</p>
+
+<p id="20bfb520-e8dc-4703-9993-271c119d38c7" class="latex-block">\begin{align*}
+\frac{dv}{d\theta}
+  &= 6\tan\theta \sec^2 \theta \\
+\end{align*}</p>
+
+<p>for, if $\tan \theta = u$,</p>
+
+<p id="d9dc26e2-d947-4903-bc0b-3d2bbd555444" class="latex-block">\begin{align*}
+v &= 3u^2;\quad \frac{dv}{du} = 6u;\quad \frac{du}{d\theta} = \sec^2 \theta; \\
+\frac{dv}{d\theta}
+  &= 6 (\tan \theta \sec^2 \theta) \\
+\frac{dy}{d\theta}
+  &= \frac{6\tan\theta \sec^2\theta}{2\sqrt{1 + 3\tan^2\theta}}.
+\end{align*}</p>
+
+
+
+
+<p>(8) $y=\sin x \cos x$. <a name="example1"></a></p>
+
+<p id="41dbd1c8-ce71-4cd4-a403-d5b93df81e6b" class="latex-block">\begin{align*}
+\frac{dy}{dx}
+  &= \sin x(-\sin x) + \cos x × \cos x \\
+  &= \cos^2 x - \sin^2 x.
+\end{align*}</p>
+
+
+
+
+
+<hr>
+
+<div class="exercises-section">
+<h3>Exercises XIV</h3>
+
+(1) Differentiate the following:</p>
+
+<p id="fb5f439d-f34e-4e80-8703-d66d9b2fbaf0" class="latex-block">\begin{align*}
+\text{(i)}\quad   y &= A \sin\left(\theta - \frac{\pi}{2}\right).\\
+\text{(ii)}\quad  y &= \sin^2 \theta;\quad \text{and } y = \sin 2\theta.\\
+\text{(iii)}\quad y &= \sin^3 \theta;\quad \text{and } y = \sin 3\theta.
+\end{align*}</p>
+
+
+
+
+<p>(2) Find the value of $\theta$ for which $\sin\theta × \cos\theta$ is a
+maximum.</p>
+
+
+<p>(3) Differentiate $y=\dfrac{1}{2\pi} \cos 2\pi nt$.</p>
+
+
+
+<p>(4) If $y = \sin a^x$, find $\dfrac{dy}{dx}$.</p>
+
+
+<p>(5) Differentiate $y=\log_\epsilon \cos x$.</p>
+
+
+<p>(6) Differentiate $y=18.2 \sin(x+26°)$.</p>
+
+
+<p>(7) Plot the curve $y=100 \sin(\theta-15°)$; and show
+that the slope of the curve at $\theta = 75°$ is half the
+maximum slope.</p>
+
+
+<p>(8) If $y=\sin \theta·\sin 2\theta$, find $\dfrac{dy}{d\theta}$.</p>
+
+
+<p>(9)  If $y=a·\tan^m(\theta^n)$, find the differential coefficient
+of $y$ with respect to $\theta$.</p>
+
+
+<p>(10) Differentiate $y=\epsilon^x \sin^2 x$.</p>
+
+
+<p>(11) Differentiate the three equations of Exercises XIII.
+(<a href="14b.html">here</a>), No. 4, and compare their differential
+coefficients, as to whether they are equal, or nearly
+equal, for very small values of $x$, or for very large
+values of $x$, or for values of $x$ in the neighbourhood
+of $x=30$.</p>
+
+
+<p>(12) Differentiate the following:</p>
+
+<p id="ef4fad02-4b98-4b23-bc5c-463ef2e59d7b" class="latex-block">\begin{align*}
+\text{(i)}\quad   y &= \sec x.    \\
+\text{(ii)}\quad  y &= \arccos x. \\
+\text{(iii)}\quad y &= \arctan x. \\
+\text{(iv)}\quad  y &= \text{arcsec} x. \\
+\text{(v)}\quad   y &= \tan x × \sqrt{3 \sec x}. &&
+\end{align*}</p>
+
+
+
+
+<p>(13) Differentiate $y=\sin(2\theta +3)^{2.3}$.</p>
+
+
+<p>(14) Differentiate $y=\theta^3+3 \sin(\theta+3)-3^{\sin \theta} - 3^\theta$.</p>
+
+
+<p>(15) Find the maximum or minimum of $y=\theta \cos \theta$.</p>
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)  (i) $\dfrac{dy}{d\theta} = A \cos \left( \theta - \dfrac{\pi}{2} \right)$;</p>
+
+
+<p>(ii) $\dfrac{dy}{d\theta} = 2\sin\theta \cos\theta = \sin2\theta$ and $\dfrac{dy}{d\theta} = 2\cos2\theta$;</p>
+
+<p>(iii) $\dfrac{dy}{d\theta} = 3\sin^2 \theta \cos\theta$ and $\dfrac{dy}{d\theta} = 3\cos3\theta$.</p>
+
+<p>(2)   $\theta = 45°$ or $\dfrac{\pi}{4}$ radians.</p>
+
+<p>(3)   $\dfrac{dy}{dt} = -n \sin 2\pi nt$.</p>
+
+<p>(4)   $a^x \log_\epsilon a \cos a^x$.</p>
+
+<p>(5)   $\dfrac{\cos x}{\sin x} = \text{cotan}\; x$</p>
+
+<p>(6)   $18.2 \cos \left(x + 26° \right)$.</p>
+
+<p>(7)  The slope is $\dfrac{dy}{d\theta} = 100\cos\left(\theta - 15° \right)$, which is a maximum
+ when $(\theta -15°) = 0$, or $\theta = 15°$; the value of the slope
+ being then ${}= 100$. When $\theta = 75°$ the slope is
+ $100\cos(75°  - 15°) = 100\cos 60° = 100 × \frac{1}{2} = 50$.</p>
+
+<p>(8)</p>
+
+<p>$\begin{aligned}[t]
+  \cos\theta \sin2\theta + 2\cos2\theta \sin\theta
+  &= 2\sin\theta\left(\cos^2 \theta + \cos2\theta\right) \\
+  &= 2\sin\theta\left(3\cos^2 \theta - 1\right).
+  \end{aligned}$</p>
+
+
+<p>(9)  $amn\theta^{n-1} \tan^{m-1}\left(\theta^n\right)\sec^2 \theta^n$.</p>
+
+<p>(10)  $\epsilon^x \left(\sin^2 x + \sin2x\right)$;&nbsp;&nbsp; $\epsilon^x \left(\sin^2 x + 2\sin2x + 2\cos2x\right)$.</p>
+
+<p>(11)  $\left(i\right) \dfrac{dy}{dx} = \dfrac{ab}{\left(x + b\right)^2}$;&nbsp;&nbsp;
+(ii) $\dfrac{a}{b} \epsilon^{-\frac{x}{b}}$;&nbsp;&nbsp;
+(iii) $\dfrac{1}{90}° × \dfrac{ab}{\left(b^2 + x^2\right)}$.</p>
+
+
+<p>(12)  (i) $\dfrac{dy}{dx} = \sec x \tan x$;
+
+(ii) $\dfrac{dy}{dx} = - \dfrac{1}{\sqrt{ 1 - x^2}}$;
+
+(iii) $\dfrac{dy}{dx} = \dfrac{1}{ 1 + x^2}$;
+
+(iv) $\dfrac{dy}{dx} = \dfrac{1}{x \sqrt{ x^2 - 1}}$;
+
+(v) $\dfrac{dy}{dx} = \dfrac{\sqrt{ 3\sec x} \left(3\sec^2 x - 1\right)}{2}$.</p>
+
+
+<p>(13)  $\dfrac{dy}{d\theta} = 4.6\left(2\theta + 3\right)^{1.3} \cos\left(2\theta + 3\right)^{2.3}$.</p>
+
+
+
+<p>(14)   $\dfrac{dy}{d\theta} = 3\theta^2 + 3\cos \left( \theta + 3 \right) - \log_\epsilon 3 \left( \cos\theta × 3^{\sin\theta} + 3\theta \right)$.</p>
+
+
+<p>(15)   $\theta = \cot\theta; \theta = ±0.86$; is max. for $+\theta$, min. for $-\theta$.</p>
+</div>
+
+
+
+<br>
+<hr>
+</main>
+
+<a href="16.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

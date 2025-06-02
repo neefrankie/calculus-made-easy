@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>On Finding Areas by Integrating | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 19}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>On Finding Areas by Integrating</h1>
+
+
+
+
+<main id="main-content">
+
+<p>One use of the integral calculus is to enable us to
+ascertain the values of areas bounded by curves.</p>
+
+
+<p>Let us try to get at the subject bit by bit.</p>
+
+
+<p><img src="33283-t/images/218a.pdf.png-1.png"></p>
+
+
+<p>Let $AB$ (Figure 52) be a curve, the equation to which
+is known. That is, $y$ in this curve is some known
+function of $x$. Think of a piece of the curve from
+the point $P$ to the point $Q$.</p>
+
+
+<p>Let a perpendicular $PM$ be dropped from $P$, and
+another $QN$ from the point $Q$. Then call $OM = x_1$
+and $ON = x_2$, and the ordinates $PM = y_1$ and $QN = y_2$.
+We have thus marked out the area $PQNM$ that lies
+
+beneath the piece $PQ$. The problem is, <em>how can we
+calculate the value of this area</em>?</p>
+
+
+<p>The secret of solving this problem is to conceive
+the area as being divided up into a lot of narrow
+strips, each of them being of the width $dx$. The
+smaller we take $dx$, the more of them there will be
+between $x_1$ and $x_2$. Now, the whole area is clearly
+equal to the sum of the areas of all such strips. Our
+business will then be to discover an expression for
+the area of any one narrow strip, and to integrate it
+so as to add together all the strips. Now think of
+any one of the strips. It
+will be like this:
+being bounded between two vertical sides, with
+a flat bottom $dx$, and with a slightly curved
+sloping top.</p>
+
+<p><img src="33283-t/images/219a.pdf.png-1.png"></p>
+
+<p>Suppose we take its <em>average</em>
+height as being $y$; then, as its width is $dx$, its
+area will be $y\, dx$. And seeing that we may
+take the width as narrow as we please, if we
+only take it narrow enough its average height will be
+the same as the height at the middle of it. Now
+let us call the unknown value of the whole area $S$,
+meaning surface. The area of one strip will be
+simply a bit of the whole area, and may therefore
+be called $dS$. So we may write the area of $1$ strip</p>
+
+<p id="b7ef28be-40dd-42db-9733-ec8d6bf7fbd5" class="latex-block">\[
+dS = y · dx
+\]</p>
+
+<p>If then we add up all the strips, we get the total area $S$</p>
+
+<p id="136d882d-40f3-482e-9846-90cc28c5a7a2" class="latex-block">\[
+\int dS = \int y dx
+\]</p>
+
+
+<p>So then our finding $S$ depends on whether we can
+
+integrate $y · dx$ for the particular case, when we know
+what the value of $y$ is as a function of $x$.</p>
+
+
+<p>For instance, if you were told that for the particular
+curve in question $y = b + ax^2$, no doubt you could put
+that value into the expression and say: then I must
+find $\int (b + ax^2)\, dx$.</p>
+
+
+<p>That is all very well; but a little thought will show
+you that something more must be done. Because the
+area we are trying to find is not the area under the
+whole length of the curve, but only the area limited
+on the left by $PM$, and on the right by $QN$, it follows
+that we must do something to define our area between
+those "<em>limits</em>". <a name="limits"></a></p>
+
+
+<p>This introduces us to a new notion, namely that of
+<em>integrating between limits</em>. We suppose $x$ to vary,
+and for the present purpose we do not require any
+value of $x$ below $x_1$ (that is $OM$), nor any value of $x$
+above $x_2$ (that is $ON$). When an integral is to be
+thus defined between two limits, we call the lower
+of the two values <em>the inferior limit</em>, and the upper
+value <em>the superior limit</em>. Any integral so limited
+we designate as a <em>definite integral</em>, by way of distinguishing
+it from a <em>general integral</em> to which no
+limits are assigned.</p>
+
+
+<p>In the symbols which give instructions to integrate,
+the limits are marked by putting them at the top
+and bottom respectively of the sign of integration.
+Thus the instruction</p>
+
+<p id="9569afe6-82fc-40fa-979b-75a07d1bb76e" class="latex-block">\[
+\int_{x=x_1}^{x=x_2} y · dx
+\]</p>
+
+<p>will be read: find the integral of $y · dx$ between the
+inferior limit $x_1$ and the superior limit $x_2$.</p>
+
+
+<p>Sometimes the thing is written more simply</p>
+
+<p id="7a9a53f1-25e3-4fae-9d0b-a37e95f7e39c" class="latex-block">\[
+\int^{x_2}_{x_1} y · dx.
+\]</p>
+
+<p>Well, but <em>how</em> do you find an integral between limits,
+when you have got these instructions?</p>
+
+
+<p>Look again at Figure 52. Suppose we could
+find the area under the larger piece of curve from
+$A$ to $Q$, that is from $x = 0$ to $x = x_2$, naming the area
+$AQNO$. Then, suppose we could find the area under
+the smaller piece from $A$ to $P$, that is from $x = 0$ to
+$x = x_1$, namely the area $APMO$. If then we were to
+subtract the smaller area from the larger, we should
+have left as a remainder the area $PQNM$, which is
+what we want. Here we have the clue as to what
+to do; the definite integral between the two limits is
+<em>the difference</em> between the integral worked out for
+the superior limit and the integral worked out for the
+lower limit.</p>
+
+
+<p>Let us then go ahead. First, find the general
+integral thus:</p>
+
+<p id="b4c2df75-18a6-45bb-861c-176a610f502f" class="latex-block">\[
+\int y\, dx,
+\]</p>
+
+<p>and, as $y = b + ax^2$ is the equation to the curve (Figure 52),</p>
+
+<p id="9f0d09dc-3c1f-4c9f-b6fe-f11493499e71" class="latex-block">\[
+\int (b + ax^2)\, dx
+\]</p>
+
+<p>is the general integral which we must find.</p>
+
+
+<p>Doing the integration in question by the rule
+, we get</p>
+
+<p id="a62b34e6-7cd4-42f4-8f4f-f5ccdfdd57ea" class="latex-block">\[
+bx + \frac{a}{3} x^3 + C;
+\]</p>
+
+<p>and this will be the whole area from $0$ up to any
+value of $x$ that we may assign.</p>
+
+
+<p>Therefore, the larger area up to the superior limit $x_2$
+will be</p>
+
+<p id="da5257cb-3837-4d80-8f36-6eab70c5b659" class="latex-block">\[
+bx_2 + \frac{a}{3} x_2^3 + C;
+\]</p>
+
+<p>and the smaller area up to the inferior limit $x_1$ will be</p>
+
+<p id="04fe6c27-a821-4ec0-8908-ad392a11b49d" class="latex-block">\[
+bx_1 + \frac{a}{3} x_1^3 + C.
+\]</p>
+
+
+<p>Now, subtract the smaller from the larger, and we
+get for the area $S$ the value,</p>
+
+<p id="cecd5b8e-e3af-4288-8c0e-c4156599aa0e" class="latex-block">\[
+b(x_2 - x_1) + \frac{a}{3}(x_2^3 - x_1^3)
+\]</p>
+
+
+<p>This is the answer we wanted. Let us give some
+numerical values. Suppose $b = 10$, $a = 0.06$, and $x_2 = 8$
+and $x_1 = 6$. Then the area $S$ is equal to</p>
+
+<p id="df419935-12ce-4059-b933-30e25dd0ba96" class="latex-block">\begin{gather*}
+10(8 - 6) + \frac{0.06}{3} (8^3 - 6^3) \\
+\begin{aligned}
+&= 20 + 0.02(512 - 216)    \\
+&= 20 + 0.02 × 296    \\
+&= 20 + 5.92     \\
+&= 25.92.
+\end{aligned}
+\end{gather*}</p>
+
+
+
+
+<p>Let us here put down a symbolic way of stating
+what we have ascertained about limits:</p>
+
+<p id="a390bc45-49a4-4659-8779-718701bd39ba" class="latex-block">\[
+\int^{x=x_2}_{x=x_1} y dx = y_2 - y_1
+\]</p>
+
+<p>where $y_2$ is the integrated value of $y\, dx$ corresponding
+to $x_2$, and $y_1$ that corresponding to $x_1$.</p>
+
+
+
+<p>All integration between limits requires the difference
+between two values to be thus found. Also note
+that, in making the subtraction the added constant $C$
+has disappeared.</p>
+
+
+
+
+<p><em>Examples</em>
+(1) To familiarize ourselves with the process, let us
+take a case of which we know the answer beforehand.
+Let us find the area of the triangle (Figure 53), which
+has base $x = 12$ and height $y = 4$. We know beforehand,
+from obvious mensuration, that the answer will
+come $24$.</p>
+
+
+<p><img src="33283-t/images/223a.pdf.png-1.png"></p>
+
+
+<p>Now, here we have as the “curve” a sloping line
+for which the equation is</p>
+
+<p id="13039778-dacd-4249-8ba8-a41490a36138" class="latex-block">\[
+y = \frac{x}{3}
+\]</p>
+
+
+<p>The area in question will be</p>
+
+<p id="786e03db-afbf-4fed-8b0e-1ecf689469c6" class="latex-block">\[
+\int^{x=12}_{x=0} y · dx = \int^{x=12}_{x=0} \frac{x}{3} · dx
+\]</p>
+
+
+<p>Integrating $\dfrac{x}{3}\, dx$ (<a href="18.html#diffrule">here</a>), and putting down the
+
+value of the general integral in square brackets with
+the limits marked above and below, we get</p>
+
+
+<p id="3fe81bd7-498c-4f85-8004-ff4a5df35b9c" class="latex-block">\begin{align*}
+\text{area}\;
+  &= \left[ \frac{1}{3} · \frac{1}{2} x^2 \right]^{x=12}_{x=0} + C \\
+  &= \left[ \frac{x^2}{6} \right]^{x=12}_{x=0} + C  \\
+  &= \left[ \frac{12^2}{6} \right] - \left[ \frac{0^2}{6} \right] \\
+  &= \frac{144}{6} = 24
+\end{align*}</p>
+
+
+
+
+<p>Let us satisfy ourselves about this rather surprising
+dodge of calculation, by testing it on a simple
+example. Get some squared paper, preferably some
+that is ruled in little squares of one-eighth centimetre or
+one-tenth centimetre each way.  On this squared paper
+plot out the graph of the equation $y = \frac{x}{3}$.</p>
+
+
+<p>The values to be plotted will be:</p>
+
+<table>
+<tr><td>$x$</td><td>$0$</td><td>$3$</td><td>$6$</td><td>$9$</td><td>$12$</td>
+<tr><td>$y$</td><td>$0$</td><td>$1$</td><td>$2$</td><td>$3$</td><td>$4$</td>
+</table>
+
+
+<p>The plot is given in Figure 54.</p>
+
+<p><img src="33283-t/images/224a.pdf.png-1.png"></p>
+
+
+<p>Now reckon out the area beneath the curve <em>by
+counting the little squares</em> below the line, from $x = 0$
+as far as $x = 12$ on the right. There are $18$ whole
+squares and four triangles, each of which has an area
+equal to $1\frac{1}{2}$ squares; or, in total, $24$ squares. Hence
+$24$ is the numerical value of the integral of $\dfrac{x}{3}\, dx$
+between the lower limit of $x = 0$ and the higher limit
+of $x = 12$.</p>
+
+
+<p>As a further exercise, show that the value of the
+same integral between the limits of $x = 3$ and $x = 15$
+is $36$.</p>
+
+
+<p><img src="33283-t/images/225a.pdf.png-1.png"></p>
+
+<p>(2) Find the area, between limits $x = x_1$ and $x = 0$,
+of the curve $y = \dfrac{b}{x + a}$.</p>
+
+<p id="ee9cc5d4-a111-49c7-a0f7-215aa8f1e46e" class="latex-block">\begin{align*}
+\text{Area}
+  &= \int^{x=x_1}_{x=0} y · dx
+   = \int^{x=x_1}_{x=0} \frac{b}{x+a}\, dx  \\
+  &= b \bigl[\log_\epsilon(x + a) \bigr]^{x_1} _{0} + C  \\
+  &= b \bigl[\log_\epsilon(x_1 + a) - \log_\epsilon(0 + a)\bigr]  \\
+  &= b \log_\epsilon \frac{x_1 + a}{a}
+\end{align*}</p>
+
+
+
+
+<p><em>Note</em>–Notice that in dealing with definite integrals
+the constant $C$ always disappears by subtraction.</p>
+
+
+<p>Let it be noted that this process of subtracting one
+part from a larger to find the difference is really a
+common practice. How do you find the area of a
+plane ring (Figure 56), the outer radius of which is $r_2$
+and the inner radius is $r_1$? You know from mensuration
+that the area of the outer circle is $\pi r_2^2$; then
+you find the area of the inner circle, $\pi r_1^2$; then you
+subtract the latter from the former, and find area of
+ring $= \pi(r_2^2 - r_1^2)$; which may be written</p>
+
+<p id="3963e827-9eb9-4711-b218-0a5ce0979d76" class="latex-block">\[
+\pi(r_2 + r_1)(r_2 - r_1)
+\]</p>
+
+<p>$= \text{mean circumference of ring} × \text{width of ring}$.</p>
+
+<p><img src="33283-t/images/226a.pdf.png-1.png"></p>
+
+
+
+<p>(3) Here's another case–that of the <em>die-away curve</em>. Find the area between $x = 0$ and $x = a$, of
+the curve (Figure 57) whose equation is</p>
+
+<p id="2e1ba2c2-e561-470b-bc9d-73b6dcfec56c" class="latex-block">\begin{align*}
+y &= b\epsilon^{-x}. \\
+\text{Area} &= b\int^{x=a} _{x=0} \epsilon^{-x} · dx.  \\
+\end{align*}</p>
+
+<p>The integration gives</p>
+
+<p id="2be3668e-3c8e-4d09-a867-b57581800167" class="latex-block">\begin{align*}
+  &= b\left[-\epsilon^{-x}\right]^a _0 \\
+  &= b\bigl[-\epsilon^{-a} - (-\epsilon^{-0})\bigr] \\
+  &= b(1-\epsilon^{-a}).
+\end{align*}</p>
+
+
+
+
+<p><img src="33283-t/images/227a.pdf.png-1.png"></p>
+
+
+<p>(4) Another example is afforded by the adiabatic
+curve of a perfect gas, the equation to which is
+$pv^n = c$, where $p$ stands for pressure, $v$ for volume,
+and $n$ is of the value $1.42$ (Figure 58).</p>
+
+<p><img src="33283-t/images/227b.pdf.png-1.png"></p>
+
+
+<p>Find the area under the curve (which is proportional
+
+to the work done in suddenly compressing the gas)
+from volume $v_2$ to volume $v_1$.</p>
+
+
+<p>Here we have</p>
+
+<p id="05e69ee6-b370-426c-8fba-1b0fe5540ff0" class="latex-block">\begin{align*}
+\text{area}
+  &= \int^{v=v_2}_{v=v_1} cv^{-n} · dv \\
+  &= c\left[\frac{1}{1-n} v^{1-n} \right]^{v_2} _{v_1} \\
+  &= c \frac{1}{1-n} (v_2^{1-n} - v_1^{1-n}) \\
+  &= \frac{-c}{0.42}\left(\frac{1}{v_2^{0.42}} - \frac{1}{v_1^{0.42}}\right).
+\end{align*}</p>
+
+
+
+
+<p><em>An Exercise.</em></p>
+<p>Prove the ordinary mensuration formula, that the
+area $A$ of a circle whose radius is $R$, is equal to $\pi R^2$.</p>
+
+
+<p><img src="33283-t/images/228a.pdf.png-1.png"></p>
+
+
+<p>Consider an elementary zone or annulus of the
+surface (Figure 59), of breadth $dr$, situated at a distance $r$
+from the centre. We may consider the entire surface
+as consisting of such narrow zones, and the
+whole area $A$ will simply be the integral of all
+
+such elementary zones from centre to margin, that is,
+integrated from $r = 0$ to $r = R$.</p>
+
+
+<p>We have therefore to find an expression for the
+elementary area $dA$ of the narrow zone. Think of
+it as a strip of breadth $dr$, and of a length that is
+the periphery of the circle of radius $r$, that is, a
+length of $2 \pi r$. Then we have, as the area of the
+narrow zone,</p>
+
+<p id="231cec3c-478f-4087-abe0-862c680ccc35" class="latex-block">\[
+dA = 2 \pi r\, dr.
+\]</p>
+
+
+<p>Hence the area of the whole circle will be:</p>
+
+<p id="e9a80e94-f81b-4fcb-9c8f-8b4b4d8a17e7" class="latex-block">\[
+A = \int dA
+  = \int^{r=R}_{r=0} 2 \pi r · dr
+  = 2 \pi \int^{r=R}_{r=0} r · dr.
+\]</p>
+
+
+<p>Now, the general integral of $r · dr$ is $\frac{1}{2} r^2$. Therefore,</p>
+
+<p id="8ed50ae6-df06-4c85-b56f-e6373e77b893" class="latex-block">\begin{align*}
+A &= 2 \pi \bigl[\tfrac{1}{2} r^2 \bigr]^{r=R}_{r=0}; \\
+ &= 2 \pi \bigl[\tfrac{1}{2} R^2 - \tfrac{1}{2}(0)^2\bigr]; \\
+ &= \pi R^2.
+\end{align*}</p>
+
+
+
+
+<p><em>Another Exercise.</em></p>
+<p>Let us find the mean ordinate of the positive part
+of the curve $y = x - x^2$, which is shown in Figure 60.
+To find the mean ordinate, we shall have to find the
+area of the piece $OMN$, and then divide it by the
+length of the base $ON$. But before we can find
+the area we must ascertain the length of the base,
+so as to know up to what limit we are to integrate.
+At $N$ the ordinate $y$ has zero value; therefore, we
+must look at the equation and see what value of $x$
+will make $y = 0$. Now, clearly, if $x$ is $0$, $y$ will also be $0$,
+the curve passing through the origin $O$; but also,
+if $x=1$, $y=0$; so that $x=1$ gives us the position of
+the point $N$.</p>
+
+<p><img src="33283-t/images/229a.pdf.png-1.png"></p>
+
+<p>Then the area wanted is</p>
+
+<p id="98805de5-3729-442e-8ebb-610b40c4522e" class="latex-block">\begin{align*}
+  &= \int^{x=1}_{x=0} (x-x^2)\, dx \\
+  &= \left[\tfrac{1}{2} x^2 - \tfrac{1}{3} x^3 \right]^{1}_{0} \\
+  &= \left[\tfrac{1}{2} - \tfrac{1}{3} \right] - [0-0] \\
+  &= \tfrac{1}{6}
+\end{align*}</p>
+
+
+
+
+<p>But the base length is $1$.</p>
+
+
+<p>Therefore, the average ordinate of the curve $= \frac{1}{6}$.</p>
+
+
+<p>[<em>Note</em>–It will be a pretty and simple exercise in
+maxima and minima to find by differentiation what
+is the height of the maximum ordinate. It <em>must</em> be
+greater than the average.]</p>
+
+
+<p>The mean ordinate of any curve, over a range from
+$x= 0$ to $x = x_1$, is given by the expression,</p>
+
+<p id="c8ef0b40-5cdf-4e0a-a5e0-4a41e784ad2a" class="latex-block">\[
+\text{mean $y$} = \frac{1}{x_1} \int^{x=x_1}_{x=0} y · dx.
+\]</p>
+
+
+<p>One can also find in the same way the surface area
+of a solid of revolution.</p>
+
+<p><em>Example</em>.</p>
+
+<p>The curve $y=x^2-5$ is revolving about
+the axis of $x$. Find the area of the surface generated
+by the curve between $x=0$ and $x=6$.</p>
+
+
+<p>A point on the curve, the ordinate of which is $y$,
+describes a circumference of length $2\pi y$, and a narrow
+belt of the surface, of width $dx$, corresponding to this
+point, has for area $2\pi y\, dx$. The total area is</p>
+
+<p id="0993e479-bded-4109-85eb-f720941dc036" class="latex-block">\begin{align*}
+2\pi \int^{x=6}_{x=0} y\, dx
+  &= 2\pi \int^{x=6}_{x=0} (x^2-5)\, dx
+   = 2\pi \left[\frac{x^3}{3} - 5x\right]^6_0 \\
+  &= 6.28 × 42=263.76.
+\end{align*}</p>
+
+
+
+
+
+<h2>Areas in Polar Coordinates.</h2>
+
+
+
+<p>When the equation of the boundary of an area is
+given as a function of the distance $r$ of a point of it
+from a fixed point $O$ (see Figure 61) called the <em>pole</em>, and
+of the angle which $r$ makes with the positive horizontal
+direction $OX$, the process just explained can
+be applied just as easily, with a small modification.
+Instead of a strip of area, we consider a small triangle
+$OAB$, the angle at $O$ being $d\theta$, and we find the sum
+of all the little triangles making up the required
+area.</p>
+
+<p><img src="33283-t/images/231a.pdf.png-1.png"></p>
+
+<p>The area of such a small triangle is approximately
+$\dfrac{AB}{2}×r$ or $\dfrac{r\, d\theta}{2}×r$; hence the portion of the area
+included between the curve and two positions of $r$
+corresponding to the angles $\theta_1$ and $\theta_2$ is given by</p>
+
+<p id="86955161-af28-4722-8e20-9288fde77771" class="latex-block">\[
+\tfrac{1}{2} \int^{\theta=\theta_2}_{\theta=\theta_1} r^2\, d\theta.
+\]</p>
+
+
+
+<hr>
+
+
+
+
+<p><em>Examples</em>
+(1) Find the area of the sector of $1$ radian in a
+circumference of radius $a$ centimetres.</p>
+
+
+<p>The polar equation of the circumference is evidently
+$r=a$. The area is</p>
+
+<p id="7061fa24-550e-43b7-a082-9c31f4947eaa" class="latex-block">\[
+\tfrac{1}{2} \int^{\theta=\theta_2}_{\theta=\theta_1} a^2\, d\theta
+  = \frac{a^2}{2} \int^{\theta=1}_{\theta=0} d\theta
+  = \frac{a^2}{2}.
+\]</p>
+
+
+<p>(2) Find the area of the first quadrant of the curve
+(known as “Pascal's Snail”), the polar equation of
+which is $r=a(1+\cos \theta)$.</p>
+
+<p id="ad42132f-a16a-4094-9241-fbb88399e8b6" class="latex-block">\begin{align*}
+\text{Area}
+  &= \tfrac{1}{2}  \int^{\theta=\frac{\pi}{2}}_{\theta=0} a^2(1+\cos \theta)^2\, d\theta  \\
+  &= \frac{a^2}{2} \int^{\theta=\frac{\pi}{2}}_{\theta=0} (1+2 \cos \theta + \cos^2 \theta)\, d\theta  \\
+  &= \frac{a^2}{2} \left[\theta + 2 \sin \theta + \frac{\theta}{2} + \frac{\sin 2 \theta}{4} \right]^{\frac{\pi}{2}}_{0} \\
+  &= \frac{a^2(3\pi+8)}{8}.
+\end{align*}</p>
+
+
+
+
+
+<h2>Volumes by Integration.</h2>
+
+
+
+<p>What we have done with the area of a little strip
+of a surface, we can, of course, just as easily do with
+the volume of a little strip of a solid. We can add
+up all the little strips that make up the total solid,
+and find its volume, just as we have added up all the
+small little bits that made up an area to find the final
+area of the figure operated upon.</p>
+
+
+
+<hr>
+
+
+<p><em>Examples</em></p>
+
+<p>(1) Find the volume of a sphere of radius $r$.</p>
+
+
+<p>A thin spherical shell has for volume $4\pi x^2\, dx$ (see
+Figure 59); summing up all the concentric shells which make up the sphere, we have</p>
+
+<p id="963f8708-9399-415b-8ad5-d199edc00db0" class="latex-block">\[
+\text{volume sphere}
+  = \int^{x=r}_{x=0} 4\pi x^2\, dx
+  = 4\pi \left[\frac{x^3}{3} \right]^r_0
+  = \tfrac{4}{3} \pi r^3.
+\]</p>
+
+
+<p><img src="33283-t/images/233a.pdf.png-1.png"></p>
+
+
+<p>We can also proceed as follows: a slice of the
+sphere, of thickness $dx$, has for volume $\pi y^2\, dx$ (see
+Figure 62). Also $x$ and $y$ are related by the expression</p>
+
+<p id="880b1da8-e43e-45d4-a2b6-0e4ffa28dc97" class="latex-block">\[
+y^2 = r^2 - x^2.
+\]</p>
+
+
+<p id="cfdb3b7c-9436-452e-83ac-e5d56d696bba" class="latex-block">\begin{align*}
+\text{volume sphere}
+  &= 2 \int^{x=r}_{x=0} \pi(r^2-x^2)\, dx \\
+  &= 2 \pi \left[ \int^{x=r}_{x=0} r^2\, dx - \int^{x=r}_{x=0} x^2\, dx \right] \\
+  &= 2 \pi \left[r^2x - \frac{x^3}{3} \right]^r_0 = \frac{4\pi}{3} r^3.
+\end{align*}</p>
+
+
+
+
+<p>(2) Find the volume of the solid generated by the
+revolution of the curve $y^2=6x$ about the axis of $x$,
+between $x=0$ and $x=4$.</p>
+
+
+<p>The volume of a strip of the solid is $\pi y^2\, dx$.</p>
+
+<p id="4efde90f-564d-4e84-81a5-898c5cdffac9" class="latex-block">\begin{align*}
+\text{volume}
+  &= \int^{x=4}_{x=0} \pi y^2\, dx = 6\pi \int^{x=4}_{x=0} x\, dx  \\
+  &= 6\pi \left[ \frac{x^2}{2} \right]^4_0 = 48\pi = 150.8.
+\end{align*}</p>
+
+
+
+
+<h2>On Quadratic Means.</h2>
+
+
+
+<p>In certain branches of physics, particularly in the
+study of alternating electric currents, it is necessary
+to be able to calculate the <em>quadratic mean</em> of a
+variable quantity. By “quadratic mean” is denoted
+the square root of the mean of the squares of all the
+values between the limits considered. Other names
+for the quadratic mean of any quantity are its
+“virtual” value, or its “r.m.s.” (meaning root-mean-square)
+value. The French term is <em>valeur efficace</em> . If $y$
+is the function under consideration, and the quadratic
+mean is to be taken between the limits of $x=0$
+and $x=l$; then the quadratic mean is expressed as</p>
+
+<p id="e8bce4e4-470c-4d3f-826f-5a2bd3794934" class="latex-block">\[
+\sqrt[2] {\frac{1}{l} \int^l_0 y^2\, dx}.
+\]</p>
+
+
+<p><em>Examples</em></p>
+
+
+<p>(1) To find the quadratic mean of the function
+$y=ax$ (Figure 63).</p>
+
+
+<p>Here the integral is</p>
+
+<p id="1e5ab2f6-11ee-4bd8-bc37-6a31d074eeea" class="latex-block">\[
+\int^l_0 a^2 x^2 dx = \frac{1}{3} a^2 l^3
+\]</p>
+
+
+<p><img src="33283-t/images/235a.pdf.png-1.png"></p>
+
+
+<p>Dividing by $l$ and taking the square root, we have</p>
+
+<p id="78026417-e493-4401-8071-5a4f230bb621" class="latex-block">\[
+\text{quadratic mean} = \frac{1}{\sqrt 3}\, al.
+\]</p>
+
+
+<p>Here the arithmetical mean is $\frac{1}{2}al$; and the ratio
+of quadratic to arithmetical mean (this ratio is called
+the <em>form-factor</em>) is $\dfrac{2}{\sqrt 3}=1.155$.</p>
+
+
+<p>(2) To find the quadratic mean of the function $y=x^a$.</p>
+
+
+<p>The integral is, that is.</p>
+
+<p id="6c12cff5-1b78-4ac0-b34a-5129e08d249c" class="latex-block">\begin{align*}
+\int^{x=l}_{x=0} x^{2a}\, dx = \dfrac{l^{2a+1}}{2a+1}
+\end{align*}</p>
+
+<p>Hence quadratic mean =</p>
+
+<p id="d6f1e441-98a0-41c7-8a5e-b839b6ede630" class="latex-block">\[
+\sqrt[2]{\dfrac{l^{2a}}{2a+1}}.
+\]</p>
+
+<p>(3) To find the quadratic mean of the function $y=a^{\frac{x}{2}}$.</p>
+
+<p>The integral is</p>
+
+<p id="f65c5b5e-b7c7-4f1a-b11f-767797ab1ad4" class="latex-block">\begin{align*}
+&\int^{x=l}_{x=0} (a^{\frac{x}{2}})^2\, dx \\
+ &= \int^{x=l}_{x=0} a^x\, dx \\
+ &= \left[ \frac{a^x}{\log_\epsilon a} \right]^{x=l}_{x=0} \\
+ & = \dfrac{a^l-1}{\log_\epsilon a}
+\end{align*}</p>
+
+<p>Hence the quadratic mean is.</p>
+
+<p id="919bb163-f2d1-4f1a-b2f2-78f3632baa35" class="latex-block">\[
+\sqrt[2] {\dfrac{a^l - 1}{l \log_\epsilon a}}  
+\]</p>
+
+<hr>
+
+<div class="exercises-section">
+<h3>Exercises XVIII</h3>
+
+(1) Find the area of the curve $y=x^2+x-5$ between
+$x=0$ and $x=6$, and the mean ordinates between
+these limits.</p>
+
+
+<p>(2) Find the area of the parabola $y=2a\sqrt x$ between
+$x=0$ and $x=a$. Show that it is two-thirds of the
+rectangle of the limiting ordinate and of its abscissa.</p>
+
+
+<p>(3) Find the area of the positive portion of a sine
+curve and the mean ordinate.</p>
+
+
+<p>(4) Find the area of the positive portion of the
+curve $y=\sin^2 x$, and find the mean ordinate.</p>
+
+
+<p>(5) Find the area included between the two branches
+of the curve $y=x^2 ± x^{\frac{5}{2}}$ from $x=0$ to $x=1$, also the
+area of the positive portion of the lower branch of
+the curve (see <a href="11.html#figure30">Figure 30</a>).</p>
+
+
+<p>(6) Find the volume of a cone of radius of base $r$,
+and of height $h$.</p>
+
+
+<p>(7) Find the area of the curve $y=x^3-\log_\epsilon x$ between
+$x=0$ and $x=1$.</p>
+
+
+<p>(8) Find the volume generated by the curve
+$y=\sqrt{1+x^2}$, as it revolves about the axis of $x$, between
+$x=0$ and $x=4$.</p>
+
+
+
+<p>(9) Find the volume generated by a sine curve
+revolving about the axis of $x$. Find also the area of
+its surface.</p>
+
+
+<p>(10) Find the area of the portion of the curve
+$xy=a$ included between $x=1$ and $x = a$. Find the
+mean ordinate between these limits.</p>
+
+
+<p>(11) Show that the quadratic mean of the function
+$y=\sin x$, between the limits of $0$ and $\pi$ radians, is $\dfrac{\sqrt2}{2}$.
+Find also the arithmetical mean of the same
+function between the same limits; and show that the
+form-factor is $=1.11$.</p>
+
+
+<p>(12) Find the arithmetical and quadratic means of
+the function $x^2+3x+2$, from $x=0$ to $x=3$.</p>
+
+
+<p>(13) Find the quadratic mean and the arithmetical
+mean of the function $y=A_1 \sin x + A_1 \sin 3x$.</p>
+
+
+<p>(14) A certain curve has the equation $y=3.42\epsilon^{0.21x}$.
+Find the area included between the curve and the
+axis of $x$, from the ordinate at $x=2$ to the ordinate
+at $x = 8$. Find also the height of the mean ordinate
+of the curve between these points.</p>
+
+
+<p>(15) Show that the radius of a circle, the area of
+which is twice the area of a polar diagram, is equal
+to the quadratic mean of all the values of $r$ for that
+polar diagram.</p>
+
+
+<p>(16) Find the volume generated by the curve
+$y=±\dfrac{x}{6}\sqrt{x(10-x)}$ rotating about the axis of $x$.</p>
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)  $\text{Area} = 60$; $\text{mean ordinate} = 10$.</p>
+
+
+<p>(2)  $\text{Area} = \frac{2}{3}$ of $a × 2a \sqrt{a}$.</p>
+
+
+<p>(3)  $\text{Area} = 2$; $\text{mean ordinate} = \dfrac{2}{\pi} = 0.637$.</p>
+
+
+<p>(4)  $\text{Area} = 1.57$; $\text{mean ordinate} = 0.5$.</p>
+
+
+
+<p>(5)  $0.572$, $0.0476$.</p>
+
+
+<p>(6)  $\text{Volume} = \pi r^2 \dfrac{h}{3}$.</p>
+
+
+<p>(7)  $1.25$.</p>
+
+
+<p>(8)  $79.4$.</p>
+
+
+<p>(9)  $\text{Volume} = 4.9348$; $\text{area of surface} = 12.57$ (from $0$ to $\pi$).</p>
+
+
+<p>(10)  $a\log_\epsilon a$,&nbsp;&nbsp; $\dfrac{a}{a - 1} \log_\epsilon a$.</p>
+
+
+<p>(12)  $\text{Arithmetical mean} = 9.5$; $\text{quadratic mean} = 10.85$.</p>
+
+
+
+<p>(13)  $\text{Quadratic mean} = \dfrac{1}{\sqrt{2}} \sqrt{A_1^2 + A_3^2}$; $\text{arithmetical mean} = 0$.
+
+The first involves a somewhat difficult integral, and may be
+stated thus: By definition the quadratic mean will be</p>
+
+<p id="5ee8263b-d7ca-49d7-a4d4-1d2aba100344" class="latex-block">\[
+\sqrt{\dfrac{1}{2\pi} \int_0^{2\pi} (A_1 \sin x + A_3 \sin 3x)^2\, dx}.
+\]</p>
+
+<p>Now the integration indicated by</p>
+
+<p id="1dd719c4-9950-4724-8b62-dfe9a1320ee3" class="latex-block">\[
+\int (A_1^2 \sin^2 x + 2A_1 A_3 \sin x \sin 3x + A_3^2 \sin^2 3x)\, dx
+\]</p>
+
+<p>is more readily obtained if for $\sin^2 x$ we write</p>
+
+<p id="c2c4593b-480b-4e88-b08e-3b4d7ed50464" class="latex-block">\[
+\dfrac{1 - \cos 2x}{2}.
+\]</p>
+
+<p>For $2\sin x \sin 3x$ we write $\cos 2x - \cos 4x$; and, for $\sin^2 3x$,</p>
+
+<p id="a2b16c12-a356-4dfb-8cee-3dca22c3a391" class="latex-block">\[
+\dfrac{1 - \cos 6x}{2}.
+\]</p>
+
+<p>Making these substitutions, and integrating, we get (see
+<a href="18.html#cosax">here</a>)</p>
+
+<p id="43fd9550-6832-476f-9a2c-e52ba40e7d0b" class="latex-block">\[
+\dfrac{A_1^2}{2} \left( x - \dfrac{\sin 2x}{2} \right)
+ + A_1 A_3 \left( \dfrac{\sin 2x}{2} - \dfrac{\sin 4x}{4} \right)
+ + \dfrac{A_3^2}{2} \left( x - \dfrac{\sin 6x}{6} \right).
+\]</p>
+
+<p>At the lower limit the substitution of $0$ for $x$ causes all
+this to vanish, whilst at the upper limit the substitution
+of $2\pi$ for $x$ gives $A_1^2 \pi + A_3^2 \pi$. And hence the
+answer follows.</p>
+
+
+<p>(14)  Area is $62.6$ square units. Mean ordinate is $10.42$.</p>
+
+
+<p>(16)  $436.3$. (This solid is pear shaped.)</p>
+</div>
+
+
+<br>
+<hr>
+</main>
+
+<a href="20.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

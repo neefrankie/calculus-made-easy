@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Finding some Solutions | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 21}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Finding some Solutions</h1>
+
+
+
+
+<main id="main-content">
+
+<p>In this chapter we go to work finding solutions to
+some important differential equations, using for this
+purpose the processes shown in the preceding chapters.</p>
+
+
+<p>The beginner, who now knows how easy most of
+those processes are in themselves, will here begin to
+realize that integration is <em>an art</em>. As in all arts, so
+in this, facility can be acquired only by diligent and
+regular practice. He who would attain that facility
+must work out examples, and more examples, and yet
+more examples, such as are found abundantly in all
+the regular treatises on the Calculus. Our purpose
+here must be to afford the briefest introduction to
+serious work.</p>
+
+
+
+<hr>
+
+<p><em>Example (1.)</em></p>
+
+<p>Find the solution of the differential
+equation</p>
+
+<p id="8d2c2859-7cee-44c6-a6a5-f94e9f639190" class="latex-block">\[
+ay + b \frac{dy}{dx} = 0.
+\]</p>
+
+
+<p>Transposing we have</p>
+
+<p id="61896392-5578-46a8-8c36-cc6771b44c3a" class="latex-block">\[
+b \frac{dy}{dx} = -ay.
+\]</p>
+
+
+
+<p>Now the mere inspection of this relation tells us
+that we have got to do with a case in which $\dfrac{dy}{dx}$ is
+proportional to $y$. If we think of the curve which
+will represent $y$ as a function of $x$, it will be such
+that its slope at any point will be proportional to
+the ordinate at that point, and will be a negative
+slope if $y$ is positive. So obviously the curve will
+be a die-away curve, and the solution will
+contain $\epsilon^{-x}$ as a factor. But, without presuming on
+this bit of sagacity, let us go to work.</p>
+
+
+<p>As both $y$ and $dy$ occur in the equation and on
+opposite sides, we can do nothing until we get both
+$y$ and $dy$ to one side, and $dx$ to the other. To do
+this, we must split our usually inseparable companions
+$dy$ and $dx$ from one another.</p>
+
+<p id="1501df18-ddb8-430c-a24c-b837f1f55e9f" class="latex-block">\[
+\frac{dy}{y} = - \frac{a}{b}\, dx.
+\]</p>
+
+
+<p>Having done the deed, we now can see that both
+sides have got into a shape that is integrable, because
+we recognize $\dfrac{dy}{y}$, or $\dfrac{1}{y}\, dy$, as a differential that we
+have met with (<a href="14.html#expolo">here</a>) when differentiating logarithms.
+So we may at once write down the instructions to
+integrate,</p>
+
+<p id="5fc262e7-e000-484c-be96-28e723736806" class="latex-block">\[
+\int \frac{dy}{y} = \int -\frac{a}{b}\, dx
+\]</p>
+
+<p>and doing the two integrations, we have:</p>
+
+<p id="7c8c8093-0110-4979-b8c9-4290e3cc717f" class="latex-block">\[
+\log_\epsilon y = -\frac{a}{b} x + \log_\epsilon C
+\]</p>
+
+<p>where $\log_\epsilon C$ is the yet undetermined constant
+of
+integration. Then, delogarizing, we get:</p>
+
+<p id="4a44052f-2c13-4fbe-a8c2-bc671bc3b280" class="latex-block">\[
+y = C \epsilon^{-\frac{a}{b} x}
+\]</p>
+
+<p>which is <em>the solution</em> required*. Now, this solution
+looks quite unlike the original differential equation
+from which it was constructed: yet to an expert
+mathematician they both convey the same information
+as to the way in which $y$ depends on $x$.</p>
+
+
+<p><note>*We may write down any form of constant as the “constant of
+  integration,” and the form $\log_\epsilon C$ is adopted here by preference,
+  because the other terms in this line of equation are, or are treated
+  as logarithms; and it saves complications afterward if the added
+  constant be <em>of the same kind</em>.</note></p>
+
+
+<p>Now, as to the $C$, its meaning depends on the
+initial value of $y$. For if we put $x = 0$ in order to
+see what value $y$ then has, we find that this makes
+$y = C \epsilon^{-0}$; and as $\epsilon^{-0} = 1$ we see that $C$ is nothing else
+than the particular value*
+ of $y$ at starting. This we
+may call $y_0$, and so write the solution as</p>
+
+<p id="543546f5-2e9a-4e90-b9d2-e6b9ca5ebe7b" class="latex-block">\[
+y = y_0 \epsilon^{-\frac{a}{b} x}
+\]</p>
+
+<p><note>*Compare what was said about the “constant of integration,”
+  with reference to <a href="17.html#figure48">Figure 48</a> on <a href="17.html#constant">here</a>, and <a href="17.html#figure51">Figure 51</a>.</note></p>
+
+
+<hr>
+
+
+<p><em>Example (2.)</em></p>
+
+
+<p>Let us take as an example to solve</p>
+
+<p id="8c9a8a95-c301-4ca8-8017-8161d7a0bcc5" class="latex-block">\[
+ay + b \frac{dy}{dx} = g
+\]</p>
+
+<p>where $g$ is a constant. Again, inspecting the equation
+will suggest, (1) that somehow or other $\epsilon^x$ will come
+into the solution, and (2) that if at any part of the
+
+curve $y$ becomes either a maximum or a minimum, so
+that $\dfrac{dy}{dx} = 0$, then $y$ will have the value $= \dfrac{g}{a}$. But let
+us go to work as before, separating the differentials
+and trying to transform the thing into some integrable
+shape.</p>
+
+<p id="4d0c3a5b-6038-465d-be74-2743f159a9ee" class="latex-block">\begin{align*}
+b\frac{dy}{dx}           &= g -ay; \\
+\frac{dy}{dx}            &= \frac{a}{b}\left(\frac{g}{a}-y\right); \\
+\frac{dy}{y-\dfrac{g}{a}} &= -\frac{a}{b}\, dx.
+\end{align*}</p>
+
+
+
+
+<p>Now we have done our best to get nothing but $y$ and $dy$
+on one side, and nothing but $dx$ on the other.
+But is the result on the left side integrable?</p>
+
+
+<p>It is of the same form as the result on <a href="14.html#differlog">here</a>; so,
+writing the instructions to integrate, we have:</p>
+
+<p id="d3db2242-3fd6-468d-a19e-2487fe11fff5" class="latex-block">\[
+\int{\frac{dy}{y-\dfrac{g}{a}}} = - \int{\frac{a}{b}\, dx};
+\]</p>
+
+<p>and, doing the integration, and adding the appropriate
+constant,</p>
+
+<p id="96b30e62-5e63-4390-8edf-ba3659296fbc" class="latex-block">\begin{align*}
+\log_\epsilon\left(y-\frac{g}{a}\right) &= -\frac{a}{b}x + \log_\epsilon C; \\
+ y-\frac{g}{a} &= C\epsilon^{-\frac{a}{b}x}; \\
+ y &= \frac{g}{a} + C\epsilon^{-\frac{a}{b}x},
+\end{align*}</p>
+
+<p>which is <em>the solution</em>.</p>
+
+
+
+<p>If the condition is laid down that $y = 0$ when $x = 0$
+we can find $C$; for then the exponential becomes $= 1$;
+and we have</p>
+
+<p id="50e6d146-2647-42d9-83e2-c0b193885782" class="latex-block">\begin{align*}
+0 &= \frac{g}{a} + C, \\
+C &= -\frac{g}{a}
+\end{align*}</p>
+
+
+
+
+<p>Putting in this value, the solution becomes</p>
+
+<p id="d43ca4d8-11d5-460c-be1c-30e4102cde24" class="latex-block">\[
+y = \frac{g}{a} (1-\epsilon^{-\frac{a}{b} x})
+\]</p>
+
+
+<p>But further, if $x$ grows indefinitely, $y$ will grow to
+a maximum; for when $x=\infty$, the exponential $= 0$,
+giving $y_{\text{max.}} = \dfrac{g}{a}$. Substituting this, we get finally</p>
+
+<p id="248522a3-e737-4a63-be1e-16bae30ac556" class="latex-block">\[
+y = y_{\text{max.}}(1-\epsilon^{-\frac{a}{b} x})
+\]</p>
+
+
+<p>This result is also of importance in physical science.</p>
+
+
+
+<hr>
+
+<h3>Example (3.)</h3>
+
+<p>Let</p>
+
+<p id="aa8383d5-baf3-4bab-ad32-9db8c7d19138" class="latex-block">\[
+ay+b\frac{dy}{dt} = g · \sin 2\pi nt  
+\]</p>
+
+<p>We shall find this much less tractable than the
+preceding. First divide through by $b$.</p>
+
+<p id="1fb66e87-20aa-4f3e-a81f-2bc5383ade5f" class="latex-block">\[
+\frac{dy}{dt} + \frac{a}{b}y = \frac{g}{b} \sin 2\pi nt.
+\]</p>
+
+
+<p>Now, as it stands, the left side is not integrable.
+But it can be made so by the artifice–and this is
+
+where skill and practice suggest a plan–of multiplying
+all the terms by $\epsilon^{\frac{a}{b} t}$, giving us:</p>
+
+<p id="f5794786-c375-42a6-8a61-1d542d92b5d3" class="latex-block">\[
+\frac{dy}{dt} \epsilon^{\frac{a}{b} t} + \frac{a}{b} y \epsilon^{\frac{a}{b} t} = \frac{g}{b} \epsilon^{\frac{a}{b} t} · \sin 2 \pi nt,
+\]</p>
+
+<p>which is the same as</p>
+
+<p id="2ea8de4c-eb52-4b40-8194-83ad7ea2ad8f" class="latex-block">\[
+\frac{dy}{dt} \epsilon^{\frac{a}{b} t} + y \frac{d(\epsilon^{\frac{a}{b} t})}{dt} = \frac{g}{b} \epsilon^{\frac{a}{b} t} · \sin 2 \pi nt;
+\]</p>
+
+<p>and this being a perfect differential may be integrated
+thus:–since, if  ,</p>
+
+<p id="9bc5c31b-dd04-4a8e-ba97-854fc68df822" class="latex-block">\begin{align*}
+u &= y\epsilon^{\frac{a}{b} t} \\
+\dfrac{du}{dt} &= \dfrac{dy}{dt} \epsilon^{\frac{a}{b} t} + y \dfrac{d(\epsilon^{\frac{a}{b} t})}{dt}
+\end{align*}</p>
+
+<p id="15006e0a-eaef-40e8-9be0-2ec29d1bf50f" class="latex-block">\begin{align*}
+  y \epsilon^{\frac{a}{b} t}
+  &= \frac{g}{b} \int \epsilon^{\frac{a}{b} t} · \sin 2 \pi nt · dt + C, \\
+y &= \frac{g}{b} \epsilon^{-\frac{a}{b} t}
+     \int \epsilon^{ \frac{a}{b} t} · \sin 2\pi nt · dt
+       + C\epsilon^{-\frac{a}{b} t}.
+\tag*{[A]}
+\end{align*}</p>
+
+
+
+
+<p>The last term is obviously a term which will die
+out as $t$ increases, and may be omitted. The trouble
+now comes in to find the integral that appears as a
+factor. To tackle this we resort to the device (see
+<a href="20.html#intparts">here</a>) of integration by parts, the general formula for
+which is $\int u dv = uv - \int v du$. For this purpose write</p>
+
+<p id="0255db0d-bb08-4558-be43-953747a66940" class="latex-block">\begin{align*}
+&\left\{
+\begin{aligned}
+u &= \epsilon^{\frac{a}{b} t}; \\
+dv &= \sin 2\pi nt · dt.
+\end{aligned}
+\right.
+\end{align*}</p>
+
+<p>We shall then have</p>
+
+<p id="7d7b0d43-2e55-4299-9a65-aa93fbee0885" class="latex-block">\begin{align*}
+&\left\{
+\begin{aligned}
+du &= \epsilon^{\frac{a}{b} t} × \frac{a}{b}\, dt; \\
+v &= - \frac{1}{2\pi n} \cos 2\pi nt.
+\end{aligned}
+\right.
+\end{align*}</p>
+
+
+
+
+
+<p>Inserting these, the integral in question becomes:</p>
+
+<p id="ce6b91b8-5c5c-4ba7-b3f9-dc3532754bcc" class="latex-block">\begin{align*}
+\int \epsilon^{\frac{a}{b} t} &{} · \sin 2 \pi n t · dt \\
+&= -\frac{1}{2 \pi n} · \epsilon^{\frac{a}{b} t} · \cos 2 \pi nt
+   -\int -\frac{1}{2\pi n} \cos 2 \pi nt · \epsilon^{\frac{a}{b} t} · \frac{a}{b}\, dt \\
+&= -\frac{1}{2 \pi n} \epsilon^{\frac{a}{b} t} \cos 2 \pi nt
+   +\frac{a}{2 \pi nb} \int \epsilon^{\frac{a}{b} t} · \cos 2 \pi nt · dt.
+\tag*{[B]}
+\end{align*}</p>
+
+
+
+
+<p>The last integral is still irreducible. To evade the
+difficulty, repeat the integration by parts of the left
+side, but treating it in the reverse way by writing:</p>
+
+<p id="5bf66b3a-f6d2-4b37-a1d0-66d9b29c7631" class="latex-block">\begin{align*}
+&\left\{
+\begin{aligned}
+u &= \sin 2 \pi n t ; \\
+dv &= \epsilon^{\frac{a}{b} t} · dt;
+\end{aligned}
+\right.
+\end{align*}</p>
+
+<p>whence</p>
+
+<p id="5f0d43a1-701c-4a18-90f9-6f25af7edde9" class="latex-block">\begin{align*}
+&\left\{
+  \begin{aligned}
+  du &= 2 \pi n · \cos 2 \pi n t · dt; \\
+ v &= \frac{b}{a} \epsilon ^{\frac{a}{b} t}
+\end{aligned}
+\right.
+\end{align*}</p>
+
+
+
+
+<p>Inserting these, we get</p>
+
+<p id="4e7b74fd-c353-4708-a281-b536163b04ff" class="latex-block">\begin{align*}
+\int \epsilon^{\frac{a}{b} t} &{} · \sin 2 \pi n t · dt\\
+&= \frac{b}{a} · \epsilon^{\frac{a}{b} t} · \sin 2 \pi n t -
+   \frac{2 \pi n b}{a} \int \epsilon^{\frac{a}{b} t} · \cos 2 \pi n t · dt. \tag*{[C]}
+\end{align*}</p>
+
+
+
+
+<p>Noting that the final intractable integral in [C] is
+the same as that in [B], we may eliminate it, by
+multiplying [B] by $\dfrac{2 \pi nb}{a}$, and multiplying [C] by
+$\dfrac{a}{2 \pi nb}$, and adding them.</p>
+
+
+
+<p>The result, when cleared down, is:</p>
+
+<p id="acc71536-3273-45ab-ae6a-ced58a1a34d1" class="latex-block">\begin{align*}
+\int \epsilon^{\frac{a}{b} t} · \sin 2 \pi n t · dt
+  &= \epsilon^{\frac{a}{b} t} \left\{\frac{ ab · \sin 2 \pi nt - 2 \pi n b^2 · \cos 2 \pi n t}{ a^2 + 4 \pi^2 n^2 b^2 } \right\}
+\tag*{[D]} &\\
+\end{align*}</p>
+
+<p>Inserting this value in [A], we get</p>
+
+<p id="7b349afe-55ba-48e2-b4e1-11df38156f62" class="latex-block">\begin{align*}
+y &= g \left\{\frac{ a · \sin 2 \pi n t - 2 \pi n b · \cos 2 \pi nt}{ a^2 + 4 \pi^2  n^2 b^2}\right\}. &
+\end{align*}</p>
+
+
+
+
+<p>To simplify still further, let us imagine an angle $\phi$
+such that $\tan \phi = \dfrac{2 \pi n b}{ a}$.
+   Then</p>
+
+<p id="8747776c-133f-4150-9fc5-ce8d64947c6f" class="latex-block">\[
+\sin \phi = \frac{2 \pi nb}{\sqrt{a^2 + 4 \pi^2 n^2 b^2}},
+\]</p>
+
+<p>and</p>
+
+<p id="aa73819c-3561-4ff5-936b-306328f78620" class="latex-block">\[
+\cos \phi = \frac{a}{\sqrt{a^2 + 4 \pi^2 n^2 b^2}}.  \\
+\]</p>
+
+<p>Substituting these, we get:</p>
+
+<p id="6b145330-4eee-424f-bd5f-54c8f015a7e8" class="latex-block">\[
+y = g \frac{\cos \phi · \sin 2 \pi nt
+  - \sin \phi · \cos 2 \pi nt}{\sqrt{a^2 + 4 \pi^2 n^2 b^2}}, \\
+\]</p>
+
+<p>which may be written</p>
+
+<p id="2e6c1701-71d9-454d-9f51-0a530e09811f" class="latex-block">\[
+y = g \frac{\sin(2 \pi nt - \phi)}{\sqrt{a^2 + 4 \pi^2 n^2 b^2}},
+\]</p>
+
+<p>which is <em>the solution  desired.</em></p>
+
+
+
+<p>This is indeed none other than the equation of an
+alternating electric current, where $g$ represents the
+amplitude of the electromotive force, $n$ the frequency,
+$a$ the resistance, $b$ the coefficient of self-induction of
+the circuit, and $\phi$ is an angle of lag.</p>
+
+
+
+<hr>
+
+
+
+<p><em>Example (4.)</em>
+
+   Suppose that
+$M\, dx + N\, dy = 0.$</p>
+
+
+
+<p>We could integrate this expression directly, if $M$
+were a function of $x$ only, and $N$ a function of $y$
+only; but, if both $M$ and $N$ are functions that depend
+on both $x$ and $y$, how are we to integrate it? Is it
+itself an exact differential? That is: have $M$ and $N$
+each been formed by partial differentiation from some
+common function $U$, or not? If they have, then</p>
+
+<p id="79c31cc5-ac27-4975-ad97-89405be37285" class="latex-block">\[
+\left\{
+  \begin{aligned}
+ \frac{\partial U}{\partial x} = M, \\
+ \frac{\partial U}{\partial y} = N.
+  \end{aligned}
+\right.
+\]</p>
+
+<p>And if such a common function exists, then</p>
+
+<p id="ad2064b9-531b-4c2d-9535-4efdbb052fc4" class="latex-block">\[
+\frac{\partial U}{\partial x}\, dx + \frac{\partial U}{\partial y}\, dy
+\]</p>
+
+<p>is an exact differential (compare <a href="16.html#partialdiff">here</a>).</p>
+
+
+<p>Now the test of the matter is this. If the expression
+is an exact differential, it must be true that</p>
+
+<p id="7c2d3b1d-27a6-473a-aeb4-8ca2debb429e" class="latex-block">\begin{align*}
+\frac{dM}{dy} &= \frac{dN}{dx}; \\
+\frac{d(dU)}{dx\, dy} &= \frac{d(dU)}{dy\, dx},\\
+\end{align*}</p>
+
+<p>which is necessarily true.</p>
+
+
+<p>Take as an illustration the equation</p>
+
+<p id="80dc3fbd-4806-491f-ac4f-53862eb3c46d" class="latex-block">\[
+(1 + 3 xy)\, dx + x^2\, dy = 0.
+\]</p>
+
+
+<p>Is this an exact differential or not? Apply the
+test.</p>
+
+<p id="88c1e51b-52b7-4793-95f9-befa0ffd74ad" class="latex-block">\[
+\left\{
+  \begin{aligned}
+ \frac{d(1 + 3xy)}{dy}=3x, \\
+
+  \dfrac{d(x^2)}{dx} = 2x,
+
+  \end{aligned}
+\right.
+\]</p>
+
+<p>which do not agree. Therefore, it is not an exact
+differential, and the two functions $1+3xy$ and $x^2$
+have not come from a common original function.</p>
+
+
+<p>It is possible in such cases to discover, however, <em>an
+integrating factor</em>, that is to say, a factor such that
+if both are multiplied by this factor, the expression
+will become an exact differential. There is no one
+rule for discovering such an integrating factor; but
+experience will usually suggest one. In the present
+instance $2x$ will act as such. Multiplying by $2x$, we
+get</p>
+
+<p id="134bc83d-b57a-43be-a65d-391d3f5e0760" class="latex-block">\[
+(2x + 6x^2y)\, dx + 2x^3\, dy = 0.
+\]</p>
+
+
+<p>Now apply the test to this.</p>
+
+<p id="a7d9cef7-1d7b-43ea-9e7f-bcd609cdec6b" class="latex-block">\[
+\left\{
+  \begin{aligned}
+ \frac{d(2x + 6x^2y)}{dy}=6x^2, \\
+ \dfrac{d(2x^3)}{dx} = 6x^2,
+  \end{aligned}
+\right.
+\]</p>
+
+<p>which agrees. Hence this is an exact differential, and
+may be integrated. Now, if $w = 2x^3y$,</p>
+
+<p id="c3bf048a-5d9d-4b67-a545-68c1ce680a27" class="latex-block">\[
+dw=6x^2y\, dx + 2x^3\, dy.
+\]</p>
+
+<p>Hence</p>
+
+<p id="24df5061-a580-42f3-b280-7af3c466b6df" class="latex-block">\[
+\int 6x^2y\, dx + \int 2x^3\, dy=w=2x^3y;
+\]</p>
+
+<p>so that we get</p>
+
+<p id="1a72dc55-e115-447d-b9ac-e7a94fefe71d" class="latex-block">\[
+ U = x^2 + 2x^3y + C.
+\]</p>
+
+
+
+
+<hr>
+<em>Example (5.)</em></p>
+
+<p id="6dff95f8-f553-4ac3-86ab-f3a9f351833e" class="latex-block">\[
+\dfrac{d^2 y}{dt^2} + n^2 y = 0
+\]</p>
+
+<p>In this case we have a differential equation of the
+second degree, in which $y$ appears in the form of
+a second differential coefficient, as well as in person.</p>
+
+
+<p>Transposing, we have $$.</p>
+
+<p id="e37b79cf-d84d-4969-bf0b-a7a6fe0bc1a3" class="latex-block">\[
+\dfrac{d^2 y}{dt^2} = - n^2 y  
+\]</p>
+
+<p>It appears from this that we have to do with a
+function such that its second differential coefficient is
+proportional to itself, but with reversed sign. In
+Chapter XV. we found that there was such a function–namely,
+the <em>sine</em> (or the <em>cosine</em> also) which
+possessed this property. So, without further ado,
+we may infer that the solution will be of the form
+$y = A \sin (pt + q)$. However, let us go to work.</p>
+
+
+<p>Multiply both sides of the original equation by $2\dfrac{dy}{dt}$
+and integrate, giving us</p>
+
+<p id="e37b79cf-d84d-4969-bf0b-a7a6fe0bc1a3" class="latex-block">\[
+2\dfrac{d^2 y}{dt^2}\, \dfrac{dy}{dt} + 2x^2 y \dfrac{dy}{dt} = 0
+\[]</p>
+
+<p>and, as</p>
+
+<p id="9348ac08-3246-47cc-89bd-1d7cf56073dd" class="latex-block">\begin{align*}
+2 \frac{d^2y}{dt^2}\, \frac{dy}{dt}
+  &= \frac{d \left(\dfrac{dy}{dt}\right)^2}{dt}, \\
+\left(\frac{dy}{dt}\right)^2 + n^2 (y^2-C^2) &= 0,
+\end{align*}</p>
+
+<p>$C$ being a constant. Then, taking the square roots,</p>
+
+<p id="8fa52965-07c7-470a-87a1-129f957ee8e1" class="latex-block">\begin{align*}
+\frac{dy}{dt} &= -n \sqrt{ y^2 - C^2}\\
+\frac{dy}{\sqrt{C^2 - y^2}} &= n · dt.
+\end{align*}</p>
+
+
+<p>But it can be shown that (see <a href="15.html#intex3">here</a>)</p>
+
+<p id="34494bd9-00e0-4bdd-b6ce-6fa7de4a9503" class="latex-block">\[
+\frac{1}{\sqrt{C^2 - y^2}} = \frac{d (\arcsin \dfrac{y}{C})}{dy};
+\]</p>
+
+<p>whence, passing from angles to sines,</p>
+
+<p id="e9752767-b1ea-434f-9345-79dbf4eba50a" class="latex-block">\begin{align*}
+\arcsin \frac{y}{C} &= nt + C_1 \\
+y &= C \sin (nt + C_1),
+\end{align*}</p>
+
+<p>where $C_1$ is a constant angle that comes in by integration.</p>
+
+
+<p>Or, preferably, this may be written</p>
+
+<p id="09494515-0822-497f-b536-28116d999d50" class="latex-block">\[
+y = A \sin nt + B \cos nt,
+\]</p>
+
+<p>which is the solution.</p>
+
+<hr>
+
+<h3>Example (6.)</h3>
+
+<p id="19fdc248-fe84-4674-96d6-a3e75a885b4b" class="latex-block">\[
+\dfrac{d^2 y}{dt^2} - n^2 y = 0
+\]</p>
+
+
+<p>Here we have obviously to deal with a function $y$
+which is such that its second differential coefficient is
+proportional to itself. The only function we know
+that has this property is the exponential function
+(see <a href="14.html#unchanged">here</a>), and we may be certain therefore that the
+solution of the equation will be of that form.</p>
+
+
+<p>Proceeding as before, by multiplying through by
+$2 \dfrac{dy}{dx}$, and integrating, we get,
+
+</p class="latex-block">
+2\dfrac{d^2 y}{dx^2}\, \dfrac{dy}{dx} - 2x^2 y \dfrac{dy}{dx}=0
+<p>\[
+  
+\]</p>
+
+<p>and, as</p>
+
+<p id="217c201f-daef-4a3b-96d4-b8013fe61747" class="latex-block">\begin{align*}
+2\frac{d^2 y}{dx^2}\, \frac{dy}{dx}
+  &= \frac{d \left(\dfrac{dy}{dx}\right)^2}{dx}, \\
+\left(\frac{dy}{dx}\right)^2 - n^2 (y^2 + c^2) &= 0, \\
+\frac{dy}{dx} - n \sqrt{y^2 + c^2} &= 0,
+\end{align*}</p>
+
+<p>where $c$ is a constant, and $$.</p>
+
+<p id="bc26d4fb-ceeb-4915-976a-f40ca107aab7" class="latex-block">\[
+\dfrac{dy}{\sqrt{y^2 + c^2}} = n dx  
+\]</p>
+
+<p>Now, if</p>
+
+<p id="cec60670-0d75-4f94-b8b8-d196e3c4d3da" class="latex-block">\begin{align*}
+\quad w &= \log_\epsilon ( y+ \sqrt{y^2+ c^2}) \\
+ &= \log_\epsilon u,\\
+\frac{dw}{du} &= \frac{1}{u}, \\
+\frac{du}{dy} &= 1 + \frac{y}{\sqrt{y^2 + c^2}} \\
+ &= \frac{y + \sqrt{ y^2 + c^2}}{\sqrt{y^2 + c^2}}
+\end{align*}</p>
+
+<p>and</p>
+
+<p id="f00010c0-a777-4122-8dc1-8a8c9fe6653e" class="latex-block">\[
+ \frac{dw}{dy} = \frac{1}{\sqrt{ y^2 + c^2}}.
+\]</p>
+
+
+<p>Hence, integrating, this gives us</p>
+
+<p id="cc450d28-c9a8-4720-b11f-a9f4952adbfe" class="latex-block">\begin{align*}
+\log_\epsilon (y + \sqrt{y^2 + c^2} ) &= nx + \log_\epsilon C, \\
+y + \sqrt{y^2 + c^2} &= C \epsilon^{nx}.
+\tag*{(1)}  \\
+\end{align*}</p>
+
+<p>Now</p>
+
+<p id="58e2547d-c25b-4441-821a-4eceda6f22e1" class="latex-block">\begin{align*}
+( y + \sqrt{y^2 + c^2} ) × ( -y + \sqrt{y^2 + c^2} ) &= c^2 ;    \\
+-y + \sqrt{y^2 + c^2} &= \dfrac{c^2}{C} \epsilon^{-nx}.
+\tag*{(2)}
+\end{align*}</p>
+
+
+
+<p>Subtracting (2) from (1) and dividing by $2$, we
+then have</p>
+
+<p id="18d4f92d-bcaf-4f1b-8060-71c2a7a06533" class="latex-block">\[
+y = \frac{1}{2} C \epsilon^{nx} - \frac{1}{2}\, \frac{c^2}{C} \epsilon^{-nx},
+\]</p>
+
+<p>which is more conveniently written</p>
+
+<p id="fe824a15-3c0a-465d-a333-1fa991f0cf44" class="latex-block">\[
+y = A \epsilon^{nx} + B \epsilon^{-nx}.
+\]</p>
+
+<p>Or, the solution, which at first sight does not look
+as if it had anything to do with the original equation,
+shows that $y$ consists of two terms, one of which
+grows logarithmically as $x$ increases, and of a second
+term which dies away as $x$ increases.</p>
+
+
+
+<hr>
+
+<p><em>Example (7.)</em></p>
+
+<p>Let</p>
+
+<p id="725d8d7b-725a-4554-89b5-1f05cb1de2a9" class="latex-block">\begin{align*}
+b \frac{d^2y}{dt^2} + a \frac{dy}{dt} + gy &= 0.
+\end{align*}</p>
+
+
+
+
+<p>Examination of this expression will show that, if
+$b = 0$, it has the form of Example 1, the solution of
+which was a negative exponential. On the other
+hand, if $a = 0$, its form becomes the same as that of
+Example 6, the solution of which is the sum of a
+positive and a negative exponential. It is therefore
+not very surprising to find that the solution of the
+present example is</p>
+
+<p id="cecd1425-a851-47b4-90bd-29c5ffe70dce" class="latex-block">\begin{align*}
+y &= (\epsilon^{-mt})(A \epsilon^{nt} + B \epsilon^{-nt}), \\
+m &= \frac{a}{2b} \\
+n &= \sqrt{\frac{a^2}{4b^2}} - \frac{g}{b}.
+\end{align*}</p>
+
+
+
+
+<p>The steps by which this solution is reached are not
+given here; they may be found in advanced treatises.</p>
+
+
+
+<hr>
+
+
+
+<p><em>Example (8.)</em></p>
+
+<p id="85272fba-ac23-46eb-a986-6c3c088517ee" class="latex-block">\[
+\frac{d^2y}{dt^2} = a^2 \frac{d^2y}{dx^2}.
+\]</p>
+
+
+<p>It was seen (<a href="9.html#Example4">here</a>) that this equation was derived
+from the original</p>
+
+<p id="8b646631-63a1-49f3-afe4-825a8e0d963e" class="latex-block">\[
+y = F(x+at) + f(x-at),
+\]</p>
+
+<p>where $F$ and $f$ were any arbitrary functions of $t$.</p>
+
+
+<p>Another way of dealing with it is to transform it
+by a change of variables into</p>
+
+<p id="ca165f79-b1fc-4d6a-bd74-cee5da991cea" class="latex-block">\[
+\frac{d^2y}{du · dv} = 0,
+\]</p>
+
+<p>where $u = x + at$, and $v = x - at$, leading to the same
+general solution. If we consider a case in which
+$F$ vanishes, then we have simply</p>
+
+<p id="3df0ec79-0e03-496b-aff0-104916693534" class="latex-block">\[
+y = f(x-at);
+\]</p>
+
+<p>and this merely states that, at the time $t = 0$, $y$ is a
+particular function of $x$, and may be looked upon as
+denoting that the curve of the relation of $y$ to $x$ has
+a particular shape. Then any change in the value
+of $t$ is equivalent simply to an alteration in the origin
+from which $x$ is reckoned. That is to say, it indicates
+that, the form of the function being conserved, it is
+propagated along the $x$ direction with a uniform
+velocity $a$; so that whatever the value of the
+ordinate $y$ at any particular time $t_0$ at any particular
+point $x_0$, the same value of $y$ will appear at the subsequent
+time $t_1$ at a point further along, the abscissa
+of which is $x_0 + a(t_1 - t_0)$. In this case the simplified
+
+equation represents the propagation of a wave (of any
+form) at a uniform speed along the $x$ direction.</p>
+
+
+<p>If the differential equation had been written</p>
+
+<p id="0b37d8b1-3ef3-446c-9845-f93d6997ab7b" class="latex-block">\[
+m \frac{d^2y}{dt^2} = k\, \frac{d^2y}{dx^2},
+\]</p>
+
+<p>the solution would have been the same, but the
+velocity of propagation would have had the value</p>
+
+<p id="9a335729-6aba-4186-b70e-d46c9d07b8d2" class="latex-block">\[
+a = \sqrt{\frac{k}{m}}.
+\]</p>
+
+
+
+<hr>
+
+
+<p>You have now been personally conducted over the
+frontiers into the enchanted land. And in order that
+you may have a handy reference to the principal
+results, the author, in bidding you farewell, begs to
+present you with a passport in the shape of a convenient
+<a href="table.html">collection of standard forms</a>.
+In the middle column are set down a number of the
+functions which most commonly occur. The results
+of differentiating them are set down on the left; the
+results of integrating them are set down on the right.
+May you find them useful!</p>
+
+<br>
+<hr>
+</main>
+
+<a href="epilogue.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

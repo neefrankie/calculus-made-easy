@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Curvature of Curves | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 12}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Curvature of Curves</h1>
+
+
+
+
+
+<main id="main-content">
+
+<p>Returning to the process of successive differentiation,
+it may be asked: Why does anybody want to
+differentiate twice over? We know that when the
+variable quantities are space and time, by differentiating
+twice over we get the acceleration of a
+moving body, and that in the geometrical interpretation,
+as applied to curves, $\dfrac{dy}{dx}$ means the <em>slope</em> of the
+curve. But what can $\dfrac{d^2 y}{dx^2}$ mean in this case? Clearly
+it means the rate (per unit of length $x$) at which the
+slope is changing–in brief, it is <em>a measure of the
+curvature of the slope</em>.</p>
+
+
+<p><img src="33283-t/images/124a.pdf.png-1.png"></p>
+
+<p><img src="33283-t/images/124b.pdf.png-1.png"></p>
+
+
+<p>Suppose a slope constant, as in Figure 31.</p>
+
+
+<p>Here, $\dfrac{dy}{dx}$ is of constant value.</p>
+
+
+
+<p>Suppose, however, a case in which, like Figure 32,
+the slope itself is getting greater upwards, then
+$\dfrac{d\left(\dfrac{dy}{dx}\right)}{dx}$, that is, $\dfrac{d^2y}{dx^2}$, will be <em>positive</em>.</p>
+
+
+<p>If the slope is becoming less as you go to the right
+(as in <a href="10.html#figure14">Figure 14</a>), or as in Figure 33, then, even
+though the curve may be going upward, since the
+change is such as to diminish its slope, its $\dfrac{d^2y}{dx^2}$ will
+be <em>negative</em>.</p>
+
+
+<p><img src="33283-t/images/125a.pdf.png-1.png"></p>
+
+
+<p>It is now time to initiate you into another secret–how
+to tell whether the result that you get by
+“equating to zero” is a maximum or a minimum.
+The trick is this: After you have differentiated
+(so as to get the expression which you equate to
+zero), you then differentiate a second time, and look
+whether the result of the second differentiation is
+<em>positive</em> or <em>negative</em>. If $\dfrac{d^2y}{dx^2}$ comes out <em>positive</em>, then
+you know that the value of $y$ which you got was
+a <em>minimum</em>; but if $\dfrac{d^2y}{dx^2}$ comes out <em>negative</em>, then
+
+the value of $y$ which you got must be a <em>maximum</em>.
+That's the rule.</p>
+
+
+<p><img src="33283-t/images/126a.pdf.png-1.png"></p>
+
+<p><img src="33283-t/images/126b.pdf.png-1.png"></p>
+
+
+<p>The reason of it ought to be quite evident. Think
+of any curve that has a minimum point in it (like
+<a href="10.html#figure15">Figure 15</a>), or like Figure 34, where the point of
+minimum $y$ is marked $M$, and the curve is <em>concave</em>
+upwards. To the left of $M$ the slope is downward,
+that is, negative, and is getting less negative. To the
+right of $M$ the slope has become upward, and is
+getting more and more upward. Clearly the change
+of slope as the curve passes through $M$ is such that
+$\dfrac{d^2y}{dx^2}$ is <em>positive</em>, for its operation, as $x$ increases toward
+the right, is to convert a downward slope into an
+upward one.</p>
+
+
+<p>Similarly, consider any curve that has a maximum
+point in it (like <a href="10.html#figure16">Figure 16</a>), or like Figure 35, where
+the curve is <em>convex</em>, and the maximum point is
+marked $M$. In this case, as the curve passes through $M$
+from left to right, its upward slope is converted
+
+into a downward or negative slope, so that in this
+case the “slope of the slope” $\dfrac{d^2y}{dx^2}$ is <em>negative</em>.</p>
+
+
+<p>Go back now to the examples of the last chapter
+and verify in this way the conclusions arrived at as to
+whether in any particular case there is a maximum
+or a minimum. You will find below a few worked
+out examples.</p>
+
+
+
+<hr>
+
+
+<p>(1) Find the maximum or minimum of</p>
+
+<p id="851e7842-4092-4482-bc7d-f434ab57cb9a" class="latex-block">\begin{align*}
+\text{(a)}\quad y &= 4x^2-9x-6; \\
+\text{(b)}\quad y &= 6 + 9x-4x^2; \\
+\end{align*}</p>
+
+<p>and ascertain if it be a maximum or a minimum in each case.</p>
+
+<p>(a)</p>
+
+<p id="df71c94f-4e01-4696-97a1-09f80fb59cbe" class="latex-block">\begin{align*}
+\dfrac{dy}{dx}
+  &= 8x-9=0;\quad x=1\tfrac{1}{8}, y = -11.065.\\
+\dfrac{d^2y}{dx^2}
+  &= 8
+\end{align*}</p>
+
+<p>it is $+$; hence it is a minimum.</p>
+
+<p>(b)</p>
+
+<p id="f75e1c14-f9d4-4da9-9d3e-922f40f9f7ef" class="latex-block">\begin{align*}
+{\dfrac{dy}{dx}}
+  &= 9-8x=0;\quad x = 1\tfrac{1}{8}; y = +11.065.\\
+\dfrac{d^2y}{dx^2}
+  &= -8;
+\end{align*}</p>
+
+<p>it is $-$; hence it is a maximum.</p>
+
+
+
+<p>(2) Find the maxima and minima of the function
+$y = x^3-3x+16$.</p>
+
+<p id="3f1083c3-d88c-4f3a-97b3-891099bbb4ef" class="latex-block">\begin{align*}
+\dfrac{dy}{dx}
+  &= 3x^2 - 3 = 0;\quad x^2 = 1; x = ±1.\\
+
+\dfrac{d^2y}{dx^2}
+  &= 6x;
+\end{align*}</p>
+
+<p>for $x = 1$; it is $+$.</p>
+
+<p>hence $x=1$ corresponds to a minimum $y=14$. For
+$x=-1$ it is $-$; hence $x=-1$ corresponds to a maximum
+$y=+18$.</p>
+
+
+
+<p>(3) Find the maxima and minima of $y=\dfrac{x-1}{x^2+2}$.</p>
+
+<p id="0baa1e95-34e3-4764-a237-26b806659c32" class="latex-block">\begin{align*}
+\frac{dy}{dx} &= \frac{(x^2+2) × 1 - (x-1) × 2x}{(x^2+2)^2} \\
+  &= \frac{2x - x^2 + 2}{(x^2 + 2)^2} \\
+  &= 0;
+\end{align*}</p>
+
+<p>or $x^2 - 2x - 2 = 0$, whose solutions are $x =+2.73$ and
+$x=-0.73$.</p>
+
+<p id="d5978aaa-5575-4602-808d-ae532c10c1ea" class="latex-block">\begin{align*}
+\dfrac{d^2y}{dx^2}
+  &= - \frac{(x^2 + 2)^2 × (2x-2) - (x^2 - 2x - 2)(4x^3 + 8x)}{(x^2 + 2)^4} \\
+  &= - \frac{2x^5 - 6x^4 - 8x^3 - 8x^2 - 24x + 8}{(x^2 + 2)^4}.
+\end{align*}</p>
+
+
+
+
+<p>The denominator is always positive, so it is sufficient
+to ascertain the sign of the numerator.</p>
+
+
+<p>If we put $x = 2.73$, the numerator is negative; the
+maximum, $y = 0.183$.</p>
+
+
+<p>If we put $x=-0.73$, the numerator is positive; the
+minimum, $y=-0.683$.</p>
+
+
+<p>(4) The expense $C$ of handling the products of a
+certain factory varies with the weekly output $P$
+according to the relation $C = aP + \dfrac{b}{c+P} + d$, where
+$a$, $b$, $c$, $d$ are positive constants. For what output
+will the expense be least?</p>
+
+<p id="50721d4b-94c6-4858-9c77-9ceed2baa3bf" class="latex-block">\[
+\dfrac{dC}{dP} = a - \frac{b}{(c+P)^2} = 0
+\]</p>
+
+<p>for maximum or minimum;</p>
+
+<p>hence $a = \dfrac{b}{(c+P)^2}$ and $P = ±\sqrt{\dfrac{b}{a}} - c$.</p>
+
+
+<p>As the output cannot be negative, $P=+\sqrt{\dfrac{b}{a}} - c$.</p>
+
+<p>Now</p>
+
+<p id="cebc5e98-3223-4df0-b0b6-bcb4a35f4e15" class="latex-block">\begin{align*}
+\frac{d^2C}{dP^2} &= + \frac{b(2c + 2P)}{(c + P)^4},
+\end{align*}</p>
+
+<p>which is positive for all the values of $P$; hence
+$P = +\sqrt{\dfrac{b}{a}} - c$ corresponds to a minimum.</p>
+
+
+<p>(5) The total cost per hour $C$ of lighting a building
+with $N$ lamps of a certain kind is</p>
+
+<p id="0e7ed13e-9e12-446f-9bfa-3300ad84c189" class="latex-block">\[
+C = N\left(\frac{C_l}{t} + \frac{EPC_e}{1000}\right),
+\]</p>
+
+<p>where $E$ is the commercial efficiency (watts per candle),
+
+$P$ is the candle power of each lamp,<br>
+$t$ is the average life of each lamp in hours,<br>
+$C_l =$ cost of renewal in pence per hour of use,<br>
+$C_e =$ cost of energy per $1000$ watts per hour.<br></p>
+
+
+<p>Moreover, the relation connecting the average life
+of a lamp with the commercial efficiency at which it
+is run is approximately $t = mE^n$, where $m$ and $n$ are
+constants depending on the kind of lamp.</p>
+
+
+<p>Find the commercial efficiency for which the total
+cost of lighting will be least.</p>
+
+<p>We have</p>
+
+<p id="945c395d-522b-4acc-bcb7-6cdf4908dedf" class="latex-block">\begin{align*}
+C &= N\left(\frac{C_l}{m} E^{-n} + \frac{PC_e}{1000} E\right), \\
+\dfrac{dC}{dE}
+  &= \frac{PC_e}{1000} - \frac{nC_l}{m} E^{-(n+1)} = 0
+\end{align*}</p>
+
+<p>for maximum or minimum.</p>
+
+<p id="339ab378-8ba1-4d1a-8737-f7a17f6e55a4" class="latex-block">\begin{align*}
+E^{n+1} &= \frac{1000 × nC_l}{mPC_e} \\
+E &= \sqrt[n+1]{\frac{1000 × nC_l}{mPC_e}}.
+\end{align*}</p>
+
+
+
+<p>This is clearly for minimum, since</p>
+
+<p id="f298c88f-f2d7-4861-ae0d-e1fc6e2c1f11" class="latex-block">\[
+\frac{d^2C}{dE^2} = (n + 1) \frac{nC_l}{m} E^{-(n+2)},
+\]</p>
+
+<p>which is positive for a positive value of $E$.</p>
+
+
+<p>For a particular type of $16$ candle-power lamps,
+$C_l= 17$ pence, $C_e=5$ pence; and it was found that
+$m=10$ and $n=3.6$.</p>
+
+<p id="ba87e04f-b9a9-411e-a74b-957e39939d11" class="latex-block">\[
+E = \sqrt[4.6]{\frac{1000 × 3.6 × 17}{10 × 16 × 5}}
+  = 2.6\text{ watts per candle-power}.
+\]</p>
+
+
+
+<hr>
+
+<div class="exercises-section">
+<h3>Exercises X</h3> (You are advised to plot the graph
+of any numerical example.)
+
+(1) Find the maxima and minima of</p>
+
+<p id="0cff9d02-f2ac-4363-a82c-a29e30a4f385" class="latex-block">\[
+y = x^3 + x^2 - 10x + 8.
+\]</p>
+
+
+<p>(2) Given $y = \dfrac{b}{a}x - cx^2$, find expressions for $\dfrac{dy}{dx}$, and
+for $\dfrac{d^2y}{dx^2}$, also find the value of $x$ which makes $y$ a
+maximum or a minimum, and show whether it is
+maximum or minimum.</p>
+
+
+<p>(3) Find how many maxima and how many minima
+there are in the curve, the equation to which is</p>
+
+<p id="7082dcc7-bf8d-4a86-b400-a3a88556870b" class="latex-block">\[
+y = 1 - \frac{x^2}{2} + \frac{x^4}{24};
+\]</p>
+
+<p>and how many in that of which the equation is</p>
+
+<p id="09952d03-8aa8-4ae1-a063-8fbe0989f2f3" class="latex-block">\[
+y = 1 - \frac{x^2}{2} + \frac{x^4}{24} - \frac{x^6}{720}.
+\]</p>
+
+
+
+<p>(4) Find the maxima and minima of</p>
+
+<p id="2589b72d-d634-4094-9e78-3cdfb94faa0c" class="latex-block">\[
+y=2x+1+\frac{5}{x^2}.
+\]</p>
+
+
+<p>(5) Find the maxima and minima of</p>
+
+<p id="354ccfd9-bed1-4d6f-9326-e898ee322285" class="latex-block">\[
+y=\frac{3}{x^2+x+1}.
+\]</p>
+
+
+<p>(6) Find the maxima and minima of</p>
+
+<p id="c2853ff3-5991-4d99-b4b5-e7f9426e8073" class="latex-block">\[
+y=\frac{5x}{2+x^2}.
+\]</p>
+
+
+<p>(7) Find the maxima and minima of</p>
+
+<p id="5782e3d3-447e-48c2-821c-778a4edbc4d7" class="latex-block">\[
+y=\frac{3x}{x^2-3} + \frac{x}{2} + 5.
+\]</p>
+
+
+<p>(8) Divide a number $N$ into two parts in such a
+way that three times the square of one part plus
+twice the square of the other part shall be a
+minimum.</p>
+
+
+<p>(9) The efficiency $u$ of an electric generator at
+different values of output $x$ is expressed by the
+general equation:</p>
+
+<p id="1fd2361c-3408-4422-99be-69b40b6135a2" class="latex-block">\[
+u=\frac{x}{a+bx+cx^2};
+\]</p>
+
+<p>where $a$ is a constant depending chiefly on the energy
+losses in the iron and $c$ a constant depending chiefly
+on the resistance of the copper parts. Find an expression
+for that value of the output at which the
+efficiency will be a maximum.</p>
+
+
+
+<p>(10) Suppose it to be known that consumption of
+coal by a certain steamer may be represented by the
+formula $y = 0.3 + 0.001v^3$; where $y$ is the number of
+tons of coal burned per hour and $v$ is the speed
+expressed in nautical miles per hour. The cost of
+wages, interest on capital, and depreciation of that
+ship are together equal, per hour, to the cost of
+$1$ ton of coal. What speed will make the total cost
+of a voyage of $1000$ nautical miles a minimum?
+And, if coal costs $10$ shillings per ton, what will that
+minimum cost of the voyage amount to?</p>
+
+
+<p>(11) Find the maxima and minima of<a name="ex10"></a></p>
+
+<p id="e2929287-bb64-4256-8d5f-2a2d737a4e78" class="latex-block">\[
+y = ±\frac{x}{6}\sqrt{x(10-x)}.
+\]</p>
+
+
+<p>(12) Find the maxima and minima of</p>
+
+<p id="019d1a94-ac56-4997-86d2-78c14ce152c2" class="latex-block">\[
+y= 4x^3 - x^2 - 2x + 1.
+\]</p>
+
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)   Max.: $x = -2.19$, $y = 24.19$; min.:, $x = 1.52$, $y = -1.38$.</p>
+
+
+<p>(2)   $\dfrac{dy}{dx} = \dfrac{b}{a} - 2cx$; $\dfrac{d^2 y}{dx^2} = -2c$; $x = \dfrac{b}{2ac}$ (<em>a maximum</em>).</p>
+
+
+<p>(3)   (<em>a</em> ) One maximum and two minima.
+(<em>b</em> ) One maximum. ($x = 0$; other points unreal.)</p>
+
+
+<p>(4)   Min.: $x = 1.71$, $y = 6.14$.</p>
+
+
+<p>(5)   Max: $x = -.5$, $y = 4$.</p>
+
+
+<p>(6)   Max.: $x = 1.414$, $y = 1.7675$.
+Min.: $x = -1.414$, $y = 1.7675$.</p>
+
+
+<p>(7)   Max.: $x = -3.565$, $y = 2.12$.
+Min.: $x = +3.565$, $y = 7.88$.</p>
+
+
+<p>(8)   $0.4N$, $0.6N$.</p>
+
+
+<p>(9)   $x = \sqrt{\dfrac{a}{c}}$.</p>
+
+
+<p>(10)   Speed $8.66$ nautical miles per hour. Time taken $115.47$ hours.
+Minimum cost £$112$. $12$<em>s</em> .</p>
+
+
+<p>(11)   Max. and min. for $x = 7.5$, $y = ±5.414$. (See example
+no. 10, <a href="9.html#Example10">here</a>.)</p>
+
+
+<p>(12)   Min.: $x = \frac{1}{2}$, $y= 0.25$; max.: $x = - \frac{1}{3}$, $y= 1.408$.</p>
+</div>
+
+
+<br>
+<hr>
+</main>
+
+<a href="13.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

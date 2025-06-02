@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Simplest Cases | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 4}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Simplest Cases</h1>
+
+
+
+
+
+<main id="main-content">
+
+<p>Now let us see how, on first principles, we can
+differentiate some simple algebraical expression.</p>
+
+
+<h3>Case 1</h3>
+<p>Let us begin with the simple expression $y=x^2$.
+Now remember that the fundamental notion about
+the calculus is the idea of <em>growing</em>. Mathematicians
+call it <em>varying</em>. Now as $y$ and $x^2$ are equal to one
+another, it is clear that if $x$ grows, $x^2$ will also grow.
+And if $x^2$ grows, then $y$ will also grow. What we
+have got to find out is the proportion between the
+growing of $y$ and the growing of $x$. In other words
+our task is to find out the ratio between $dy$ and $dx$,
+or, in brief, to find the value of $\dfrac{dy}{dx}$.</p>
+
+
+<p>Let $x$, then, grow a little bit bigger and become
+$x + dx$; similarly, $y$ will grow a bit bigger and will
+become $y + dy$. Then, clearly, it will still be true
+that the enlarged $y$ will be equal to the square of the
+enlarged $x$. Writing this down, we have:</p>
+
+<p id="301ac44a-0167-4a53-9e5a-1936d26be4a6" class="latex-block">\begin{align*}
+y + dy &= (x + dx)^2.
+\end{align*}</p>
+
+<p>Doing the squaring we get:</p>
+
+<p id="24627a58-a187-4cfb-a881-c45b7f1bcfe6" class="latex-block">\begin{align*}
+y + dy &= x^2 + 2x · dx+(dx)^2.
+\end{align*}</p>
+
+
+
+
+
+<p>What does $(dx)^2$ mean? Remember that $dx$ meant
+a bit–a little bit–of $x$. Then $(dx)^2$ will mean a little
+bit of a little bit of $x$; that is, as explained above
+(<a href="2.html#smallness">here</a>), it is a small quantity of the second order
+of smallness. It may therefore be discarded as quite
+inconsiderable in comparison with the other terms.
+Leaving it out, we then have:<a name="diffexample"></a></p>
+
+<p id="8a842fb5-1840-495e-a782-c99a9b353973" class="latex-block">\begin{align*}
+y + dy = x^2 + 2x · dx.
+\end{align*}</p>
+
+<p>Now $y=x^2$; so let us subtract this from the equation
+and we have left</p>
+
+<p id=93248fef-ced6-4cc4-a183-0c14ef31cf00 class="latex-block">\begin{align*}
+dy = 2x · dx.
+\end{align*}</p>
+
+<p>Dividing across by $dx$, we find</p>
+
+<p id=438bd562-6d32-4057-9826-09fa308bb2f9 class="latex-block">\begin{align*}\;\\
+\frac{dy}{dx} = 2x.
+\end{align*}</p>
+
+
+
+
+<p>Now <em>this</em>*
+is what we set out to find. The ratio of
+the growing of $y$ to the growing of $x$ is, in the case
+before us, found to be $2x$.</p>
+
+<p><note>*<em>Note</em>–This ratio $\dfrac{dy}{dx}$ is the result of differentiating $y$ with
+  respect to $x$. Differentiating means finding the differential coefficient.
+  Suppose we had some other function of $x$, as, for
+  example, $u = 7x^2 + 3$. Then if we were told to differentiate this
+  with respect to $x$, we should have to find $\dfrac{du}{dx}$, or, what is the same
+  thing, $\dfrac{d(7x^2 + 3)}{dx}$. On the other hand, we may have a case in which
+  time was the independent variable (see <a href="3.html#indvar">here</a>), such as this:
+  $y = b + \frac{1}{2} at^2$. Then, if we were told to differentiate it, that means we
+  must find its differential coefficient with respect to $t$. So that then
+  our business would be to try to find $\dfrac{dy}{dt}$, that is, to find
+  $\dfrac{d(b + \frac{1}{2} at^2)}{dt}$.</note></p>
+
+
+<p><em>Numerical example.</em></p>
+<p>Suppose $x=100$ and $\therefore y=10,000$. Then let $x$ grow
+till it becomes $101$ (that is, let $dx=1$). Then the
+enlarged $y$ will be $101 × 101 = 10,201$. But if we agree
+that we may ignore small quantities of the second
+order, $1$ may be rejected as compared with $10,000$; so
+we may round off the enlarged $y$ to $10,200$. $y$ has
+grown from $10,000$ to $10,200$; the bit added on is $dy$,
+which is therefore $200$.</p>
+
+
+<p>$\dfrac{dy}{dx} = \dfrac{200}{1} = 200$. According to the algebra-working
+of the previous paragraph, we find $\dfrac{dy}{dx} = 2x$. And so
+it is; for $x=100$ and $2x=200$.</p>
+
+
+<p>But, you will say, we neglected a whole unit.</p>
+
+
+<p>Well, try again, making $dx$ a still smaller bit.</p>
+
+
+<p>Try $dx=\frac{1}{10}$. Then $x+dx=100.1$, and</p>
+
+<p id="0f3e8bb9-e01f-4fb1-b9fc-accec9aa5644" class="latex-block">\[
+(x+dx)^2 = 100.1 × 100.1 = 10,020.01.
+\]</p>
+
+
+<p>Now the last figure $1$ is only one-millionth part of
+the $10,000$, and is utterly negligible; so we may
+take $10,020$ without the little decimal at the end.
+And this makes $dy=20$; and $\dfrac{dy}{dx} = \dfrac{20}{0.1} = 200$, which
+is still the same as $2x$.</p>
+
+
+
+<h3>Case 2</h3>
+<p>Try differentiating $y = x^3$ in the same way.</p>
+
+
+<p>We let $y$ grow to $y+dy$, while $x$ grows to $x+dx$.</p>
+
+
+<p>Then we have</p>
+
+<p id="2db8eb2f-ba94-4f97-8dbd-f0426001ee5c" class="latex-block">\[
+y + dy = (x + dx)^3.
+\]</p>
+
+
+
+<p>Doing the cubing we obtain</p>
+
+<p id="742f0a04-5b7c-4183-9d55-ed356c0d24ff" class="latex-block">\[
+y + dy = x^3 + 3x^2 · dx + 3x(dx)^2+(dx)^3.
+\]</p>
+
+
+<p>Now we know that we may neglect small quantities
+of the second and third orders; since, when $dy$ and $dx$
+are both made indefinitely small, $(dx)^2$ and $(dx)^3$
+will become indefinitely smaller by comparison. So,
+regarding them as negligible, we have left:</p>
+
+<p id="c659897c-8fc4-4903-b522-98ae5b28029f" class="latex-block">\[
+y + dy=x^3+3x^2 · dx.
+\]</p>
+
+
+<p>But $y=x^3$; and, subtracting this, we have:</p>
+
+<p id="955ceea9-32a4-4e91-b280-3c29cca2489a" class="latex-block">\begin{align*}
+dy &= 3x^2 · dx, \\
+\frac{dy}{dx} &= 3x^2.
+\end{align*}</p>
+
+
+
+<h3>Case 3</h3>
+<p>Try differentiating $y=x^4$. Starting as before by
+letting both $y$ and $x$ grow a bit, we have:</p>
+
+<p id="16eb5cbb-834b-4d24-b41e-c9cd9b68b67c" class="latex-block">\begin{align*}
+y + dy &= (x+dx)^4.  \\
+\end{align*}</p>
+
+<p>Working out the raising to the fourth power, we get</p>
+
+<p id="a1665fd3-1569-42c2-ab36-7da70ef96959" class="latex-block">\begin{align*}
+y + dy &= x^4 + 4x^3\, dx + 6x^2(dx)^2 + 4x(dx)^3+(dx)^4.  \\
+\end{align*}</p>
+
+<p>Then striking out the terms containing all the
+higher powers of $dx$, as being negligible by comparison, we have</p>
+
+<p id="9d13f749-6299-4ed4-a563-96bf254f98b6" class="latex-block">\begin{align*}
+y + dy &= x^4+4x^3\, dx.  \\
+\end{align*}</p>
+
+<p>Subtracting the original $y=x^4$, we have left</p>
+
+<p id="724d5269-a5a1-4dee-8ccd-be1aebcdbe55" class="latex-block">\begin{align*}
+dy &= 4x^3\, dx, \\
+\frac{dy}{dx} &= 4x^3.
+\end{align*}</p>
+
+
+
+
+
+<hr>
+
+
+
+<p>Now all these cases are quite easy. Let us collect
+the results to see if we can infer any general rule.
+Put them in two columns, the values of $y$ in one
+and the corresponding values found for $\dfrac{dy}{dx}$ in the
+other: thus</p>
+
+<table>
+  <tr><th>$y$</th><th>$\frac{dy}{dx}$</th></tr>
+  <tr><td>$x^2$</td><td>$2x$</td></tr>
+  <tr><td>$x^3$</td><td>$3x^2$</td></tr>
+  <tr><td>$x^4$</td><td>$4x^3$</td></tr>
+</table>
+
+
+
+<p><a name="diffrule1"></a>
+Just look at these results: the operation of differentiating
+appears to have had the effect of diminishing
+the power of $x$ by $1$ (for example in the last case
+reducing $x^4$ to $x^3$), and at the same time multiplying
+by a number (the same number in fact which originally
+appeared as the power). Now, when you have once
+seen this, you might easily conjecture how the others
+will run. You would expect that differentiating $x^5$
+would give $5x^4$, or differentiating $x^6$ would give $6x^5$.
+If you hesitate, try one of these, and see whether
+the conjecture comes right.</p>
+
+
+<p>Try $y = x^5$.</p>
+
+<p>Then</p>
+
+<p id="6e462575-de28-445b-8344-00e334388ef2" class="latex-block">\begin{align*}
+y+dy &= (x+dx)^5 \\
+     &= x^5 + 5x^4\, dx + 10x^3(dx)^2  + 10x^2(dx)^3 \\
+     &\phantom{{}= x^5 + 5x^4\, dx} + 5x(dx)^4 + (dx)^5.
+\end{align*}</p>
+
+
+
+
+<p>Neglecting all the terms containing small quantities
+of the higher orders, we have left</p>
+
+<p id="70ae2e7e-70cf-44df-ac19-42281789ba62" class="latex-block">\[
+y + dy = x^5 + 5x^4\, dx
+\]</p>
+
+<p>and subtracting</p>
+
+<p id=40188c12-6fa1-4afd-b2f2-37f2d53a42f2 class="latex-block">\[
+y = x^5
+\]</p>
+
+<p>leaves us</p>
+
+<p id=39861e5f-5dfe-49b7-8ec1-b99d762325f0 class="latex-block">\[
+dy = 5x^4\, dx
+\]</p>
+
+<p>whence</p>
+
+<p id=dc1cff27-45f7-4a68-b688-2d13964db26e class="latex-block">\[
+\frac{dy}{dx} = 5x^4
+\]</p>
+
+<p>exactly as we supposed.</p>
+
+
+
+
+
+<hr>
+
+
+<p>Following out logically our observation, we should
+conclude that if we want to deal with any higher
+power,–call it $n$–we could tackle it in the same
+way.</p>
+
+<p>Let $y = x^n,$</p>
+<p>then, we should expect to find that</p>
+
+
+<p>$\frac{dy}{dx} = nx^{(n-1)}$.</p>
+
+
+<p>For example, let $n=8$, then $y=x^8$; and differentiating
+it would give $\dfrac{dy}{dx} = 8x^7$.</p>
+
+
+<p>And, indeed, the rule that differentiating $x^n$ gives as
+the result $nx^{n-1}$ is true for all cases where $n$ is a
+whole number and positive. [Expanding $(x + dx)^n$ by
+the binomial theorem will at once show this.] But
+the question whether it is true for cases where $n$
+has negative or fractional values requires further
+consideration.</p>
+
+
+<p><em>Case of a negative power.</em></p>
+<p>Let $y = x^{-2}$. Then proceed as before:</p>
+
+<p id="2f688930-0fbf-42d6-94c9-d8e5a26fe5bb" class="latex-block">\begin{align*}
+y+dy &= (x+dx)^{-2} \\
+     &= x^{-2} \left(1 + \frac{dx}{x}\right)^{-2}.
+\end{align*}</p>
+
+<p>Expanding this by the binomial theorem (see <a href="14.html#binomtheo">here</a>),
+we get</p>
+
+<p id="64267f09-0ca4-4e54-b7b2-0cf3f0511f23" class="latex-block">\begin{align*}
+&=x^{-2} \left[1 - \frac{2\, dx}{x} +
+    \frac{2(2+1)}{1×2} \left(\frac{dx}{x}\right)^2 -
+    \text{etc.}\right]  \\
+&=x^{-2} - 2x^{-3} · dx + 3x^{-4}(dx)^2 - 4x^{-5}(dx)^3 + \ldots \\
+\end{align*}</p>
+
+<p>So, neglecting the small quantities of higher orders
+of smallness, we have:</p>
+
+<p id="22ae9378-7a97-48b6-922f-68877df8def6" class="latex-block">\begin{align*}
+
+       y + dy &= x^{-2} - 2x^{-3} · dx.
+\end{align*}</p>
+
+<p>Subtracting the original $y = x^{-2}$, we find</p>
+
+<p id="0c35e288-fb03-4404-aa44-737cf5a99c8b" class="latex-block">\begin{align*}
+           dy &= -2x^{-3}dx,   \\
+\frac{dy}{dx} &= -2x^{-3}.
+\end{align*}</p>
+
+<p>And this is still in accordance with the rule inferred
+above.</p>
+
+
+<p><em>Case of a fractional power.</em></p>
+<p>Let $y = x^{\frac{1}{2}}$. Then, as before,</p>
+
+
+
+<p id="7c530498-a324-44c6-8ed8-754f97c5db36" class="latex-block">\begin{align*}
+y+dy &= (x+dx)^{\frac{1}{2}} = x^{\frac{1}{2}} (1 + \frac{dx}{x} )^{\frac{1}{2}} \\
+     &= \sqrt{x} + \frac{1}{2} \frac{dx}{\sqrt{x}} - \frac{1}{8}
+        \frac{(dx)^2}{x\sqrt{x}} + \text{terms with higher powers of $dx$.}
+\end{align*}</p>
+
+
+
+
+<p>Subtracting the original $y = x^{\frac{1}{2}}$, and neglecting higher
+powers we have left:</p>
+
+<p id="d4394889-3dfc-42a6-9b45-20e749c25cfa" class="latex-block">\[
+dy = \frac{1}{2} \frac{dx}{\sqrt{x}} = \frac{1}{2} x^{-\frac{1}{2}} · dx,
+\]</p>
+
+<p>and $\dfrac{dy}{dx} = \dfrac{1}{2} x^{-\frac{1}{2}}$. Agreeing with the general rule.</p>
+
+
+
+<p><em>Summary.</em> Let us see how far we have got. We
+have arrived at the following rule:<a name="multipow"></a> To differentiate $x^n$,
+multiply by the power and reduce the power by
+one, so giving us $nx^{n-1}$ as the result.</p>
+
+
+<p><a name="ex1"></a></p>
+<hr>
+
+
+
+<div class="exercises-section">
+<h3>Exercises I</h3>
+
+
+<p>Differentiate the following:</p>
+
+
+<p>(1) $y = x^{13}$</p>
+
+<p>(2) $y = x^{-\frac{3}{2}}$</p>
+
+<p>(3) $y = x^{2a}$</p>
+
+<p>(4) $u = t^{2.4}$</p>
+
+<p>(5) $z = \sqrt[3]{u}$</p>
+
+<p>(6) $y = \sqrt[3]{x^{-5}}$</p>
+
+<p>(7) $u = \sqrt[5]{\dfrac{1}{x^8}}$</p>
+
+<p>(8) $y = 2x^a$</p>
+
+<p>(9) $y = \sqrt[q]{x^3}$</p>
+
+<p>(10) $y = \sqrt[n]{\dfrac{1}{x^m}}$</p>
+
+
+
+<p><em>You have now learned how to differentiate powers
+of $x$. How easy it is!</em></p>
+
+<h3 class="answers">Answers</h3>
+
+<p>(1)   $\dfrac{dy}{dx} = 13x^{12}$.</p>
+
+<p>(2)   $\dfrac{dy}{dx} = - \dfrac{3}{2} x^{-\frac{5}{2}}$.</p>
+
+<p>(3)   $\dfrac{dy}{dx} = 2ax^{(2a-1)}$.</p>
+
+<p>(4)   $\dfrac{du}{dt} = 2.4t^{1.4}$.</p>
+
+<p>(5)   $\dfrac{dz}{du} = \dfrac{1}{3} u^{-\frac{2}{3}}$.</p>
+
+<p>(6)   $\dfrac{dy}{dx} = -\dfrac{5}{3}x^{-\frac{8}{3}}$.</p>
+
+<p>(7)   $\dfrac{du}{dx} = -\dfrac{8}{5}x^{-\frac{13}{5}}$.</p>
+
+<p>(8)   $\dfrac{dy}{dx} = 2ax^{a-1}$.</p>
+
+<p>(9)   $\dfrac{dy}{dx} = \dfrac{3}{q} x^{\frac{3-q}{q}}$.</p>
+
+<p>(10)   $\dfrac{dy}{dx} = -\dfrac{m}{n} x^{-\frac{m+n}{n}}$.</p>
+</div>
+
+<br>
+<hr>
+</main>
+
+<a href="5.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Other Useful Dodges | Calculus Made Easy</title>
+<link rel="stylesheet" href="screen.css">
+<style>
+body{counter-reset:h1 13}
+</style>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+  }
+};
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+
+<body>
+<h1>Other Useful Dodges</h1>
+
+
+
+
+<main id="main-content">
+
+<h2>Partial Fractions.</h2>
+
+
+
+<p>We have seen that when we differentiate a fraction
+we have to perform a rather complicated operation;
+and, if the fraction is not itself a simple one, the result
+is bound to be a complicated expression. If we could
+split the fraction into two or more simpler fractions
+such that their sum is equivalent to the original
+fraction, we could then proceed by differentiating
+each of these simpler expressions. And the result of
+differentiating would be the sum of two (or more)
+differentials, each one of which is relatively simple;
+while the final expression, though of course it will be
+the same as that which could be obtained without
+resorting to this dodge, is thus obtained with much
+less effort and appears in a simplified form.</p>
+
+
+<p>Let us see how to reach this result. Try first the
+job of adding two fractions together to form a resultant
+fraction. Take, for example, the two fractions $\dfrac{1}{x+1}$
+and $\dfrac{2}{x-1}$. Every schoolboy can add these together
+and find their sum to be $\dfrac{3x+1}{x^2-1}$. And in the same
+
+way he can add together three or more fractions.
+Now this process can certainly be reversed:<a name="partfracs2"></a> that is to
+say, that if this last expression were given, it is certain
+that it can somehow be split back again into its
+original components or partial fractions. Only we do
+not know in every case that may be presented to us
+<em>how</em> we can so split it. In order to find this out
+we shall consider a simple case at first. But it is
+important to bear in mind that all which follows
+applies only to what are called “proper” algebraic
+fractions, meaning fractions like the above, which have
+the numerator of <em>a lesser degree</em> than the denominator;
+that is, those in which the highest index of $x$ is less
+in the numerator than in the denominator. If we
+have to deal with such an expression as $\dfrac{x^2+2}{x^2-1}$, we can
+simplify it by division, since it is equivalent to
+$1+\dfrac{3}{x^2-1}$; and $\dfrac{3}{x^2-1}$ is a proper algebraic fraction
+to which the operation of splitting into partial fractions
+can be applied, as explained hereafter.</p>
+
+
+<p><em>Case I.</em> If we perform many additions of two or
+more fractions the denominators of which contain only
+terms in $x$, and no terms in $x^2$, $x^3$, or any other powers
+of $x$, we <em>always</em> find that <em>the denominator of the final
+resulting fraction is the product of the denominators</em>
+of the fractions which were added to form the result.
+It follows that by factorizing the denominator of this
+final fraction, we can find every one of the denominators
+of the partial fractions of which we are in search.</p>
+
+
+
+<p>Suppose we wish to go back from $\dfrac{3x+1}{x^2-1}$ to the
+components which we know are $\dfrac{1}{x+1}$ and $\dfrac{2}{x-1}$. If
+we did not know what those components were we can
+still prepare the way by writing:</p>
+
+<p id="65c38bcc-e715-4887-ae5e-2050df92a313" class="latex-block">\[
+\frac{3x+1}{x^2-1} = \frac{3x+1}{(x+1)(x-1)} = \frac{}{x+1} + \frac{}{x-1},
+\]</p>
+
+<p>leaving blank the places for the numerators until we
+know what to put there. We always may assume the
+sign between the partial fractions to be <em>plus</em>, since, if
+it be <em>minus</em>, we shall simply find the corresponding
+numerator to be negative. Now, since the partial
+fractions are <em>proper</em> fractions, the numerators are
+mere numbers without $x$ at all, and we can call them
+$A$, $B$, $C\dots$ as we please. So, in this case, we have:</p>
+
+<p id="b2735c7c-d778-476b-8712-6182a1561be8" class="latex-block">\[
+\frac{3x+1}{x^2-1} = \frac{A}{x+1} + \frac{B}{x-1}.
+\]</p>
+
+
+<p>If now we perform the addition of these two
+partial fractions, we get $\dfrac{A(x-1)+B(x+1)}{(x+1)(x-1)}$; and this
+must be equal to $\dfrac{3x+1}{(x+1)(x-1)}$. And, as the denominators
+in these two expressions are the same,
+the numerators must be equal, giving us:</p>
+
+<p id="24c6cc67-09b3-4ecd-9dd1-e0651034a8d4" class="latex-block">\[
+3x + 1 = A(x-1) + B(x + 1).
+\]</p>
+
+
+<p>Now, this is an equation with two unknown
+quantities, and it would seem that we need another
+equation before we can solve them and find $A$ and $B$.
+
+But there is another way out of this difficulty. The
+equation must be true for all values of $x$; therefore
+it must be true for such values of $x$ as will cause
+$x-1$ and $x+1$ to become zero, that is for $x=1$ and
+for $x=-1$ respectively. If we make $x=1$, we get
+$4 = (A × 0)+(B × 2)$, so that $B=2$; and if we make
+$x=-1$, we get $-2 = (A × -2) + (B × 0)$, so that $A=1$.
+Replacing the $A$ and $B$ of the partial fractions by
+these new values, we find them to become $\dfrac{1}{x+1}$ and
+$\dfrac{2}{x-1}$; and the thing is done.</p>
+
+
+<p>As a farther example, let us take the fraction
+$\dfrac{4x^2 + 2x - 14}{x^3 + 3x^2 - x - 3}$. The denominator becomes zero when
+$x$ is given the value $1$; hence $x-1$ is a factor of it,
+and obviously then the other factor will be $x^2 + 4x + 3$;
+and this can again be decomposed into $(x+1)(x+3)$.
+So we may write the fraction thus:</p>
+
+<p id="71432ee8-80ae-470d-9d35-433d5a9d51e4" class="latex-block">\[
+\frac{4x^2 + 2x - 14}{x^3 + 3x^2 - x - 3}
+  = \frac{A}{x+1} + \frac{B}{x-1} + \frac{C}{x+3},
+\]</p>
+
+<p>making three partial factors.</p>
+
+
+<p>Proceeding as before, we find</p>
+
+<p id="8d491a9e-c462-44e0-80ef-4758c6c60933" class="latex-block">\[
+4x^2 + 2x - 14 = A(x-1)(x+3) + B(x+1)(x+3) + C(x+1)(x-1).
+\]</p>
+
+
+<p>Now, if we make $x=1$, we get:</p>
+
+<p id="8f8582a1-36ee-4c54-b103-7befcbf81048" class="latex-block">\begin{align*}
+-8 &= (A × 0) + B(2 × 4) + (C × 0); \\
+B &= -1.
+\end{align*}</p>
+
+
+<p>If $x= -1$, we get:</p>
+
+<p id="56eec024-f09d-43d7-97f3-f9e0718197f2" class="latex-block">\begin{align*}
+-12 &= A(-2 × 2) + (B × 0) + (C × 0); \\
+A &= 3.
+\end{align*}</p>
+
+
+
+<p>If $x = -3$, we get:</p>
+
+<p id="d4c75931-b9ca-4b11-8491-9b75fd2cb06f" class="latex-block">\begin{align*}
+16 &= (A × 0) + (B × 0) + C(-2 × -4); \\
+C &= 2.
+\end{align*}</p>
+
+
+<p>So then the partial fractions are:</p>
+
+<p id="3430a3fa-913a-40a4-9bcc-eb43ff7adb7c" class="latex-block">\[
+\frac{3}{x+1} - \frac{1}{x-1} + \frac{2}{x+3},
+\]</p>
+
+<p>which is far easier to differentiate with respect to $x$
+than the complicated expression from which it is
+derived.</p>
+
+<p><em>Case II.</em></p>
+
+<p>If some of the factors of the denominator
+contain terms in $x^2$, and are not conveniently put
+into factors, then the corresponding numerator may
+contain a term in $x$, as well as a simple number; and
+hence it becomes necessary to represent this unknown
+numerator not by the symbol $A$ but by $Ax + B$; the
+rest of the calculation being made as before.
+
+
+   Try, for instance:</p>
+
+<p id="6889a5d8-eb65-4227-ab76-91687b27b9cf" class="latex-block">\begin{align*}
+\frac{-x^2 - 3}{(x^2+1)(x+1)}. \\
+\frac{-x^2 - 3}{(x^2+1)(x+1)} &= \frac{Ax+B}{x^2+1} + \frac{C}{x+1};\\
+-x^2 - 3 &= (Ax + B)(x+1) + C(x^2+1).
+\end{align*}</p>
+
+
+<p>Putting $x= -1$, we get $-4 = C × 2$; and $C = -2$; hence</p>
+
+<p id="3c1c47f9-5d9a-4efa-8829-c8808e76996e" class="latex-block">\begin{align*}
+-x^2 - 3 &= (Ax + B)(x + 1) - 2x^2 - 2; \\
+x^2 - 1 &= Ax(x+1) + B(x+1).
+\end{align*}</p>
+
+
+
+
+<p>Putting $x = 0$, we get $-1 = B$;
+hence</p>
+
+<p id="f9d93a71-f499-4271-bdab-2c95f3d42469" class="latex-block">\begin{align*}
+x^2 - 1 &= Ax(x + 1) - x - 1; \\
+x^2 + x &= Ax(x+1); \\
+x+1 &= A(x+1)
+\end{align*}</p>
+
+<p>so that $A=1$, and the partial fractions are:</p>
+
+<p id="6df43a71-4fd2-481e-9825-f35977eb60a4" class="latex-block">\[
+\frac{x-1}{x^2+1} - \frac{2}{x+1}.
+\]</p>
+
+
+<p>Take as another example the fraction</p>
+
+<p id="cdf228bc-6d2b-4cc5-9dc4-314fd706c47a" class="latex-block">\[
+\frac{x^3-2}{(x^2+1)(x^2+2)}.
+\]</p>
+
+
+<p>We get</p>
+
+<p id="982e2911-4a1e-44f8-9208-dbaa4188bbcf" class="latex-block">\begin{align*}
+\frac{x^3-2}{(x^2+1)(x^2+2)}
+  &= \frac{Ax+B}{x^2+1} + \frac{Cx+D}{x^2+2}\\
+  &= \frac{(Ax+B)(x^2+2)+(Cx+D)(x^2+1)}{(x^2+1)(x^2+2)}.
+\end{align*}</p>
+
+
+
+
+<p>In this case the determination of $A$, $B$, $C$, $D$ is not
+so easy. It will be simpler to proceed as follows:
+Since the given fraction and the fraction found by
+adding the partial fractions are equal, and have
+<em>identical</em> denominators, the numerators must also be
+identically the same. In such a case, and for such
+algebraical expressions as those with which we are
+dealing here, <em>the coefficients of the same powers of $x$
+are equal and of same sign</em>.</p>
+
+
+<p>Hence, since</p>
+
+<p id="3b8eca71-413d-4f38-a345-cc7f278de72c" class="latex-block">\begin{align*}
+x^3-2
+  &= (Ax+B)(x^2+2) + (Cx+D)(x^2+1) \\
+  &= (A+C)x^3 + (B+D)x^2 + (2A+C)x + 2B+D,
+\end{align*}</p>
+
+<p>we have $1=A+C$; $0=B+D$ (the coefficient of $x^2$
+in the left expression being zero); $0=2A+C$; and
+$-2=2B+D$. Here are four equations, from which
+we readily obtain $A=-1$; $B=-2$; $C=2$; $D=0$;
+so that the partial fractions are $\dfrac{2(x+1)}{x^2+2} - \dfrac{x+2}{x^2+1}$.
+
+This method can always be used; but the method
+shown first will be found the quickest in the case of
+factors in $x$ only.</p>
+
+<p><em>Case III.</em></p>
+
+<p>When, among the factors of the denominator
+there are some which are raised to some power,
+one must allow for the possible existence of partial
+fractions having for denominator the several powers
+of that factor up to the highest. For instance, in
+splitting the fraction $\dfrac{3x^2-2x+1}{(x+1)^2(x-2)}$ we must allow for
+the possible existence of a denominator $x+1$ as well
+as $(x+1)^2$ and $(x-2)$.</p>
+
+
+<p>It maybe thought, however, that, since the numerator
+of the fraction the denominator of which is $(x+1)^2$
+may contain terms in $x$, we must allow for this in
+writing $Ax+B$ for its numerator, so that</p>
+
+<p id="8a112305-4b22-4481-84b3-58bc2e0b6afd" class="latex-block">\[
+\frac{3x^2 - 2x + 1}{(x+1)^2(x-2)}
+  = \frac{Ax+B}{(x+1)^2} + \frac{C}{x+1} + \frac{D}{x-2}.
+\]</p>
+
+<p>If, however, we try to find $A$, $B$, $C$ and $D$ in this case,
+we fail, because we get four unknowns; and we have
+only three relations connecting them, yet</p>
+
+<p id="a9d373d6-c8c6-429f-85d4-fc716fefd2f0" class="latex-block">\[
+\frac{3x^2 - 2x + 1}{(x+1)^2(x-2)}
+  = \frac{x-1}{(x+1)^2} + \frac{1}{x+1} + \frac{1}{x-2}.
+\]</p>
+
+
+<p>But if we write</p>
+
+<p id="e7f03a5b-cac8-400b-9948-05c0d4c03541" class="latex-block">\[
+\frac{3x^2 - 2x + 1}{(x+1)^2(x-2)}
+  = \frac{A}{(x+1)^2} + \frac{B}{x+1} + \frac{C}{x-2},
+\]</p>
+
+<p>we get</p>
+
+<p id="6f1c360d-6bf2-42bf-a3a6-dbce0176774c" class="latex-block">\[
+3x^2 - 2x+1 = A(x-2) + B(x+1)(x-2) + C(x+1)^2,
+\]</p>
+
+<p>which gives $C=1$ for $x=2$. Replacing $C$ by its value,
+transposing, gathering like terms and dividing by
+$x-2$, we get $-2x= A+B(x+1)$, which gives $A=-2$
+for $x=-1$. Replacing $A$ by its value, we get</p>
+
+<p id="587e4c7e-9f70-4ace-ab08-a962d9ffad5f" class="latex-block">\[
+2x = -2+B(x+1).
+\]</p>
+
+
+<p>Hence $B=2$; so that the partial fractions are:</p>
+
+<p id="fe9de210-35c1-4bd4-bfb9-5b14bf6a3cc5" class="latex-block">\[
+\frac{2}{x+1} - \frac{2}{(x+1)^2} + \frac{1}{x-2},
+\]</p>
+
+<p>instead of $\dfrac{1}{x+1} + \dfrac{x-1}{(x+1)^2} + \dfrac{1}{x-2}$ stated above as being
+the fractions from which $\dfrac{3x^2-2x+1}{(x+1)^2(x-2)}$ was obtained.
+The mystery is cleared if we observe that $\dfrac{x-1}{(x+1)^2}$ can
+itself be split into the two fractions $\dfrac{1}{x+1} - \dfrac{2}{(x+1)^2}$, so
+that the three fractions given are really equivalent to</p>
+
+<p id="d77095fd-8890-4d6d-91c5-d28f3ff7133e" class="latex-block">\[
+\frac{1}{x+1} + \frac{1}{x+1} - \frac{2}{(x+1)^2} + \frac{1}{x-2}
+  = \frac{2}{x+1} - \frac{2}{(x+1)^2} + \frac{1}{x-2},
+\]</p>
+
+<p>which are the partial fractions obtained.</p>
+
+
+<p>We see that it is sufficient to allow for one numerical
+term in each numerator, and that we always get the
+ultimate partial fractions.</p>
+
+
+<p>When there is a power of a factor of $x^2$ in the
+denominator, however, the corresponding numerators
+must be of the form $Ax+B$; for example,</p>
+
+<p id="0f177190-91a0-4400-83c5-29a6a376990d" class="latex-block">\[
+\frac{3x-1}{(2x^2-1)^2(x+1)}
+  = \frac{Ax+B}{(2x^2-1)^2} + \frac{Cx+D}{2x^2-1} + \frac{E}{x+1},
+\]</p>
+
+<p>which gives</p>
+
+<p id="8261073a-324a-4936-a888-701cdce309d5" class="latex-block">\[
+3x - 1 = (Ax + B)(x + 1)
+       + (Cx + D)(x + 1)(2x^2 - 1) + E(2x^2 - 1)^2.
+\]</p>
+
+
+<p>For $x = -1$, this gives $E = -4$. Replacing, transposing,
+collecting like terms, and dividing by $x + 1$,
+we get</p>
+
+<p id="ea8d7c53-0b17-4f7a-a19c-4cf325d4641d" class="latex-block">\[
+16x^3 - 16x^2 + 3 = 2Cx^3 + 2Dx^2 + x(A - C) + (B - D).
+\]</p>
+
+
+<p>Hence $2C = 16$ and $C = 8$; $2D = -16$ and $D = -8$;
+$A - C = 0$ or $A - 8 = 0$ and $A = 8$, and finally, $B - D = 3$
+or $B = -5$. So that we obtain as the partial fractions:</p>
+
+<p id="1f1a7572-100b-445c-b105-fbd25d851b64" class="latex-block">\[
+\frac{(8x - 5)}{(2x^2 - 1)^2} + \frac{8(x - 1)}{2x^2 - 1} - \frac{4}{x + 1}.
+\]</p>
+
+
+<p>It is useful to check the results obtained. The
+simplest way is to replace $x$ by a single value, say $+1$,
+both in the given expression and in the partial
+fractions obtained.</p>
+
+
+<p>Whenever the denominator contains but a power of
+a single factor, a very quick method is as follows:</p>
+
+
+<p>Taking, for example, $\dfrac{4x + 1}{(x + 1)^3}$, let $x + 1 = z$; then
+$x = z - 1$.</p>
+
+
+<p>Replacing, we get</p>
+
+<p id="d12c5be6-b163-4ac4-a68f-4e74bec2eabe" class="latex-block">\[
+\frac{4(z - 1) + 1}{z^3} = \frac{4z - 3}{z^3} = \frac{4}{z^2} - \frac{3}{z^3}.
+\]</p>
+
+
+<p>The partial fractions are, therefore,</p>
+
+<p id="eb5a9b62-fb16-4c59-95f4-af560a977a8d" class="latex-block">\[
+\frac{4}{(x + 1)^2} - \frac{3}{(x + 1)^3}.
+\]</p>
+
+
+
+<p>Application to differentiation. Let it be required
+to differentiate $y = \dfrac{5-4x}{6x^2 + 7x - 3}$; we have</p>
+
+<p id="00c8d001-e39e-447f-99d9-c7afd2155d2f" class="latex-block">\begin{align*}
+\frac{dy}{dx}
+  &= -\frac{(6x^2+7x-3) × 4 + (5 - 4x)(12x + 7)}{(6x^2 + 7x - 3)^2}\\
+  &=  \frac{24x^2 - 60x - 23}{(6x^2 + 7x - 3)^2}.
+\end{align*}</p>
+
+
+
+
+<p>If we split the given expression into</p>
+
+<p id="a8c39309-f903-486b-9a0b-cfe9f2c84ff0" class="latex-block">\[
+\frac{1}{3x-1} - \frac{2}{2x+3},
+\]</p>
+
+<p>we get, however,</p>
+
+<p id="09cdef2b-d867-41fc-924f-be873e550353" class="latex-block">\[
+\frac{dy}{dx} = -\frac{3}{(3x-1)^2} + \frac{4}{(2x+3)^2},
+\]</p>
+
+<p>which is really the same result as above split into
+partial fractions. But the splitting, if done after
+differentiating, is more complicated, as will easily be
+seen. When we shall deal with the <em>integration</em> of
+such expressions, we shall find the splitting into
+partial fractions a precious auxiliary (see <a href="20.html#partfracs">here</a>).</p>
+
+
+
+<hr>
+
+
+
+<div class="exercises-section">
+<h3>Exercises XI</h3>
+
+<p>Split into fractions:</p>
+
+
+<p>(1) $\dfrac{3x + 5}{(x - 3)(x + 4)}$.</p>
+
+<p>(2) $\dfrac{3x - 4}{(x - 1)(x - 2)}$.</p>
+
+<p>(3) $\dfrac{3x + 5}{x^2 + x - 12}$.</p>
+
+<p>(4) $\dfrac{x + 1}{x^2 - 7x + 12}$.</p>
+
+<p>(5) $\dfrac{x - 8}{(2x + 3)(3x - 2)}$.</p>
+
+<p>(6) $\dfrac{x^2 - 13x + 26}{(x - 2)(x - 3)(x - 4)}$.</p>
+
+<p>(7) $\dfrac{x^2 - 3x + 1}{(x - 1)(x + 2)(x - 3)}$.</p>
+
+<p>(8) $\dfrac{5x^2 + 7x + 1}{(2x + 1)(3x - 2)(3x + 1)}$.</p>
+
+<p>(9) $\dfrac{x^2}{x^3 - 1}$.</p>
+
+<p>(10) $\dfrac{x^4 + 1}{x^3 + 1}$.</p>
+
+<p>(11) $\dfrac{5x^2 + 6x + 4}{(x +1)(x^2 + x + 1)}$.</p>
+
+<p>(12) $\dfrac{x}{(x - 1)(x - 2)^2}$.</p>
+
+<p>(13) $\dfrac{x}{(x^2 - 1)(x + 1)}$.</p>
+
+<p>(14) $\dfrac{x + 3}{ (x +2)^2(x - 1)}$.</p>
+
+<p>(15) $\dfrac{3x^2 + 2x + 1}{(x + 2)(x^2 + x + 1)^2}$.</p>
+
+<p>(16) $\dfrac{5x^2 + 8x - 12}{(x + 4)^3}$.</p>
+
+<p>(17) $\dfrac{7x^2 + 9x - 1}{(3x - 2)^4}$.</p>
+
+<p>(18) $\dfrac{x^2}{(x^3 - 8)(x - 2)}$.</p>
+
+
+
+
+<h3 class="answers">Answers</h3>
+
+
+<p>(1)   $\dfrac{2}{ x - 3} + \dfrac{1}{ x + 4}$.</p>
+
+
+<p>(2)   $\dfrac{1}{ x - 1} + \dfrac{2}{ x - 2}$.</p>
+
+
+<p>(3)   $\dfrac{2}{ x - 3} + \dfrac{1}{ x + 4}$.</p>
+
+
+
+<p>(4)   $\dfrac{5}{ x - 4} - \dfrac{4}{ x - 3}$.</p>
+
+
+<p>(5)   $\dfrac{19}{13(2x + 3)} - \dfrac{22}{13(3x - 2)}$.</p>
+
+
+
+<p>(6)   $\dfrac{2}{ x - 2} + \dfrac{4}{ x - 3} - \dfrac{5}{ x - 4}$.</p>
+
+
+<p>(7)   $\dfrac{1}{6(x - 1)} + \dfrac{11}{15(x + 2)} + \dfrac{1}{10(x - 3)}$.</p>
+
+
+<p>(8)   $\dfrac{7}{9(3x + 1)} + \dfrac{71}{63(3x - 2)} - \dfrac{5}{7(2x + 1)}$.</p>
+
+
+
+<p>(9)   $\dfrac{1}{3(x - 1)} + \dfrac{2x + 1}{3(x^2 + x + 1)}$.</p>
+
+
+<p>(10)  $x + \dfrac{2}{3(x + 1)} + \dfrac{1 - 2x}{3(x^2 - x + 1)}$.</p>
+
+
+
+<p>(11)  $\dfrac{3}{(x + 1)} + \dfrac{2x + 1}{x^2 + x + 1}$.</p>
+
+
+<p>(12)  $\dfrac{1}{ x - 1} - \dfrac{1}{ x - 2} + \dfrac{2}{(x - 2)^2}$.</p>
+
+
+
+<p>(13)  $\dfrac{1}{4(x - 1)} - \dfrac{1}{4(x + 1)} + \dfrac{1}{2(x + 1)^2}$.</p>
+
+
+<p>(14)  $\dfrac{4}{9(x - 1)} - \dfrac{4}{9(x + 2)} - \dfrac{1}{3(x + 2)^2}$.</p>
+
+
+<p>(15)  $\dfrac{1}{ x + 2} - \dfrac{x - 1}{ x^2 + x + 1} - \dfrac{1}{(x^2 + x + 1)^2}$.</p>
+
+
+<p>(16)  $\dfrac{5}{ x + 4} -\dfrac{32}{(x + 4)^2} + \dfrac{36}{(x + 4)^3}$.</p>
+
+
+<p>(17)  $\dfrac{7}{9(3x - 2)^2} + \dfrac{55}{9(3x - 2)^3} + \dfrac{73}{9(3x - 2)^4}$.</p>
+
+
+<p>(18)  $\dfrac{1}{6(x - 2)} + \dfrac{1}{3(x - 2)^2} - \dfrac{x}{6(x^2 + 2x + 4)}$.</p>
+
+
+<h2>Differential of an Inverse Function.</h2>
+
+
+
+<p>Consider the function (see <a href="3.html#function">here</a>) $y = 3x$; it can be
+expressed in the form $x = \dfrac{y}{3}$; this latter form is called
+the <em>inverse function</em> to the one originally given.</p>
+
+
+<p>If $y = 3x$,&nbsp;&nbsp; $\dfrac{dy}{dx} = 3$; if $x=\dfrac{y}{3}$,&nbsp;&nbsp; $\dfrac{dx}{dy} = \dfrac{1}{3}$, and we see that</p>
+
+<p id="4b6e057f-9d88-4a23-a007-ee484ed784b5" class="latex-block">\[
+\frac{dy}{dx} = \frac{1}{\ \dfrac{dx}{dy}\ }\quad \text{or}\quad
+\frac{dy}{dx} × \frac{dx}{dy} = 1.
+\]</p>
+
+
+<p>Consider $y= 4x^2$, $\dfrac{dy}{dx} = 8x$; the inverse function is</p>
+
+<p id="ee841de3-498d-412c-b704-990a067de8e0" class="latex-block">\[
+x = \frac{y^{\frac{1}{2}}}{2},\quad \text{and}\quad
+\frac{dx}{dy} = \frac{1}{4\sqrt{y}} = \frac{1}{4 × 2x} = \frac{1}{8x}.
+\]</p>
+
+
+<p id="9662f37a-f9b2-40d8-ac82-25f5fff603dc" class="latex-block">\begin{align*}
+   \text{Here again}\;
+\frac{dy}{dx}×\frac{dx}{dy} &= 1.
+\end{align*}</p>
+
+
+
+
+<p>It can be shown that for all functions which can be
+put into the inverse form, one can always write</p>
+
+<p id="f183c8d9-9583-494b-a768-2d2021f5b334" class="latex-block">\[
+\frac{dy}{dx} × \frac{dx}{dy} = 1\quad \text{or}\quad
+\frac{dy}{dx} = \frac{1}{\ \dfrac{dx}{dy}\ }.
+\]</p>
+
+
+<p>It follows that, being given a function, if it be
+easier to differentiate the inverse function, this may
+be done, and the reciprocal of the differential coefficient
+of the inverse function gives the differential coefficient
+of the given function itself.</p>
+
+
+<p>As an example, suppose that we wish to differentiate
+$y=\sqrt[2]{\dfrac{3}{x}-1}$. We have seen one way of doing this,
+by writing $u=\dfrac{3}{x}-1$, and finding $\dfrac{dy}{du}$ and $\dfrac{du}{dx}$. This
+gives</p>
+
+<p id="1f71473f-9b64-4086-ab2a-cef2d48a0aff" class="latex-block">\[
+\frac{dy}{dx} = -\frac{3}{2x^2\sqrt{\dfrac{3}{x} -1}}.
+\]</p>
+
+
+<p>If we had forgotten how to proceed by this method,
+or wished to check our result by some other way of
+obtaining the differential coefficient, or for any other
+reason we could not use the ordinary method, we can
+proceed as follows: The inverse function is $x=\dfrac{3}{1+y^2}$.</p>
+
+<p id="05ede2c6-86a9-431f-b36f-91aef8b4ec00" class="latex-block">\[
+\frac{dx}{dy} = -\frac{3 × 2y}{(1+y^2)^2} = -\frac{6y}{(1+y^2)^2};
+\]</p>
+
+<p>hence</p>
+
+<p id="216bdbef-70a7-40f1-b6dc-431dde249837" class="latex-block">\[
+\frac{dy}{dx} = \frac{1}{\ \dfrac{dx}{dy}\ }
+  = -\frac{(1+y^2)^2}{6y}
+  = -\frac{\left(1+\dfrac{3}{x} -1\right)^2}{6×\sqrt[2]{\dfrac{3}{x}-1}}
+  = -\frac{3}{2x^2\sqrt{\dfrac{3}{x}-1}}.
+\]</p>
+
+
+<p>Let us take as an other example $y=\dfrac{1}{\sqrt[3]{\theta +5}}$.</p>
+
+
+<p>The inverse function is $\theta=\dfrac{1}{y^3}-5$ or $\theta=y^{-3}-5$, and</p>
+
+<p id="cf1d87ac-8a3c-4b23-9f8e-cf814d58cdcd" class="latex-block">\[
+\frac{d\theta}{dy} = -3y^{-4} = -3\sqrt[3]{(\theta + 5)^4}.
+\]</p>
+
+
+<p>It follows that $\dfrac{dy}{dx} = -\dfrac{1}{3\sqrt{(\theta +5)^4}}$, as might have
+been found otherwise.</p>
+
+
+<p>We shall find this dodge most useful later on;
+meanwhile you are advised to become familiar with
+it by verifying by its means the results obtained in
+Exercises I. (<a href="4.html#ex1">here</a>), Nos. 5, 6, 7; Examples (<a href="9.html#ExNo1">here</a>),
+Nos. 1, 2, 4; and Exercises VI. (<a href="9.html#ex6">here</a>), Nos. 1, 2, 3
+and 4.</p>
+
+
+
+<hr>
+
+
+<p>You will surely realize from this chapter and the
+preceding, that in many respects the calculus is an
+<em>art</em> rather than a <em>science</em>: an art only to be acquired,
+as all other arts are, by practice. Hence you should
+work many examples, and set yourself other examples,
+to see if you can work them out, until the various
+artifices become familiar by use.</p>
+</div>
+
+
+<br>
+<hr>
+</main>
+
+<a href="14.html">Next &rarr;</a><br>
+<a href="/">Main Page &uarr;</a><br>
+
+<script src="j/jquery.js"></script>
+<script src="j/modernizr.js"></script>
+<script src="j/dih5.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101178221-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101178221-1');
+</script>
+
+</body>
